@@ -7,30 +7,6 @@ import styled from "styled-components";
 import Grid from "styled-components-grid";
 import { Image } from "../components/Image";
 
-
-// const TopWrapper = styled.div`
-//   display: grid;
-//   grid-template-columns: repeat(2, 1fr);
-//   grid-gap: 1em;
-//   grid-auto-rows: minmax(300px, auto);
-// `;
-
-// const Wrapper = styled.div`
-//   display: grid;
-//   grid-template-columns: repeat(3, 1fr);
-//   grid-gap: 1em;
-//   grid-auto-rows: minmax(300px, auto);
-// `;
-
-// const Cell = styled.div`
-//   display: grid;
-//   /* grid-template-columns: repeat(3, 1fr); */
-//   grid-gap: 1em;
-//   background: #eee;
-//   /* text-align: center; */
-//   /* grid-auto-rows: minmax(100px, auto); */
-// `;
-
 const BigText = styled.span`
   /* color: #ffa500; */
   font-size: 50px;

@@ -4,7 +4,6 @@ import Layout from "../components/layout";
 import { useBlogData } from "../components/hooks/getBlogdata";
 import blogStyles from "./blog.module.scss";
 import { Head } from "../components/head";
-// import { RetrieveBlogPost } from "../components/Contentful/retrieveBlogPost";
 
 // ToDo define edge type
 export const Blog: React.FC = () => {

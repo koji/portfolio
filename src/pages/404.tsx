@@ -9,7 +9,6 @@ const ComingSoon = styled.div`
   text-align: center;
 `;
 
-
 const NotFoundPage = () => {
   return (
     <Layout>

@@ -3,23 +3,6 @@ import styled from "styled-components";
 import { Project } from "./Project";
 import { project } from "./Types";
 
-
-const Wrapper = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1em;
-  grid-auto-rows: minmax(300px, auto);
-`;
-
-const Cell = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1em;
-  background: #eee;
-  text-align:center;
-  /* grid-auto-rows: minmax(100px, auto); */
-`;
-
 const GridPart = styled.div`
   display: flex;
   flex-wrap: wrap;

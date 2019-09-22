@@ -3,7 +3,6 @@ import Link from "gatsby-link";
 import headerStyles from "./header.module.scss";
 import { useSiteMetadata } from "./hooks/siteMetadata";
 import styled from "styled-components";
-import { Image } from "../components/Image";
 import { NavBar } from "./navbar";
 import Grid from "styled-components-grid";
 
@@ -16,7 +15,6 @@ export const Header: React.FC = () => {
   const { title } = useSiteMetadata();
   return (
     <header className={headerStyles.header}>
-      {/* <Wrapper> */}
       <Grid halign="justify">
         <Grid.Unit size={0.25}>
           <h1>
@@ -31,8 +29,6 @@ export const Header: React.FC = () => {
           <NavBar />
         </Grid.Unit>
       </Grid>
-      {/* <span></span> */}
-      {/* </Wrapper> */}
     </header>
   );
 };
