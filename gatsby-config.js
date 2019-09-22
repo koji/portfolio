@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "koji.work",
+    title: "koji kanao",
     author: "Koji Kanao",
     github: "https://github.com/koji",
     instagram: "https://www.instagram.com/koji_kanao/",
