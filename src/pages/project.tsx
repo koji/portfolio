@@ -12,17 +12,6 @@ export default class Project extends React.Component {
         <Head title="Project" />
         <h1>Project</h1>
         <ProjectGrid projectData={projects} />
-        {/* <p>I currently work full-time software engineer for a company.</p>
-        <h3>contact</h3>
-        <p>linkedin</p>
-        <p>
-          <a href="https://github.com/koji/" target="_blank">
-            Github
-          </a>
-        </p>
-        <p>instagram</p>
-        <p>email</p>
-        <Link to="/">Go back to the homepage</Link> */}
       </Layout>
     );
   }

@@ -1,14 +1,15 @@
 import * as React from "react";
-import Link from "gatsby-link";
 import Layout from "../components/layout";
 import { Head } from "../components/head";
 import { Image } from "../components/Image";
 import Grid from "styled-components-grid";
+// for font icons start
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 library.add(fab);
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { myLinks } from "../components/data/link";
+// for font icons end
 
 export default class About extends React.Component {
     render() {

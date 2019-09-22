@@ -52,6 +52,11 @@ export const NavBar = () => {
             About
           </Link>
         </li>
+        <li>
+          <a href="https://drive.google.com/file/d/1_kEA--64uxtnpgAVuVvfTo_Gw2MCF0Mf/view?usp=sharing">
+            CV
+          </a>
+        </li>
       </ul>
     </nav>
   );

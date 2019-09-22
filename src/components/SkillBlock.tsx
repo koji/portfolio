@@ -71,6 +71,7 @@ const Cell = styled.div`
   padding: 1em;
 `;
 
+// ToDo read ts file
 export const Skill = () => {
   return (
     <Wrapper>

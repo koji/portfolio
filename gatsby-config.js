@@ -53,7 +53,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
-        logo: "./src/components/assets/logo.png",
+        logo: "./src/assets/logo.png",
 
         // WebApp Manifest Configuration
         appName: null, // Inferred with your package.json
