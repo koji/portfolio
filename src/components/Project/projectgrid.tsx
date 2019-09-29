@@ -11,7 +11,7 @@ const GridPart = styled.div`
 `;
 interface Props {
   projectData: project[];
-};
+}
 
 export const ProjectGrid = (props: Props) => {
   return (
