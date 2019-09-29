@@ -26,7 +26,7 @@ const ImageWrapper = styled.div`
 //   max-width none
 interface Props {
   projectData: project;
-};
+}
 
 export const Project = (props: Props) => {
   const {id, name, image, description, link, tool} = props.projectData;
