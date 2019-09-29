@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
-import { Project } from "./Project";
-import { project } from "./Types";
+import { Project } from ".";
+import { project } from "../Types";
 
 const GridPart = styled.div`
   display: flex;

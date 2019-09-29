@@ -1,9 +1,9 @@
 import * as React from "react";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 // import { getPostData } from "../components/hooks/getPost";
 import { graphql } from "gatsby";
 // import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import { Head } from "../components/head";
+import { Head } from "../components/Header/head";
 
 // for markdown
 export const query = graphql`

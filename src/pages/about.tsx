@@ -1,6 +1,6 @@
 import * as React from "react";
-import Layout from "../components/layout";
-import { Head } from "../components/head";
+import Layout from "../components/Layout";
+import { Head } from "../components/Header/head";
 import { Image } from "../components/Image";
 import Grid from "styled-components-grid";
 // for font icons start

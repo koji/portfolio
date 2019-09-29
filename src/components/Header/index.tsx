@@ -1,15 +1,9 @@
 import * as React from "react";
 import Link from "gatsby-link";
 import headerStyles from "./header.module.scss";
-import { useSiteMetadata } from "./hooks/siteMetadata";
-import styled from "styled-components";
+import { useSiteMetadata } from "../hooks/siteMetadata";
 import { NavBar } from "./navbar";
 import Grid from "styled-components-grid";
-
-const Wrapper = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-`;
 
 export const Header: React.FC = () => {
   const { title } = useSiteMetadata();

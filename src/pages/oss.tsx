@@ -1,7 +1,6 @@
 import * as React from "react";
-import Link from "gatsby-link";
-import Layout from "../components/layout";
-import { Head } from "../components/head";
+import Layout from "../components/Layout";
+import { Head } from "../components/Header/head";
 import styled from "styled-components";
 import Grid from "styled-components-grid";
 
@@ -226,5 +225,4 @@ export default class Oss extends React.Component {
       </Layout>
     );
   }
-
 }

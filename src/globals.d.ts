@@ -4,3 +4,4 @@ declare module '*.scss' {
 }
 
 // declare const graphql: (query: TemplateStringsArray) => void
+declare module "styled-components-grid";

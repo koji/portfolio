@@ -4,7 +4,7 @@ import headerStyles from "./header.module.scss";
 
 export const NavBar = () => {
   return (
-    <nav>
+    <nav style={{marginRight: "30px"}}>
       <ul className={headerStyles.navList}>
         <li>
           <Link

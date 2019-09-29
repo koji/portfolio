@@ -5,7 +5,7 @@ import { useStaticQuery, graphql} from "gatsby";
 export interface SiteMetadata {
      title: string;
 }
-
+// show page title
 export const Head = ({ title }: SiteMetadata) => {
   const data = useStaticQuery(graphql`
     query {
