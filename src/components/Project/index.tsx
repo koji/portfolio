@@ -1,8 +1,8 @@
 import * as React from "react";
 import styled from "styled-components";
 import Link from "gatsby-link";
-import { project } from "./Types";
-import { Image } from "./Image";
+import { project } from "../Types";
+import { Image } from "../Image";
 
 const Figure = styled.figure`
   flex-basis: calc(33.333% - 4rem);

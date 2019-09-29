@@ -1,7 +1,6 @@
-import Link from "gatsby-link";
 import * as React from "react";
-import Layout from "../components/layout";
-import { Head } from "../components/head";
+import Layout from "../components/Layout";
+import { Head } from "../components/Header/head";
 import { Skill } from "../components/SkillBlock";
 import styled from "styled-components";
 import Grid from "styled-components-grid";
