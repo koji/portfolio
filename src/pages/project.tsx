@@ -1,9 +1,8 @@
 import * as React from "react";
-import Link from "gatsby-link";
-import Layout from "../components/layout";
-import { Head } from "../components/head";
+import Layout from "../components/Layout";
+import { Head } from "../components/Header/head";
 import { projects } from "../components/data/project";
-import { ProjectGrid } from "../components/projectgrid";
+import { ProjectGrid } from "../components/Project/projectgrid";
 
 export default class Project extends React.Component {
   render() {

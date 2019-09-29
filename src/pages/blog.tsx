@@ -1,9 +1,9 @@
 import * as React from "react";
 import Link from "gatsby-link";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import { useBlogData } from "../components/hooks/getBlogdata";
 import blogStyles from "./blog.module.scss";
-import { Head } from "../components/head";
+import { Head } from "../components/Header/head";
 
 // ToDo define edge type
 export const Blog: React.FC = () => {

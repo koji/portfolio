@@ -1,7 +1,7 @@
 import * as React from "react";
 import Link from "gatsby-link";
-import Layout from "../components/layout";
-import { Head } from "../components/head";
+import Layout from "../components/Layout";
+import { Head } from "../components/Header/head";
 import styled from "styled-components";
 
 const ComingSoon = styled.div`

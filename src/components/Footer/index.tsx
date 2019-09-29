@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useSiteMetadata } from "./hooks/siteMetadata";
+import { useSiteMetadata } from "../hooks/siteMetadata";
 import styled from "styled-components";
 import Grid from "styled-components-grid";
 
