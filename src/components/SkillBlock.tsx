@@ -83,7 +83,7 @@ export const Skill = () => {
       <Cell><Text>linux</Text></Cell>
       <Cell><Text>reactjs</Text></Cell>
       <Cell><Text>git|github</Text></Cell>
-      <Cell><Text>docker</Text></Cell>
+      {/* <Cell><Text>docker</Text></Cell> */}
     </Wrapper>
   );
 };
