@@ -2,9 +2,13 @@ import * as React from "react";
 import Link from "gatsby-link";
 import headerStyles from "./header.module.scss";
 
+const navStyle = {
+  marginRight: "30px",
+};
+
 export const NavBar = () => {
   return (
-    <nav style={{marginRight: "30px"}}>
+    <nav style={navStyle}>
       <ul className={headerStyles.navList}>
         <li>
           <Link

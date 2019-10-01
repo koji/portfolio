@@ -11,6 +11,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { myLinks } from "../components/data/link";
 // for font icons end
 
+const h3Style: React.CSSProperties = {
+  fontSize: "50px",
+  marginBottom: "50px",
+  marginTop: "25px",
+  textAlign: "center",
+};
+
+const fontAwesomeStyle: React.CSSProperties = {
+  fontSize: "150px",
+};
+
 export default class About extends React.Component {
     render() {
         return (
@@ -31,8 +42,10 @@ export default class About extends React.Component {
                     Interactive Telecommunications Program
                   </a>
                   ) with master degree in 2018. He was a resident researcher at
-                  ITP 2018-2019.<br/>
-                  Before came to NY, he was a system engineer and mostly worked on a power plant control system.
+                  ITP 2018-2019.
+                  <br />
+                  Before came to NY, he was a system engineer and mostly worked
+                  on a power plant control system.
                 </p>
                 <p>
                   <b>Area of ​​interest</b>
@@ -47,23 +60,14 @@ export default class About extends React.Component {
               <Grid.Unit size={1 / 4}></Grid.Unit>
             </Grid>
             {/* social media links */}
-            <h3
-              style={{
-                fontSize: "50px",
-                marginBottom: "50px",
-                marginTop: "25px",
-                textAlign: "center",
-              }}
-            >
-              contact
-            </h3>
+            <h3 style={h3Style}>contact</h3>
             <Grid halign="center">
               <Grid.Unit size={1 / 6}></Grid.Unit>
               <Grid.Unit size={1 / 6}>
                 <a href={myLinks.github}>
                   <FontAwesomeIcon
                     icon={["fab", "github"]}
-                    style={{ fontSize: "150px" }}
+                    style={fontAwesomeStyle}
                   />
                 </a>
               </Grid.Unit>
@@ -71,7 +75,7 @@ export default class About extends React.Component {
                 <a href={myLinks.linkedin}>
                   <FontAwesomeIcon
                     icon={["fab", "linkedin"]}
-                    style={{ fontSize: "150px" }}
+                    style={fontAwesomeStyle}
                   />
                 </a>
               </Grid.Unit>
@@ -79,7 +83,7 @@ export default class About extends React.Component {
                 <a href={myLinks.instagram}>
                   <FontAwesomeIcon
                     icon={["fab", "instagram"]}
-                    style={{ fontSize: "150px" }}
+                    style={fontAwesomeStyle}
                   />
                 </a>
               </Grid.Unit>
@@ -87,7 +91,7 @@ export default class About extends React.Component {
                 <a href={myLinks.devto}>
                   <FontAwesomeIcon
                     icon={["fab", "dev"]}
-                    style={{ fontSize: "150px" }}
+                    style={fontAwesomeStyle}
                   />
                 </a>
               </Grid.Unit>
