@@ -11,6 +11,23 @@ const Separator = styled.hr`
   margin-bottom: 20px;
 `;
 
+const Title = styled.h2`
+  margin-bottom: 15px;
+  margin-left: 40px;
+  margin-top: 15px;
+`;
+
+const Description = styled.p`
+  margin-left: 20px;
+  margin-right: 20px;
+`;
+
+const gridStyle: React.CSSProperties = {
+  background: "#efefef",
+  marginLeft: "5px",
+  marginRight: "5px",
+};
+// ToDo switch from hardcoding to json
 export default class Oss extends React.Component {
   render() {
     return (
@@ -24,97 +41,45 @@ export default class Oss extends React.Component {
             marginTop: "10px",
           }}
         >
-          <Grid.Unit
-            size={0.23}
-            style={{
-              background: "#efefef",
-              marginLeft: "5px",
-              marginRight: "5px",
-            }}
-          >
-            <h2
-              style={{
-                marginBottom: "15px",
-                marginLeft: "40px",
-                marginTop: "15px",
-              }}
-            >
+          <Grid.Unit size={0.23} style={gridStyle}>
+            <Title>
               <a href="">easyGAN</a>
-            </h2>
+            </Title>
             <Separator />
-            <p style={{ marginLeft: "20px", marginRight: "20px" }}>
+            <Description>
               easyGAN is a CLI tool which can train images and generates images
               with DCGAN.
-            </p>
+            </Description>
           </Grid.Unit>
-          <Grid.Unit
-            size={0.23}
-            style={{
-              background: "#efefef",
-              marginLeft: "5px",
-              marginRight: "5px",
-            }}
-          >
-            <h2
-              style={{
-                marginBottom: "15px",
-                marginLeft: "40px",
-                marginTop: "15px",
-              }}
-            >
+          <Grid.Unit size={0.23} style={gridStyle}>
+            <Title>
               <a href="">ictrainer</a>
-            </h2>
+            </Title>
             <Separator />
-            <p style={{ marginLeft: "20px", marginRight: "20px" }}>
+            <Description>
               ictrainer is a CLI tool which offers a couple of functions to
               train own image classifier. It offers image collecting, resize,
               and face detector.
-            </p>
+            </Description>
           </Grid.Unit>
-          <Grid.Unit
-            size={0.23}
-            style={{
-              background: "#efefef",
-              marginLeft: "5px",
-              marginRight: "5px",
-            }}
-          >
-            <h2
-              style={{
-                marginBottom: "15px",
-                marginLeft: "40px",
-                marginTop: "15px",
-              }}
-            >
+          <Grid.Unit size={0.23} style={gridStyle}>
+            <Title>
               <a href="">gengitignore</a>
-            </h2>
+            </Title>
             <Separator />
-            <p style={{ marginLeft: "20px", marginRight: "20px" }}>
+            <Description>
               gengitignore is a CLI tool to generate .gitignore file
-            </p>
+            </Description>
           </Grid.Unit>
-          <Grid.Unit
-            size={0.23}
-            style={{
-              background: "#efefef",
-              marginLeft: "5px",
-              marginRight: "5px",
-            }}
-          >
-            <h2
-              style={{
-                marginBottom: "15px",
-                marginLeft: "40px",
-                marginTop: "15px",
-              }}
-            >
+          <Grid.Unit size={0.23} style={gridStyle}>
+            <Title>
               <a href="">wcartist</a>
-            </h2>
+            </Title>
             <Separator />
-            <p style={{ marginLeft: "20px", marginRight: "20px" }}>
+            <Description>
               wcartist is a CLI tool which allows users to create word art with
               one line command.
-            </p>
+            </Description>
           </Grid.Unit>
         </Grid>
         <Grid
@@ -124,67 +89,23 @@ export default class Oss extends React.Component {
             marginTop: "10px",
           }}
         >
-          <Grid.Unit
-            size={0.23}
-            style={{
-              background: "#efefef",
-              marginLeft: "5px",
-              marginRight: "5px",
-            }}
-          >
-            <h2
-              style={{
-                marginBottom: "15px",
-                marginLeft: "40px",
-                marginTop: "15px",
-              }}
-            >
-              Material UI Doc
-            </h2>
+          <Grid.Unit size={0.23} style={gridStyle}>
+            <Title>Material UI Doc</Title>
             <Separator />
-            <p style={{ marginLeft: "20px", marginRight: "20px" }}>
+            <Description>
               Have contributed to translate the documents from English into
               Japanaese.
-            </p>
+            </Description>
           </Grid.Unit>
-          <Grid.Unit
-            size={0.23}
-            style={{
-              background: "#efefef",
-              marginLeft: "5px",
-              marginRight: "5px",
-            }}
-          >
-            <h2
-              style={{
-                marginBottom: "15px",
-                marginLeft: "40px",
-                marginTop: "15px",
-              }}
-            >
+          <Grid.Unit size={0.23} style={gridStyle}>
+            <Title>
               <a href="">Realsense Doc for Pi</a>
-            </h2>
+            </Title>
             <Separator />
-            <p style={{ marginLeft: "20px", marginRight: "20px" }}>
-              Created a setup guide for Raspberry Pi.
-            </p>
+            <Description>Created a setup guide for Raspberry Pi.</Description>
           </Grid.Unit>
-          <Grid.Unit
-            size={0.23}
-            style={{
-              // background: "#efefef",
-              marginLeft: "5px",
-              marginRight: "5px",
-            }}
-          ></Grid.Unit>
-          <Grid.Unit
-            size={0.23}
-            style={{
-              // background: "#efefef",
-              marginLeft: "5px",
-              marginRight: "5px",
-            }}
-          ></Grid.Unit>
+          <Grid.Unit size={0.23} style={gridStyle}></Grid.Unit>
+          <Grid.Unit size={0.23} style={gridStyle}></Grid.Unit>
           {/* <Grid.Unit
             size={0.23}
             style={{
