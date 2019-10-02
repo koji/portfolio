@@ -13,6 +13,7 @@ export const projects: project[] = [
            longDescription: ``,
            name: "easyGAN",
            tool: "Python | Keras",
+           videoUrl: "",
          },
          {
            concept: ``,
@@ -24,6 +25,7 @@ export const projects: project[] = [
            longDescription: ``,
            name: "mtindo",
            tool: "Python | Chainer | Electron | Nodejs",
+           videoUrl: "",
          },
          {
            concept: ``,
@@ -34,6 +36,7 @@ export const projects: project[] = [
            longDescription: ``,
            name: "Data in Mukuru",
            tool: "D3.js | Heroku",
+           videoUrl: "",
          },
          {
            concept: ``,
@@ -44,6 +47,7 @@ export const projects: project[] = [
            longDescription: ``,
            name: "nikobot",
            tool: "Arduino | JavaScript",
+           videoUrl: "",
          },
          {
            concept: ``,
@@ -54,6 +58,7 @@ export const projects: project[] = [
            longDescription: ``,
            name: "NGEMS",
            tool: "Raspberry Pi3 | Python | Nodejs",
+           videoUrl: "",
          },
          {
            concept: ``,
@@ -64,6 +69,7 @@ export const projects: project[] = [
            longDescription: ``,
            name: "GenerativeArt Bot",
            tool: "Nodejs | Processing | aws",
+           videoUrl: "",
          },
          {
            concept: ``,
@@ -74,6 +80,7 @@ export const projects: project[] = [
            longDescription: ``,
            name: "Rose light",
            tool: "Arduino | Bluetooth",
+           videoUrl: "",
          },
          {
            concept: ``,
@@ -84,6 +91,7 @@ export const projects: project[] = [
            longDescription: ``,
            name: "face-swap",
            tool: " Python | OpenCV | dlib",
+           videoUrl: "",
          },
          {
            concept: ``,
@@ -96,6 +104,7 @@ export const projects: project[] = [
            longDescription: ``,
            name: "Gif Camera",
            tool: "Python | RaspberryPi | ffmpeg",
+           videoUrl: "",
          },
          {
            concept: ``,
@@ -107,6 +116,7 @@ export const projects: project[] = [
            longDescription: ``,
            name: "Kitchen Surveillance",
            tool: "Raspberry Pi Zero W | Python | OpenCV | selectivesearch",
+           videoUrl: "",
          },
          {
            concept: ``,
@@ -117,6 +127,7 @@ export const projects: project[] = [
            longDescription: ``,
            name: "RealSense Scan App",
            tool: "RealSense | openFrameworks",
+           videoUrl: "",
          },
          {
            concept: ``,
@@ -128,5 +139,42 @@ export const projects: project[] = [
            longDescription: ``,
            name: "GAN Monsters",
            tool: "Python | Keras",
+           videoUrl: "",
+         },
+         {
+           concept: ``,
+           description: `Ichi-go ichi-e is a Japanese four-character idiom.
+	The term means "for this time only" or "once in a lifetime."
+Ichi-go ichi-e is an openFrameworks application that generates a new shader code.
+`,
+           id: 13,
+           image: "Ichigo-Ichie.png",
+           link: "",
+           longDescription: ``,
+           name: "Ichi-go ichi-e",
+           tool: "openFrameworks | Python",
+           videoUrl: "",
+         },
+         {
+           concept: ``,
+           description: ``,
+           id: 14,
+           image: "comingsoon.jpg",
+           link: "",
+           longDescription: ``,
+           name: "",
+           tool: "",
+           videoUrl: "",
+         },
+         {
+           concept: ``,
+           description: ``,
+           id: 15,
+           image: "comingsoon.jpg",
+           link: "",
+           longDescription: ``,
+           name: "",
+           tool: "",
+           videoUrl: "",
          },
        ];
