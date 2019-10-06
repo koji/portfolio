@@ -35,7 +35,7 @@ export default class extends React.Component {
           <Grid.Unit size={1 / 4}></Grid.Unit>
           <Grid.Unit size={1 / 4} style={{ background: "#efefef" }}>
             <h2 style={h2Style}>
-              <BigText>🤘</BigText>
+              <BigText> 👋 </BigText>
               <BigText>Hi,</BigText> I'm Koji
             </h2>
             <p style={pStyle}>
