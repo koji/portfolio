@@ -5,7 +5,7 @@ export type project = {
   image: string; // image file name
   description: string;
   link: string;
-  tool: string;
+  tools: string[];
   concept: string;
   longDescription: string;
   videoUrl: string // url

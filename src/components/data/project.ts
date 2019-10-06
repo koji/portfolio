@@ -12,7 +12,7 @@ export const projects: project[] = [
            link: "https://easygan.netlify.com/",
            longDescription: ``,
            name: "easyGAN",
-           tool: "Python | Keras",
+           tools: ["Python", "Keras"],
            videoUrl: "",
          },
          {
@@ -24,7 +24,7 @@ export const projects: project[] = [
            link: "",
            longDescription: ``,
            name: "mtindo",
-           tool: "Python | Chainer | Electron | Nodejs",
+           tools: ["Python", "Chainer", "Electron", "Nodejs"],
            videoUrl: "",
          },
          {
@@ -35,7 +35,7 @@ export const projects: project[] = [
            link: "https://datavi.herokuapp.com/mukuru/",
            longDescription: ``,
            name: "Data in Mukuru",
-           tool: "D3.js | Heroku",
+           tools: ["D3.js", "Heroku"],
            videoUrl: "",
          },
          {
@@ -46,7 +46,7 @@ export const projects: project[] = [
            link: "http://www.nitishitp.com/nikobot/",
            longDescription: ``,
            name: "nikobot",
-           tool: "Arduino | JavaScript",
+           tools: ["Arduino", "JavaScript"],
            videoUrl: "",
          },
          {
@@ -57,7 +57,7 @@ export const projects: project[] = [
            link: "",
            longDescription: ``,
            name: "NGEMS",
-           tool: "Raspberry Pi3 | Python | Nodejs",
+           tools: ["Raspberry Pi3", "Python", "Nodejs"],
            videoUrl: "",
          },
          {
@@ -68,7 +68,7 @@ export const projects: project[] = [
            link: "",
            longDescription: ``,
            name: "GenerativeArt Bot",
-           tool: "Nodejs | Processing | aws",
+           tools: ["Nodejs", "Processing", "aws"],
            videoUrl: "",
          },
          {
@@ -79,7 +79,7 @@ export const projects: project[] = [
            link: "",
            longDescription: ``,
            name: "Rose light",
-           tool: "Arduino | Bluetooth",
+           tools: ["Arduino", "Bluetooth"],
            videoUrl: "",
          },
          {
@@ -90,7 +90,7 @@ export const projects: project[] = [
            link: "",
            longDescription: ``,
            name: "face-swap",
-           tool: " Python | OpenCV | dlib",
+           tools: ["Python", "OpenCV", "dlib"],
            videoUrl: "",
          },
          {
@@ -103,7 +103,7 @@ export const projects: project[] = [
            link: "",
            longDescription: ``,
            name: "Gif Camera",
-           tool: "Python | RaspberryPi | ffmpeg",
+           tools: ["Python", "RaspberryPi", "ffmpeg"],
            videoUrl: "",
          },
          {
@@ -115,7 +115,7 @@ export const projects: project[] = [
            link: "",
            longDescription: ``,
            name: "Kitchen Surveillance",
-           tool: "Raspberry Pi Zero W | Python | OpenCV | selectivesearch",
+           tools: ["Raspberry Pi Zero W", "Python", "OpenCV", "selectivesearch"],
            videoUrl: "",
          },
          {
@@ -126,7 +126,7 @@ export const projects: project[] = [
            link: "kitchen.png",
            longDescription: ``,
            name: "RealSense Scan App",
-           tool: "RealSense | openFrameworks",
+           tools: ["RealSense", "openFrameworks"],
            videoUrl: "",
          },
          {
@@ -138,7 +138,7 @@ export const projects: project[] = [
            link: "",
            longDescription: ``,
            name: "GAN Monsters",
-           tool: "Python | Keras",
+           tools: ["Python", "Keras"],
            videoUrl: "",
          },
          {
@@ -152,7 +152,7 @@ Ichi-go ichi-e is an openFrameworks application that generates a new shader code
            link: "",
            longDescription: ``,
            name: "Ichi-go ichi-e",
-           tool: "openFrameworks | Python",
+           tools: ["openFrameworks", "Python"],
            videoUrl: "",
          },
          {
@@ -163,7 +163,7 @@ Ichi-go ichi-e is an openFrameworks application that generates a new shader code
            link: "",
            longDescription: ``,
            name: "",
-           tool: "",
+           tools: [],
            videoUrl: "",
          },
          {
@@ -174,7 +174,7 @@ Ichi-go ichi-e is an openFrameworks application that generates a new shader code
            link: "",
            longDescription: ``,
            name: "",
-           tool: "",
+           tools: [],
            videoUrl: "",
          },
        ];
