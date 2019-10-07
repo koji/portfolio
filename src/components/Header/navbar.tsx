@@ -1,67 +1,84 @@
 import * as React from "react";
 import Link from "gatsby-link";
-import headerStyles from "./header.module.scss";
+import styled from "styled-components";
 
 const navStyle = {
   marginRight: "30px",
 };
 
+const NavUl = styled.ul`
+  display: flex;
+  list-style-type: none;
+  margin-top: 20px;
+`;
+
+const StyledLink = styled(props => <Link {...props} />)`
+  color: #999999;
+  font-size: 1.0rem;
+  margin-left: auto;
+  margin-right: 1.3rem;
+  text-decoration: none;
+  &:hover {
+    color: #666666;
+  }
+`;
+
+const activeNavItem = {
+  color: "#333333",
+};
+
 export const NavBar = () => {
   return (
     <nav style={navStyle}>
-      <ul className={headerStyles.navList}>
+      <NavUl>
         <li>
-          <Link
-            className={headerStyles.navItem}
-            activeClassName={headerStyles.activeNavItem}
+          <StyledLink
+            activeClassName={activeNavItem.color}
             to="/"
           >
             Home
-          </Link>
+          </StyledLink>
         </li>
         <li>
-          <Link
-            className={headerStyles.navItem}
-            activeClassName={headerStyles.activeNavItem}
+          <StyledLink
+            activeClassName={activeNavItem.color}
             to="/project"
           >
             Project
-          </Link>
+          </StyledLink>
         </li>
         <li>
-          <Link
-            className={headerStyles.navItem}
-            activeClassName={headerStyles.activeNavItem}
+          <StyledLink
+            activeClassName={activeNavItem.color}
             to="/oss"
           >
             OSS
-          </Link>
+          </StyledLink>
         </li>
         {/* temporary comment-out */}
         {/* <li>
-          <Link
+          <StyledLink
             className={headerStyles.navItem}
             activeClassName={headerStyles.activeNavItem}
             to="/blog"
           >
             Blog
-          </Link>
+          </StyledLink>
         </li> */}
         <li>
-          <Link
-            className={headerStyles.navItem}
-            activeClassName={headerStyles.activeNavItem}
+          <StyledLink
+            activeClassName={activeNavItem.color}
             to="/about"
           >
             About
-          </Link>
+          </StyledLink>
         </li>
         <li>
           <a href="https://drive.google.com/file/d/1_kEA--64uxtnpgAVuVvfTo_Gw2MCF0Mf/view?usp=sharing">
             CV
           </a>
         </li>
-      </ul>
+      </NavUl>
     </nav>
   );
 };
