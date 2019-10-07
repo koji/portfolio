@@ -20,6 +20,10 @@ const ImageWrapper = styled.div`
   position: relative;
 `;
 
+const Figcaption = styled.figcaption`
+  margin-top: 20px;
+`;
+
 // tag for tool
 const ToolTag = styled.span`
   background: #eee;
@@ -86,7 +90,7 @@ export const Project = (props: Props) => {
           <Image filename={image} />
         </Link>
       </ImageWrapper>
-      <figcaption>
+      <Figcaption>
         <p>{description}</p>
         <hr />
         <p>
@@ -94,7 +98,7 @@ export const Project = (props: Props) => {
             <ToolTag key={`${name}-tool-${i}`}>{tool}</ToolTag>
           ))}
         </p>
-      </figcaption>
+      </Figcaption>
     </Figure>
   );
 };
