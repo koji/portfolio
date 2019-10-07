@@ -22,8 +22,8 @@ const pStyle: React.CSSProperties = {
 };
 
 const gridStyle: React.CSSProperties = {
-  marginBottom: "50px",
-  marginTop: "50px",
+  // marginBottom: "50px",
+  marginTop: "30px",
 };
 
 export default class extends React.Component {
