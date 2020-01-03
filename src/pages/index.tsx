@@ -50,7 +50,7 @@ export default class extends React.Component {
               Right now I'm interested in <strong>
                 machine learning
               </strong>, <strong>IoT</strong>, and <strong>AR</strong>. I think
-              ARvcould be UI for ml application.
+              AR could be UI for ml application.
             </p>
           </Grid.Unit>
           <Grid.Unit size={1 / 4}>
