@@ -6,14 +6,6 @@ module.exports = {
     instagram: "https://www.instagram.com/koji_kanao/",
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-material-ui`,
-      options: {
-        stylesProvider: {
-          injectFirst: true,
-        },
-      },
-    },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     // {
