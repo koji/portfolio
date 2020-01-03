@@ -55,8 +55,6 @@ export default class extends React.Component {
           </Grid.Unit>
           <Grid.Unit size={1 / 4}>
             <Image filename="logo.png" />
-            {/* <figcaption style={{ textAlign: "center" }}>
-            </figcaption> */}
           </Grid.Unit>
           <Grid.Unit size={1 / 4}></Grid.Unit>
         </Grid>
