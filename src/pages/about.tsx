@@ -9,7 +9,54 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 library.add(fab);
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { myLinks } from "../components/data/link";
+import styled from "styled-components";
 // for font icons end
+
+const ToolTag = styled.span`
+  background: #eee;
+  border-radius: 3px 0 0 3px;
+  color: #999;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px 0 23px;
+  position: relative;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+
+  ::before {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+    content: "";
+    height: 6px;
+    left: 10px;
+    position: absolute;
+    width: 6px;
+    top: 10px;
+  }
+
+  ::after {
+    background: #fff;
+    border-bottom: 13px solid transparent;
+    border-left: 10px solid #eee;
+    border-top: 13px solid transparent;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  :hover {
+    background-color: #d76f47;
+    color: white;
+  }
+
+  :hover::after {
+    border-left-color: #d76f47;
+  }
+`;
 
 const h3Style: React.CSSProperties = {
   fontSize: "50px",
@@ -27,7 +74,7 @@ export default class About extends React.Component {
         return (
           <Layout>
             <Head title="about" />
-            <h1>about me</h1>
+            <h1>About me</h1>
 
             <Grid>
               <Grid.Unit size={1 / 4}></Grid.Unit>
@@ -50,8 +97,8 @@ export default class About extends React.Component {
                 <p>
                   <b>Area of ​​interest</b>
                   <br />
-                  machine learning <b>|</b> deep learning <br /> IoT <b>|</b> AR
-                  <b>|</b> Creative Coding
+                  <ToolTag>machine learning</ToolTag><ToolTag>IoT</ToolTag><ToolTag>AR</ToolTag>
+                  <ToolTag>CreativeCoding</ToolTag>
                 </p>
               </Grid.Unit>
               <Grid.Unit size={1 / 4}>
