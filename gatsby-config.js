@@ -17,7 +17,6 @@ module.exports = {
     // },
     "gatsby-plugin-sass",
     "gatsby-plugin-typescript",
-    "gatsby-plugin-tslint",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -52,14 +51,16 @@ module.exports = {
         appDescription: null,
         developerName: null,
         developerURL: null,
-        dir: 'auto',
-        lang: 'en-US',
-        background: '#fff',
-        theme_color: '#fff',
-        display: 'standalone',
-        orientation: 'any',
-        start_url: '/?homescreen=1',
-        version: '1.0',
+        dir: "auto",
+        lang: "en-US",
+        background: "#fff",
+        // eslint-disable-next-line @typescript-eslint/camelcase
+        theme_color: "#fff",
+        display: "standalone",
+        orientation: "any",
+        // eslint-disable-next-line @typescript-eslint/camelcase
+        start_url: "/?homescreen=1",
+        version: "1.0",
 
         icons: {
           android: true,
@@ -69,9 +70,9 @@ module.exports = {
           favicons: true,
           firefox: true,
           yandex: false,
-          windows: false
-        }
-      }
-    }
+          windows: false,
+        },
+      },
+    },
   ],
 };
