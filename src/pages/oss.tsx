@@ -99,12 +99,29 @@ export default class Oss extends React.Component {
           </Grid.Unit>
           <Grid.Unit size={0.23} style={gridStyle}>
             <Title>
-              <a href="">Realsense Doc for Pi</a>
+              <a href="https://github.com/IntelRealSense/librealsense/blob/master/doc/installation_raspbian.md">
+                Realsense Doc for Pi
+              </a>
             </Title>
             <Separator />
             <Description>Created a setup guide for Raspberry Pi.</Description>
           </Grid.Unit>
-          <Grid.Unit size={0.23} style={gridStyle}></Grid.Unit>
+          <Grid.Unit size={0.23} style={gridStyle}>
+            <Title>
+              <a href="https://github.com/koji/nes-components">
+                nes-components
+              </a>
+            </Title>
+            <Separator />
+            <Description>
+              nes-components is a react-component with nes.css. This is
+              published as{" "}
+              <a href="https://www.npmjs.com/package/nes-components">
+                a npm package
+              </a>
+              .
+            </Description>
+          </Grid.Unit>
           <Grid.Unit size={0.23} style={gridStyle}></Grid.Unit>
           {/* <Grid.Unit
             size={0.23}
