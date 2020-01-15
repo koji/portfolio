@@ -9,7 +9,9 @@
     "dev": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "rm -rf ./node_modules"
+    "clean": "rm -rf ./node_modules",
+    "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
+    "lint:fix": "yarn lint --fix"
   },
   "dependencies": {
     "@babel/core": "^7.5.5",
