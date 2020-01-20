@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Koji Kanao",
     author: "Koji Kanao",
+    description: "Koji Kanao information",
     github: "https://github.com/koji",
     instagram: "https://www.instagram.com/koji_kanao/",
   },
