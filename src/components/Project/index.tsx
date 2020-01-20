@@ -12,7 +12,7 @@ const Figure = styled.figure`
   padding: 2rem;
   border: 1px solid lightgray;
   background: white;
-  box-shadow: 0 0 0 5px rgba(0,0,0,0.03);
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.03);
   position: relative;
 `;
 
@@ -80,7 +80,7 @@ interface Props {
 }
 
 export const Project = (props: Props) => {
-  const {id, name, image, description, link, tools} = props.projectData;
+  const { id, name, image, description, link, tools } = props.projectData;
   console.log(image);
   return (
     <Figure>

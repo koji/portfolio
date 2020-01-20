@@ -8,5 +8,5 @@ export type project = {
   tools: string[];
   concept: string;
   longDescription: string;
-  videoUrl: string // url
+  videoUrl: string; // url
 };

@@ -12,7 +12,7 @@ const FooterWrapper = styled.footer`
 `;
 
 const Text = styled.p`
-  margin: 10px 0
+  margin: 10px 0;
 `;
 
 const GridWrapper = styled.div`
@@ -33,14 +33,17 @@ const Cell = styled.div`
 `;
 
 export const Footer: React.FC = () => {
-  const {author} = useSiteMetadata();
+  const { author } = useSiteMetadata();
   return (
     <FooterWrapper>
       <Grid valign="center" style={{ minHeight: "12em" }}>
         <Grid.Unit size={0.25}>
           <p style={{ textAlign: "left", marginLeft: "20px" }}>
-            🤘 Hi, I'm Koji, a software engineer<br/>I like to do creative coding and<br/>
-            explore new technology.<br/>
+            🤘 Hi, I'm Koji, a software engineer
+            <br />I like to do creative coding and
+            <br />
+            explore new technology.
+            <br />
             I'm in NYC!
           </p>
         </Grid.Unit>
