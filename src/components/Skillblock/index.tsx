@@ -75,14 +75,28 @@ const Cell = styled.div`
 export const Skill = () => {
   return (
     <Wrapper>
-      <Cell><Text>python</Text></Cell>
-      <Cell><Text>js</Text></Cell>
-      <Cell><Text>oF</Text></Cell>
-      <Cell><Text>arduino</Text></Cell>
+      <Cell>
+        <Text>python</Text>
+      </Cell>
+      <Cell>
+        <Text>js</Text>
+      </Cell>
+      <Cell>
+        <Text>oF</Text>
+      </Cell>
+      <Cell>
+        <Text>arduino</Text>
+      </Cell>
       {/* <Cell><Text>swift</Text></Cell> */}
-      <Cell><Text>linux</Text></Cell>
-      <Cell><Text>reactjs</Text></Cell>
-      <Cell><Text>git|github</Text></Cell>
+      <Cell>
+        <Text>linux</Text>
+      </Cell>
+      <Cell>
+        <Text>reactjs</Text>
+      </Cell>
+      <Cell>
+        <Text>git|github</Text>
+      </Cell>
       {/* <Cell><Text>docker</Text></Cell> */}
     </Wrapper>
   );

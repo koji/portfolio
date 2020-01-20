@@ -5,14 +5,13 @@ import "../..//styles/index.scss";
 import styled from "styled-components";
 
 const StyledContainer = styled.div`
-   margin: 0 auto;
-    // max-width: 750px;
-    padding: 1rem;
+  margin: 0 auto;
+  // max-width: 750px;
+  padding: 1rem;
 
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 `;
 const StyledContent = styled.div`
   flex-grow: 1;

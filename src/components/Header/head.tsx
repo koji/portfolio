@@ -1,9 +1,9 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
-import { useStaticQuery, graphql} from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
 
 export interface SiteMetadata {
-     title: string;
+  title: string;
 }
 // show page title
 export const Head = ({ title }: SiteMetadata) => {
@@ -16,7 +16,5 @@ export const Head = ({ title }: SiteMetadata) => {
       }
     }
   `);
-  return(
-    <Helmet title={`${title} | ${data.site.siteMetadata.title}`} />
-  );
+  return <Helmet title={`${title} | ${data.site.siteMetadata.title}`} />;
 };

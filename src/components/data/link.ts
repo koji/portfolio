@@ -3,5 +3,5 @@ export const myLinks = {
   github: "https://github.com/koji",
   instagram: "https://www.instagram.com/koji_kanao/",
   linkedin: "https://linkedin.com/in/kojikanao/",
-  twitter: "",
+  twitter: "https://twitter.com/koji_kanao",
 };

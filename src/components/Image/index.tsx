@@ -27,7 +27,7 @@ export const Image = (props: Props) => (
         }
       }
     `}
-    render={(data) => {
+    render={data => {
       const image = data.images.edges.find((n: any) => {
         // console.log(`image :${n.node.relativePath}`);
         // console.log(props.filename);
@@ -39,7 +39,9 @@ export const Image = (props: Props) => (
       // console.log(props.filename);
       const imageSizes = image.node.childImageSharp.sizes;
       // console.log(imageSizes);
-      return <Img alt={props.alt} sizes={props.size ? props.size : imageSizes} />;
+      return (
+        <Img alt={props.alt} sizes={props.size ? props.size : imageSizes} />
+      );
     }}
   />
 );
