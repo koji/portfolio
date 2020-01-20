@@ -1,5 +1,5 @@
 import * as React from "react";
-import Link from "gatsby-link";
+// import Link from "gatsby-link";
 import Layout from "../components/Layout";
 import { Head } from "../components/Header/head";
 import styled from "styled-components";
@@ -15,7 +15,7 @@ const NotFoundPage = () => {
       <Head title="404" />
       <ComingSoon>
         <h1>Coming Soon!!!</h1>
-        <Image filename="404.png"/>
+        <Image filename="404.png" />
         <a href="https://absurd.design/">https://absurd.design/</a>
       </ComingSoon>
     </Layout>

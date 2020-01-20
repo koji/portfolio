@@ -14,7 +14,7 @@ const NavUl = styled.ul`
 
 const StyledLink = styled(props => <Link {...props} />)`
   color: #999999;
-  font-size: 1.0rem;
+  font-size: 1rem;
   margin-left: auto;
   margin-right: 1.3rem;
   text-decoration: none;
@@ -32,26 +32,17 @@ export const NavBar = () => {
     <nav style={navStyle}>
       <NavUl>
         <li>
-          <StyledLink
-            activeClassName={activeNavItem.color}
-            to="/"
-          >
+          <StyledLink activeClassName={activeNavItem.color} to="/">
             Home
           </StyledLink>
         </li>
         <li>
-          <StyledLink
-            activeClassName={activeNavItem.color}
-            to="/project"
-          >
+          <StyledLink activeClassName={activeNavItem.color} to="/project">
             Project
           </StyledLink>
         </li>
         <li>
-          <StyledLink
-            activeClassName={activeNavItem.color}
-            to="/oss"
-          >
+          <StyledLink activeClassName={activeNavItem.color} to="/oss">
             OSS
           </StyledLink>
         </li>
@@ -66,10 +57,7 @@ export const NavBar = () => {
           </StyledLink>
         </li> */}
         <li>
-          <StyledLink
-            activeClassName={activeNavItem.color}
-            to="/about"
-          >
+          <StyledLink activeClassName={activeNavItem.color} to="/about">
             About
           </StyledLink>
         </li>
