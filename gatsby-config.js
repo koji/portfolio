@@ -31,6 +31,7 @@ module.exports = {
             }
           }
         `,
+      },
     },
     // {
     //   resolve: `gatsby-source-contentful`,
