@@ -73,19 +73,17 @@ const ToolTag = styled.span`
 const GridContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  /* height: "500px"; */
+  gap: 10px;
 `;
 
 const GridItemContainer = styled.div`
   background-color: #efefef;
-  margin: 5px;
 `;
 
 const LinkTag = styled.a`
   color: #2f3e9f;
 `;
 
-// ToDo switch from hardcoding to json
 export default class Oss extends React.Component {
   render() {
     return (
