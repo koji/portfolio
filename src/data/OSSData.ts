@@ -1,4 +1,4 @@
-import { oss } from "../Types";
+import { oss } from "../components/Types";
 
 export const ossData: oss[] = [
   {

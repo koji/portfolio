@@ -2,7 +2,7 @@ import * as React from "react";
 import Layout from "../components/Layout";
 import { Head } from "../components/Header/head";
 import styled from "styled-components";
-import { ossData } from "../components/data/OSSData";
+import { ossData } from "../data/OSSData";
 import { oss } from "../components/Types";
 
 const Separator = styled.hr`

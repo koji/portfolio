@@ -8,7 +8,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 library.add(fab);
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { myLinks } from "../components/data/link";
+import { myLinks } from "../data/link";
 import styled from "styled-components";
 // for font icons end
 
