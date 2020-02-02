@@ -1,7 +1,7 @@
 import * as React from "react";
 import Layout from "../components/Layout";
 import { Head } from "../components/Header/head";
-import { projects } from "../components/data/project";
+import { projects } from "../data/project";
 import { ProjectGrid } from "../components/Project/projectgrid";
 
 export default class Project extends React.Component {
