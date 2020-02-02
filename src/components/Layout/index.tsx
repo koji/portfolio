@@ -1,7 +1,8 @@
 import * as React from "react";
 import { Footer } from "../Footer";
 import { Header } from "../Header";
-import "../..//styles/index.scss";
+// import "../..//styles/index.scss";
+import "../../styles/style.css";
 import styled from "styled-components";
 
 const StyledContainer = styled.div`

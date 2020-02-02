@@ -5,6 +5,7 @@ import { Skill } from "../components/Skillblock";
 import styled from "styled-components";
 import Grid from "styled-components-grid";
 import { Image } from "../components/Image";
+import "../styles/style.css";
 
 const BigText = styled.span`
   /* color: #ffa500; */
@@ -26,7 +27,7 @@ const gridStyle: React.CSSProperties = {
   marginTop: "30px",
 };
 
-export default class extends React.Component {
+export default class Index extends React.Component {
   render() {
     return (
       <Layout>

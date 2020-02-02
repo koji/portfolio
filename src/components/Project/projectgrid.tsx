@@ -16,7 +16,7 @@ interface Props {
 export const ProjectGrid = (props: Props) => {
   return (
     <GridPart>
-      {props.projectData.map((data, i) => (
+      {props.projectData.map(data => (
         <Project projectData={data} key={`project-${data.id}`} />
       ))}
     </GridPart>
