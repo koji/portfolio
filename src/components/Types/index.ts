@@ -10,3 +10,11 @@ export type project = {
   longDescription: string;
   videoUrl: string; // url
 };
+
+export type oss = {
+  id: number;
+  title: string;
+  link: string;
+  description: string;
+  tools: string[];
+};

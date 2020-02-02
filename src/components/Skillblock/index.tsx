@@ -97,7 +97,9 @@ export const Skill = () => {
       <Cell>
         <Text>git|github</Text>
       </Cell>
-      {/* <Cell><Text>docker</Text></Cell> */}
+      <Cell>
+        <Text>raspberry pi</Text>
+      </Cell>
     </Wrapper>
   );
 };

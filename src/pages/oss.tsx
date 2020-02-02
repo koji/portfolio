@@ -2,7 +2,8 @@ import * as React from "react";
 import Layout from "../components/Layout";
 import { Head } from "../components/Header/head";
 import styled from "styled-components";
-import Grid from "styled-components-grid";
+import { ossData } from "../components/data/OSSData";
+import { oss } from "../components/Types";
 
 const Separator = styled.hr`
   border-top: 1px solid #ffffff;
@@ -22,11 +23,68 @@ const Description = styled.p`
   margin-right: 20px;
 `;
 
-const gridStyle: React.CSSProperties = {
-  background: "#efefef",
-  marginLeft: "5px",
-  marginRight: "5px",
-};
+// tag for tool
+const ToolTag = styled.span`
+  background: #eee;
+  border-radius: 3px 0 0 3px;
+  color: #999;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px 0 23px;
+  position: relative;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+
+  ::before {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+    content: "";
+    height: 6px;
+    left: 10px;
+    position: absolute;
+    width: 6px;
+    top: 10px;
+  }
+
+  ::after {
+    background: #efefef;
+    border-bottom: 13px solid transparent;
+    border-left: 10px solid #eee;
+    border-top: 13px solid transparent;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  :hover {
+    background-color: #d76f47;
+    color: white;
+  }
+
+  :hover::after {
+    border-left-color: #d76f47;
+  }
+`;
+
+const GridContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* height: "500px"; */
+`;
+
+const GridItemContainer = styled.div`
+  background-color: #efefef;
+  margin: 5px;
+`;
+
+const LinkTag = styled.a`
+  color: #2f3e9f;
+`;
+
 // ToDo switch from hardcoding to json
 export default class Oss extends React.Component {
   render() {
@@ -34,132 +92,20 @@ export default class Oss extends React.Component {
       <Layout>
         <Head title="OSS" />
         <h1>Open Source Activities</h1>
-        <Grid
-          halign="center"
-          style={{
-            marginBottom: "10px",
-            marginTop: "10px",
-          }}
-        >
-          <Grid.Unit size={0.23} style={gridStyle}>
-            <Title>
-              <a href="">easyGAN</a>
-            </Title>
-            <Separator />
-            <Description>
-              easyGAN is a CLI tool which can train images and generates images
-              with DCGAN.
-            </Description>
-          </Grid.Unit>
-          <Grid.Unit size={0.23} style={gridStyle}>
-            <Title>
-              <a href="">ictrainer</a>
-            </Title>
-            <Separator />
-            <Description>
-              ictrainer is a CLI tool which offers a couple of functions to
-              train own image classifier. It offers image collecting, resize,
-              and face detector.
-            </Description>
-          </Grid.Unit>
-          <Grid.Unit size={0.23} style={gridStyle}>
-            <Title>
-              <a href="">gengitignore</a>
-            </Title>
-            <Separator />
-            <Description>
-              gengitignore is a CLI tool to generate .gitignore file
-            </Description>
-          </Grid.Unit>
-          <Grid.Unit size={0.23} style={gridStyle}>
-            <Title>
-              <a href="">wcartist</a>
-            </Title>
-            <Separator />
-            <Description>
-              wcartist is a CLI tool which allows users to create word art with
-              one line command.
-            </Description>
-          </Grid.Unit>
-        </Grid>
-        <Grid
-          halign="center"
-          style={{
-            marginBottom: "10px",
-            marginTop: "10px",
-          }}
-        >
-          <Grid.Unit size={0.23} style={gridStyle}>
-            <Title>Material UI Doc</Title>
-            <Separator />
-            <Description>
-              Have contributed to translate the documents from English into
-              Japanaese.
-            </Description>
-          </Grid.Unit>
-          <Grid.Unit size={0.23} style={gridStyle}>
-            <Title>
-              <a href="https://github.com/IntelRealSense/librealsense/blob/master/doc/installation_raspbian.md">
-                Realsense Doc for Pi
-              </a>
-            </Title>
-            <Separator />
-            <Description>Created a setup guide for Raspberry Pi.</Description>
-          </Grid.Unit>
-          <Grid.Unit size={0.23} style={gridStyle}>
-            <Title>
-              <a href="https://github.com/koji/nes-components">
-                nes-components
-              </a>
-            </Title>
-            <Separator />
-            <Description>
-              nes-components is a react-component with nes.css. This is
-              published as{" "}
-              <a href="https://www.npmjs.com/package/nes-components">
-                a npm package
-              </a>
-              .
-            </Description>
-          </Grid.Unit>
-          <Grid.Unit size={0.23} style={gridStyle}></Grid.Unit>
-          {/* <Grid.Unit
-            size={0.23}
-            style={{
-              background: "#efefef",
-              marginLeft: "5px",
-              marginRight: "5px",
-            }}
-          >
-            <h2
-              style={{
-                marginBottom: "15px",
-                marginLeft: "40px",
-                marginTop: "15px",
-              }}
-            ></h2>
-            <Separator />
-            <p style={{ marginLeft: "20px", marginRight: "20px" }}></p>
-          </Grid.Unit>
-          <Grid.Unit
-            size={0.23}
-            style={{
-              background: "#efefef",
-              marginLeft: "5px",
-              marginRight: "5px",
-            }}
-          >
-            <h2
-              style={{
-                marginBottom: "15px",
-                marginLeft: "40px",
-                marginTop: "15px",
-              }}
-            ></h2>
-            <Separator />
-            <p style={{ marginLeft: "20px", marginRight: "20px" }}></p>
-          </Grid.Unit> */}
-        </Grid>
+        <GridContainer>
+          {ossData.map((item: oss) => (
+            <GridItemContainer key={`oss-${item.id}`}>
+              <Title>
+                <LinkTag href={item.link}>{item.title}</LinkTag>
+              </Title>
+              <Separator />
+              <Description>{item.description}</Description>
+              {item.tools.map((tool: string, i: number) => (
+                <ToolTag key={`${item.title}-tool-${i}`}>{tool}</ToolTag>
+              ))}
+            </GridItemContainer>
+          ))}
+        </GridContainer>
       </Layout>
     );
   }

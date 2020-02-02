@@ -1,0 +1,41 @@
+/* variables */
+:root {
+  --primary: '#ffffff';
+  --secondary: '#ff0000';
+}
+
+/* reset */
+
+
+/* base styles */
+body {
+  background: var(--secondary);
+  overflow-x:  hidden;
+}
+
+
+/* fonts */
+
+
+/* mobile styles */
+
+
+/* small tablet styles */
+@media screen and (min-width: 620px) {
+
+}
+
+/* large tablet and laptop styles */
+@media screen and (min-width: 960px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* desktop styles */
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+  
+}
