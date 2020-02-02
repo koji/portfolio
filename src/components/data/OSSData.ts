@@ -36,7 +36,7 @@ export const ossData: oss[] = [
   {
     id: 5,
     title: "Material UI Doc",
-    link: "",
+    link: "#",
     description:
       "Have contributed to translate the documents from English into Japanaese.",
     tools: ["Japanese"],
