@@ -23,7 +23,7 @@ const FooterGrid = styled.div`
 `;
 
 export const Footer: React.FC = () => {
-  const { author } = useSiteMetadata();
+  // const { author } = useSiteMetadata();
   return (
     <FooterWrapper>
       <GridWrapper>
