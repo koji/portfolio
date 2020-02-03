@@ -25,10 +25,6 @@ const Figcaption = styled.figcaption`
   margin-top: 20px;
 `;
 
-// width calc(100% + 4rem)
-//   margin-left -2rem
-//   margin-top -2rem
-//   max-width none
 interface Props {
   projectData: project;
 }

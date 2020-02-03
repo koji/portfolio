@@ -2,28 +2,44 @@ import * as React from "react";
 import Layout from "../components/Layout";
 import { Head } from "../components/Header/head";
 import { Image } from "../components/Image";
-import Grid from "styled-components-grid";
 // for font icons start
-import { library } from "@fortawesome/fontawesome-svg-core";
+import { library, IconName } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 library.add(fab);
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { myLinks } from "../data/link";
 import styled from "styled-components";
 import { ToolTag } from "../components/Util/styles";
+import { myLinks } from "../data/link";
+import { MyLink } from "../components/Types";
 
-// for font icons end
-
-const h3Style: React.CSSProperties = {
-  fontSize: "50px",
-  marginBottom: "50px",
-  marginTop: "25px",
-  textAlign: "center",
-};
+const ContactText = styled.h3`
+  font-size: 50px;
+  margin-bottom: 50px;
+  margin-top: 25px;
+  text-align: center;
+`;
 
 const fontAwesomeStyle: React.CSSProperties = {
-  fontSize: "150px",
+  fontSize: "120px",
 };
+
+const ProfileWrap = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+`;
+
+const Profile = styled.div`
+  grid-column: 2/3;
+`;
+
+const ProfileImage = styled.div`
+  grid-column: 3/4;
+`;
+
+const ContactWrap = styled.div`
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+`;
 
 export default class About extends React.Component {
   render() {
@@ -32,9 +48,8 @@ export default class About extends React.Component {
         <Head title="about" />
         <h1>About me</h1>
 
-        <Grid>
-          <Grid.Unit size={1 / 4}></Grid.Unit>
-          <Grid.Unit size={1 / 4}>
+        <ProfileWrap>
+          <Profile>
             <p>
               Koji is from Japan and currently he has been working for a company
               as a software enginner since 2018.
@@ -58,54 +73,28 @@ export default class About extends React.Component {
               <ToolTag>AR</ToolTag>
               <ToolTag>CreativeCoding</ToolTag>
             </p>
-          </Grid.Unit>
-          <Grid.Unit size={1 / 4}>
+          </Profile>
+          <ProfileImage>
             <Image filename="me.jpg" />
-          </Grid.Unit>
-          <Grid.Unit size={1 / 4}></Grid.Unit>
-        </Grid>
+          </ProfileImage>
+        </ProfileWrap>
         {/* social media links */}
-        <h3 style={h3Style}>contact</h3>
-        <Grid halign="center">
-          <Grid.Unit size={1 / 6}></Grid.Unit>
-          <Grid.Unit size={1 / 6}>
-            <a href={myLinks.github}>
-              <FontAwesomeIcon
-                icon={["fab", "github"]}
-                style={fontAwesomeStyle}
-              />
-            </a>
-          </Grid.Unit>
-          <Grid.Unit size={1 / 6}>
-            <a href={myLinks.linkedin}>
-              <FontAwesomeIcon
-                icon={["fab", "linkedin"]}
-                style={fontAwesomeStyle}
-              />
-            </a>
-          </Grid.Unit>
-          <Grid.Unit size={1 / 6}>
-            <a href={myLinks.instagram}>
-              <FontAwesomeIcon
-                icon={["fab", "instagram"]}
-                style={fontAwesomeStyle}
-              />
-            </a>
-          </Grid.Unit>
-          <Grid.Unit size={1 / 6}>
-            <a href={myLinks.devto}>
-              <FontAwesomeIcon icon={["fab", "dev"]} style={fontAwesomeStyle} />
-            </a>
-          </Grid.Unit>
-          <Grid.Unit size={1 / 6}>
-            <a href={myLinks.twitter}>
-              <FontAwesomeIcon
-                icon={["fab", "twitter"]}
-                style={fontAwesomeStyle}
-              />
-            </a>
-          </Grid.Unit>
-        </Grid>
+        <ContactText>contact</ContactText>
+        <ContactWrap>
+          {myLinks.map((link: MyLink) => (
+            <div
+              key={`link-${link.id}`}
+              style={{ gridColumn: `${link.id + 1}/${link.id + 2}` }}
+            >
+              <a href={link.link}>
+                <FontAwesomeIcon
+                  icon={["fab", link.type as IconName]}
+                  style={fontAwesomeStyle}
+                />
+              </a>
+            </div>
+          ))}
+        </ContactWrap>
       </Layout>
     );
   }
