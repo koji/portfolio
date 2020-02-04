@@ -1,5 +1,5 @@
 import { Workshop } from "../components/Types";
-
+// ToDo update data
 export const WorkshopData: Workshop[] = [
   {
     id: 1,
