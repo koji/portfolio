@@ -18,3 +18,9 @@ export type oss = {
   description: string;
   tools: string[];
 };
+
+export type MyLink = {
+  id: number;
+  type: string;
+  link: string;
+};

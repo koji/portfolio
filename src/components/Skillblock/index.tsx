@@ -11,9 +11,9 @@ const Wrapper = styled.div`
 
 const Text = styled.p`
   @import url("https://fonts.googleapis.com/css?family=Monoton&display=swap");
-  font-size: 2.5em;
+  font-size: 2em;
   font-family: Monoton;
-  margin: 20px 0 20px 0;
+  margin: 5px 0 5px 0;
   color: #228dff;
   -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
   -moz-animation: neon2 1.5s ease-in-out infinite alternate;

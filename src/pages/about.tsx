@@ -2,72 +2,44 @@ import * as React from "react";
 import Layout from "../components/Layout";
 import { Head } from "../components/Header/head";
 import { Image } from "../components/Image";
-import Grid from "styled-components-grid";
 // for font icons start
-import { library } from "@fortawesome/fontawesome-svg-core";
+import { library, IconName } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 library.add(fab);
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { myLinks } from "../data/link";
 import styled from "styled-components";
-// for font icons end
+import { ToolTag } from "../components/Util/styles";
+import { myLinks } from "../data/link";
+import { MyLink } from "../components/Types";
 
-const ToolTag = styled.span`
-  background: #eee;
-  border-radius: 3px 0 0 3px;
-  color: #999;
-  display: inline-block;
-  height: 26px;
-  line-height: 26px;
-  padding: 0 20px 0 23px;
-  position: relative;
-  margin: 0 10px 10px 0;
-  text-decoration: none;
-  -webkit-transition: color 0.2s;
-
-  ::before {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
-    content: "";
-    height: 6px;
-    left: 10px;
-    position: absolute;
-    width: 6px;
-    top: 10px;
-  }
-
-  ::after {
-    background: #fff;
-    border-bottom: 13px solid transparent;
-    border-left: 10px solid #eee;
-    border-top: 13px solid transparent;
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  :hover {
-    background-color: #d76f47;
-    color: white;
-  }
-
-  :hover::after {
-    border-left-color: #d76f47;
-  }
+const ContactText = styled.h3`
+  font-size: 50px;
+  margin-bottom: 50px;
+  margin-top: 25px;
+  text-align: center;
 `;
 
-const h3Style: React.CSSProperties = {
-  fontSize: "50px",
-  marginBottom: "50px",
-  marginTop: "25px",
-  textAlign: "center",
+const fontAwesomeStyle: React.CSSProperties = {
+  fontSize: "120px",
 };
 
-const fontAwesomeStyle: React.CSSProperties = {
-  fontSize: "150px",
-};
+const ProfileWrap = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+`;
+
+const Profile = styled.div`
+  grid-column: 2/3;
+`;
+
+const ProfileImage = styled.div`
+  grid-column: 3/4;
+`;
+
+const ContactWrap = styled.div`
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+`;
 
 export default class About extends React.Component {
   render() {
@@ -76,9 +48,8 @@ export default class About extends React.Component {
         <Head title="about" />
         <h1>About me</h1>
 
-        <Grid>
-          <Grid.Unit size={1 / 4}></Grid.Unit>
-          <Grid.Unit size={1 / 4}>
+        <ProfileWrap>
+          <Profile>
             <p>
               Koji is from Japan and currently he has been working for a company
               as a software enginner since 2018.
@@ -102,54 +73,28 @@ export default class About extends React.Component {
               <ToolTag>AR</ToolTag>
               <ToolTag>CreativeCoding</ToolTag>
             </p>
-          </Grid.Unit>
-          <Grid.Unit size={1 / 4}>
+          </Profile>
+          <ProfileImage>
             <Image filename="me.jpg" />
-          </Grid.Unit>
-          <Grid.Unit size={1 / 4}></Grid.Unit>
-        </Grid>
+          </ProfileImage>
+        </ProfileWrap>
         {/* social media links */}
-        <h3 style={h3Style}>contact</h3>
-        <Grid halign="center">
-          <Grid.Unit size={1 / 6}></Grid.Unit>
-          <Grid.Unit size={1 / 6}>
-            <a href={myLinks.github}>
-              <FontAwesomeIcon
-                icon={["fab", "github"]}
-                style={fontAwesomeStyle}
-              />
-            </a>
-          </Grid.Unit>
-          <Grid.Unit size={1 / 6}>
-            <a href={myLinks.linkedin}>
-              <FontAwesomeIcon
-                icon={["fab", "linkedin"]}
-                style={fontAwesomeStyle}
-              />
-            </a>
-          </Grid.Unit>
-          <Grid.Unit size={1 / 6}>
-            <a href={myLinks.instagram}>
-              <FontAwesomeIcon
-                icon={["fab", "instagram"]}
-                style={fontAwesomeStyle}
-              />
-            </a>
-          </Grid.Unit>
-          <Grid.Unit size={1 / 6}>
-            <a href={myLinks.devto}>
-              <FontAwesomeIcon icon={["fab", "dev"]} style={fontAwesomeStyle} />
-            </a>
-          </Grid.Unit>
-          <Grid.Unit size={1 / 6}>
-            <a href={myLinks.twitter}>
-              <FontAwesomeIcon
-                icon={["fab", "twitter"]}
-                style={fontAwesomeStyle}
-              />
-            </a>
-          </Grid.Unit>
-        </Grid>
+        <ContactText>contact</ContactText>
+        <ContactWrap>
+          {myLinks.map((link: MyLink) => (
+            <div
+              key={`link-${link.id}`}
+              style={{ gridColumn: `${link.id + 1}/${link.id + 2}` }}
+            >
+              <a href={link.link}>
+                <FontAwesomeIcon
+                  icon={["fab", link.type as IconName]}
+                  style={fontAwesomeStyle}
+                />
+              </a>
+            </div>
+          ))}
+        </ContactWrap>
       </Layout>
     );
   }
