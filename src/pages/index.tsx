@@ -71,7 +71,7 @@ export default class Index extends React.Component {
             </ProfileText>
           </TopProfile>
           <TopImage>
-            <Image filename="logo.png" />
+            <Image filename="top.jpg" />
           </TopImage>
         </ProfileWrap>
         <SkillWrap>

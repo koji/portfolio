@@ -57,6 +57,11 @@ export const NavBar = () => {
           </StyledLink>
         </li> */}
         <li>
+          <StyledLink activeClassName={activeNavItem.color} to="/sketch">
+            Sketch
+          </StyledLink>
+        </li>
+        <li>
           <StyledLink activeClassName={activeNavItem.color} to="/about">
             About
           </StyledLink>
