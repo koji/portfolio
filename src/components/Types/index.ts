@@ -24,3 +24,11 @@ export type MyLink = {
   type: string;
   link: string;
 };
+
+export type Workshop = {
+  id: number;
+  title: string;
+  date: string;
+  description: string;
+  tags: string[];
+};

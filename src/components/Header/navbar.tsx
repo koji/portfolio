@@ -62,6 +62,11 @@ export const NavBar = () => {
           </StyledLink>
         </li> */}
         <li>
+          <StyledLink activeClassName={activeNavItem.color} to="/workshop">
+            Workshop
+          </StyledLink>
+        </li>
+        <li>
           <StyledLink activeClassName={activeNavItem.color} to="/about">
             About
           </StyledLink>
