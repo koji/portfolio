@@ -56,11 +56,11 @@ export const NavBar = () => {
             Blog
           </StyledLink>
         </li> */}
-        <li>
+        {/* <li>
           <StyledLink activeClassName={activeNavItem.color} to="/sketch">
             Sketch
           </StyledLink>
-        </li>
+        </li> */}
         <li>
           <StyledLink activeClassName={activeNavItem.color} to="/about">
             About
