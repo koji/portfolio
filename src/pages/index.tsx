@@ -3,7 +3,6 @@ import Layout from "../components/Layout";
 import { Head } from "../components/Header/head";
 import { Skill } from "../components/Skillblock";
 import styled from "styled-components";
-import Grid from "styled-components-grid";
 import { Image } from "../components/Image";
 import "../styles/style.css";
 
@@ -12,34 +11,51 @@ const BigText = styled.span`
   font-size: 50px;
 `;
 
-const h2Style: React.CSSProperties = {
-  marginLeft: "10px",
-  marginTop: "10px",
-};
+const ProfileHeaderText = styled.h2`
+  margin-left: 10px;
+  margin-top: 10px;
+`;
 
-const pStyle: React.CSSProperties = {
-  marginLeft: "20px",
-  marginRight: "20px",
-};
+const ProfileText = styled.p`
+  margin-left: 20px;
+  margin-right: 20px;
+`;
 
-const gridStyle: React.CSSProperties = {
-  // marginBottom: "50px",
-  marginTop: "30px",
-};
+const ProfileWrap = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+`;
+
+const TopProfile = styled.div`
+  grid-column: 2/3;
+  background: #efefef;
+`;
+
+const TopImage = styled.div`
+  grid-column: 3/4;
+`;
+
+const SkillWrap = styled.div`
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+`;
+
+const SkillContainer = styled.div`
+  grid-column: 3/7;
+`;
 
 export default class Index extends React.Component {
   render() {
     return (
       <Layout>
         <Head title="Home" />
-        <Grid halign="center">
-          <Grid.Unit size={1 / 4}></Grid.Unit>
-          <Grid.Unit size={1 / 4} style={{ background: "#efefef" }}>
-            <h2 style={h2Style}>
+        <ProfileWrap>
+          <TopProfile>
+            <ProfileHeaderText>
               <BigText> 👋 </BigText>
               <BigText>Hi,</BigText> I'm Koji
-            </h2>
-            <p style={pStyle}>
+            </ProfileHeaderText>
+            <ProfileText>
               Currently, I'm working for a company as a software engineer.
               <br />
               Mostly work on frontend(reactjs with typescript) and
@@ -52,21 +68,17 @@ export default class Index extends React.Component {
                 machine learning
               </strong>, <strong>IoT</strong>, and <strong>AR</strong>. I think
               AR could be UI for ml application.
-            </p>
-          </Grid.Unit>
-          <Grid.Unit size={1 / 4}>
+            </ProfileText>
+          </TopProfile>
+          <TopImage>
             <Image filename="logo.png" />
-          </Grid.Unit>
-          <Grid.Unit size={1 / 4}></Grid.Unit>
-        </Grid>
-        <Grid halign="center" style={gridStyle}>
-          <Grid.Unit size={1 / 4}></Grid.Unit>
-          <Grid.Unit size={1 / 2}>
-            {/* <h2 style={{ textAlign: "center" }}>Skills</h2> */}
+          </TopImage>
+        </ProfileWrap>
+        <SkillWrap>
+          <SkillContainer>
             <Skill />
-          </Grid.Unit>
-          <Grid.Unit size={1 / 4}></Grid.Unit>
-        </Grid>
+          </SkillContainer>
+        </SkillWrap>
       </Layout>
     );
   }
