@@ -4,14 +4,14 @@ import { Head } from "../components/Header/head";
 import { projects } from "../data/project";
 import { ProjectGrid } from "../components/Project/projectgrid";
 
-export default class Project extends React.Component {
-  render() {
-    return (
-      <Layout>
-        <Head title="Project" />
-        <h1>Project</h1>
-        <ProjectGrid projectData={projects} />
-      </Layout>
-    );
-  }
-}
+const Project = () => {
+  return (
+    <Layout>
+      <Head title="Project" />
+      <h1>Project</h1>
+      <ProjectGrid projectData={projects} />
+    </Layout>
+  );
+};
+
+export default Project;

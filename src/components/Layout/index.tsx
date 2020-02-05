@@ -18,16 +18,20 @@ const StyledContent = styled.div`
   flex-grow: 1;
 `;
 
-export default class Layout extends React.Component {
-  render() {
-    return (
-      <StyledContainer>
-        <StyledContent>
-          <Header />
-          {this.props.children}
-        </StyledContent>
-        <Footer />
-      </StyledContainer>
-    );
-  }
-}
+type Props = {
+  children: React.ReactNode;
+};
+
+const Layout = (props: Props) => {
+  return (
+    <StyledContainer>
+      <StyledContent>
+        <Header />
+        {props.children}
+      </StyledContent>
+      <Footer />
+    </StyledContainer>
+  );
+};
+
+export default Layout;
