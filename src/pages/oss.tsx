@@ -38,27 +38,27 @@ const LinkTag = styled.a`
   color: #2f3e9f;
 `;
 
-export default class Oss extends React.Component {
-  render() {
-    return (
-      <Layout>
-        <Head title="OSS" />
-        <h1>Open Source Activities</h1>
-        <GridContainer>
-          {ossData.map((item: oss) => (
-            <GridItemContainer key={`oss-${item.id}`}>
-              <Title>
-                <LinkTag href={item.link}>{item.title}</LinkTag>
-              </Title>
-              <Separator />
-              <Description>{item.description}</Description>
-              {item.tools.map((tool: string, i: number) => (
-                <ToolTag key={`${item.title}-tool-${i}`}>{tool}</ToolTag>
-              ))}
-            </GridItemContainer>
-          ))}
-        </GridContainer>
-      </Layout>
-    );
-  }
-}
+const Oss = () => {
+  return (
+    <Layout>
+      <Head title="OSS" />
+      <h1>Open Source Activities</h1>
+      <GridContainer>
+        {ossData.map((item: oss) => (
+          <GridItemContainer key={`oss-${item.id}`}>
+            <Title>
+              <LinkTag href={item.link}>{item.title}</LinkTag>
+            </Title>
+            <Separator />
+            <Description>{item.description}</Description>
+            {item.tools.map((tool: string, i: number) => (
+              <ToolTag key={`${item.title}-tool-${i}`}>{tool}</ToolTag>
+            ))}
+          </GridItemContainer>
+        ))}
+      </GridContainer>
+    </Layout>
+  );
+};
+
+export default Oss;
