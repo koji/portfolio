@@ -18,6 +18,7 @@ export const useBlogData = () => {
           }
         }
       }
-    `);
+    `
+  );
   return data.allMarkdownRemark;
 };

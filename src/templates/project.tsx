@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import { Head } from "../components/Header/head";
 
 const Project = () => {
-  return(
+  return (
     <Layout>
       <Head title="project" />
     </Layout>

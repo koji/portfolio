@@ -1,7 +1,7 @@
 import * as React from "react";
 import Layout from "../components/Layout";
 import { Head } from "../components/Header/head";
-import { Skill } from "../components/Skillblock";
+import { Skill } from "../components/SkillBlock";
 import styled from "styled-components";
 import { Image } from "../components/Image";
 import "../styles/style.css";

@@ -7,16 +7,16 @@ import { Head } from "../components/Header/head";
 
 // for markdown
 export const query = graphql`
-      query($slug: String!) {
-        markdownRemark(fields: { slug: { eq: $slug } }) {
-          frontmatter {
-            title
-            date
-          }
-          html
-        }
+  query($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      frontmatter {
+        title
+        date
       }
-    `;
+      html
+    }
+  }
+`;
 
 // export const query = graphql`
 //   query($slug: String!) {
@@ -33,14 +33,14 @@ export const query = graphql`
 // ToDo define props type
 const Blog = (props: any) => {
   // const options = {
-    // renderNode: {
-      // ToDo define type for node
-      // "embedded-asset-block": (node: any) => {
-      //   const alt = node.data.target.fields.title["en-US"];
-      //   const url = node.data.target.fields.file["en-US"].url;
-      //   return <img alt={alt} src={url} />;
-      // },
-    // },
+  // renderNode: {
+  // ToDo define type for node
+  // "embedded-asset-block": (node: any) => {
+  //   const alt = node.data.target.fields.title["en-US"];
+  //   const url = node.data.target.fields.file["en-US"].url;
+  //   return <img alt={alt} src={url} />;
+  // },
+  // },
   // };
   return (
     <Layout>
@@ -56,7 +56,6 @@ const Blog = (props: any) => {
       ></div>
     </Layout>
   );
-
 };
 
 export default Blog;
