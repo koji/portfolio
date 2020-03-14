@@ -24,3 +24,8 @@ export type MyLink = {
   type: string;
   link: string;
 };
+
+export type Skill = {
+  id: number;
+  skill: string;
+};

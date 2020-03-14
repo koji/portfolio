@@ -1,5 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
+import { mySkills } from "../../data/skill";
 
 const Wrapper = styled.div`
   display: grid;
@@ -75,31 +76,11 @@ const Cell = styled.div`
 export const Skill = () => {
   return (
     <Wrapper>
-      <Cell>
-        <Text>python</Text>
-      </Cell>
-      <Cell>
-        <Text>js</Text>
-      </Cell>
-      <Cell>
-        <Text>oF</Text>
-      </Cell>
-      <Cell>
-        <Text>arduino</Text>
-      </Cell>
-      {/* <Cell><Text>swift</Text></Cell> */}
-      <Cell>
-        <Text>linux</Text>
-      </Cell>
-      <Cell>
-        <Text>reactjs</Text>
-      </Cell>
-      <Cell>
-        <Text>git|github</Text>
-      </Cell>
-      <Cell>
-        <Text>raspberry pi</Text>
-      </Cell>
+      {mySkills.map(skill => (
+        <Cell key={`skill-${skill.id}`}>
+          <Text>{skill.skill}</Text>
+        </Cell>
+      ))}
     </Wrapper>
   );
 };
