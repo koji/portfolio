@@ -51,7 +51,7 @@ const About = () => {
         <Profile>
           <p>
             Koji is from Japan and currently he has been working for a company
-            as a software enginner since 2018.
+            as a software engineer since 2018.
           </p>
           <p>
             He graduated from New York University(
