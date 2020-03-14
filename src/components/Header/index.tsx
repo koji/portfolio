@@ -1,6 +1,6 @@
 import * as React from "react";
 import Link from "gatsby-link";
-import { useSiteMetadata } from "../hooks/siteMetadata";
+import { useSiteMetadata } from "../Hooks/siteMetadata";
 import { NavBar } from "./navbar";
 import styled from "styled-components";
 import { Image } from "../Image";
