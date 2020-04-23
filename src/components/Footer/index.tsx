@@ -29,12 +29,12 @@ export const Footer: React.FC = () => {
       <GridWrapper>
         <FooterGrid>
           <p style={{ textAlign: "left", marginLeft: "20px" }}>
-            🤘 Hi, I'm Koji, a software engineer
+            🤘 Hi, I&#39;m Koji, a software engineer
             <br />I like to do creative coding and
             <br />
             explore new technology.
             <br />
-            I'm in NYC!
+            I&#39;m in NYC!
           </p>
         </FooterGrid>
       </GridWrapper>

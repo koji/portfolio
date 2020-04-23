@@ -31,7 +31,6 @@ interface Props {
 
 export const Project = (props: Props) => {
   const { id, name, image, description, tools } = props.projectData;
-  console.log(image);
   return (
     <Figure>
       <h3>{name}</h3>
