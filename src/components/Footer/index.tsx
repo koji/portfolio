@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useSiteMetadata } from "../Hooks/siteMetadata";
+// import { useSiteMetadata } from "../Hooks/siteMetadata";
 import styled from "styled-components";
 
 const FooterWrapper = styled.footer`

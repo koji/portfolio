@@ -1,6 +1,6 @@
 import * as React from "react";
 import Link from "gatsby-link";
-import { useSiteMetadata } from "../Hooks/siteMetadata";
+// import { useSiteMetadata } from "../Hooks/siteMetadata";
 import { NavBar } from "./navbar";
 import styled from "styled-components";
 import { Image } from "../Image";
@@ -29,7 +29,7 @@ const titleStyle: React.CSSProperties = {
 };
 
 export const Header: React.FC = () => {
-  const { title } = useSiteMetadata();
+  // const { title } = useSiteMetadata();
   return (
     <HeaderTag>
       <HeaderWrap>

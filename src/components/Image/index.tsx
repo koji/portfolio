@@ -8,6 +8,13 @@ interface Props {
   size?: number;
 }
 
+interface Image {
+  node: {
+    name: string;
+    relativePath: string;
+  };
+}
+
 export const Image = (props: Props) => (
   <StaticQuery
     query={graphql`
@@ -28,7 +35,7 @@ export const Image = (props: Props) => (
       }
     `}
     render={data => {
-      const image = data.images.edges.find((n: any) => {
+      const image = data.images.edges.find((n: Image) => {
         // console.log(`image :${n.node.relativePath}`);
         // console.log(props.filename);
         return n.node.relativePath.includes(props.filename);

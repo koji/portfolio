@@ -65,7 +65,7 @@ const About = () => {
             power plant control system.
           </p>
           <p>
-            <b>Area of ​​interest</b>
+            <b>Area of interest</b>
             <br />
             <ToolTag>machine learning</ToolTag>
             <ToolTag>IoT</ToolTag>

@@ -30,7 +30,7 @@ interface Props {
 }
 
 export const Project = (props: Props) => {
-  const { id, name, image, description, link, tools } = props.projectData;
+  const { id, name, image, description, tools } = props.projectData;
   console.log(image);
   return (
     <Figure>
