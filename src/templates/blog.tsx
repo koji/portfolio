@@ -32,6 +32,7 @@ export const query = graphql`
 
 // ToDo define props type
 const Blog = (props: any) => {
+  // console.log(props);
   // const options = {
   // renderNode: {
   // ToDo define type for node

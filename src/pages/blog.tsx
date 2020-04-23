@@ -27,6 +27,7 @@ export const Blog: React.FC = () => {
       </ol> */}
       <ol className={blogStyles.posts}>
         {data.edges.map((edge: any) => {
+          // console.log(edge);
           return (
             <li key={`${edge.node.fields.slug}`} className={blogStyles.post}>
               <Link to={`/blog/${edge.node.fields.slug}`}>
