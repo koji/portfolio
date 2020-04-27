@@ -13,7 +13,11 @@ export default class Sketch extends React.Component {
         <h3>contact</h3>
         <p>linkedin</p>
         <p>
-          <a href="https://github.com/koji/" target="_blank">
+          <a
+            href="https://github.com/koji/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Github
           </a>
         </p>
