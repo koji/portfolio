@@ -4,7 +4,7 @@ import { Head } from "../components/Header/head";
 import { Skill } from "../components/SkillBlock";
 import styled from "styled-components";
 import { Image } from "../components/Image";
-// import "../styles/style.css";
+import "../styles/style.css";
 
 const BigText = styled.span`
   /* color: #ffa500; */
