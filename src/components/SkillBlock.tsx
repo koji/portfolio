@@ -1,6 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
-import { mySkills } from "../../data/skill";
+import { mySkills } from "../data/skill";
 
 const Wrapper = styled.div`
   display: grid;
