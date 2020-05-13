@@ -38,7 +38,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: "https://kojikanao.netlify.com",
+        siteUrl: "https://kojikanao.netlify.app",
         stripQueryString: true,
       },
     },
