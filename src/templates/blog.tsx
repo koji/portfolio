@@ -30,7 +30,7 @@ export const query = graphql`
 //   }
 // `;
 
-// ToDo define props type
+// -ToDo define props type
 const Blog = (props: any) => {
   // console.log(props);
   // const options = {
