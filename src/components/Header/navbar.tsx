@@ -13,18 +13,18 @@ const NavUl = styled.ul`
 `;
 
 const StyledLink = styled(props => <Link {...props} />)`
-  color: #999999;
+  color: #49ac00;
   font-size: 1rem;
   margin-left: auto;
   margin-right: 1.3rem;
   text-decoration: none;
   &:hover {
-    color: #666666;
+    text-decoration: underline;
   }
 `;
 
 const activeNavItem = {
-  color: "#333333",
+  color: "#6200AC",
 };
 
 export const NavBar = () => {
