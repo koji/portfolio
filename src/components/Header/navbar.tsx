@@ -13,8 +13,8 @@ const NavUl = styled.ul`
 `;
 
 const StyledLink = styled(props => <Link {...props} />)`
-  color: #49ac00;
-  font-size: 1rem;
+  color: #218dff;
+  font-size: 1.2rem;
   margin-left: auto;
   margin-right: 1.3rem;
   text-decoration: none;
