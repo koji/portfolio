@@ -15,9 +15,9 @@ export default function Appbar() {
           <Intent to="/oss">OSS</Intent>
         </li>
         <li className="nav-item mx-3">
-          <Intent to="">
-            <a href="https://drive.google.com/file/d/1_kEA--64uxtnpgAVuVvfTo_Gw2MCF0Mf/view?usp=sharing">CV</a>
-          </Intent>
+          <a className="nav-link" href="https://drive.google.com/file/d/1dAHY3C69_FFo0AJ7_jiBBYuTWUZGQ4BA/view?usp=sharing">
+            CV
+          </a>
         </li>
       </ul>
     </div>
