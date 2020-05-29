@@ -1,10 +1,10 @@
 import React from "react"
-import Link from "gatsby-plugin-transition-link/AniLink"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 export default function Intent({ children, to }) {
   return (
-    <Link
-    cover bg="#218dff"
+    <AniLink
+      cover bg="#218dff"
       className="nav-link"
       to={to}
       activeStyle={{
@@ -15,6 +15,6 @@ export default function Intent({ children, to }) {
       }}
     >
       {children}
-    </Link>
+    </AniLink>
   )
 }
