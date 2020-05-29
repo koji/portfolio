@@ -3,7 +3,6 @@ import React from "react"
 import {
   FaTwitter as Twitter,
   FaGithub as Github,
-  // FaYoutube as Youtube,
   FaInstagram as Insta,
   FaEnvelope as Mail,
 } from "react-icons/fa"
@@ -31,9 +30,6 @@ export default function info() {
         <FetchItemText>passion: </FetchItemText><FetchText>creative coding | build things | learn things</FetchText><br/>
         <FetchItemText>interest: </FetchItemText><FetchText>AR | ML</FetchText><br />
         <FetchItemText>education: </FetchItemText><FetchText>Graduated from NYU-ITP</FetchText>
-        {/* <FetchItemText>:</FetchItemText> <FetchText></FetchText><br /> */}
-        {/* <br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et. */}
       </div>
       <div className="h1 code mt-2 mb-3">{"}"}</div>
       <div className="h1 mt-5">
