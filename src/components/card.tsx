@@ -1,5 +1,5 @@
 import React from "react"
-import { Card } from '../types/types';
+import { Card } from 'src/types/types';
 
 const card = (props: Card) => {
   const { cardTitle, cardSubtitle, cardStack, link } = props
