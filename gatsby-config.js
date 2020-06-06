@@ -10,10 +10,19 @@ module.exports = {
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-typescript`,
     {
-      resolve: 'gatsby-plugin-graphql-codegen',
+      resolve: "gatsby-plugin-graphql-codegen",
       options: {
-        fileName: `types/graphql-types.d.ts`
-      }
+        fileName: `types/graphql-types.d.ts`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          src: `${__dirname}/src`,
+          components: `${__dirname}/src/components`,
+        },
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -74,6 +83,6 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
