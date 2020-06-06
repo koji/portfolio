@@ -1,6 +1,13 @@
 import React from "react"
 
-function card(props) {
+type Props = {
+  cardTitle: string;
+  cardSubtitle: string;
+  cardStack: string;
+  link: string;
+}
+
+const card = (props: Props) => {
   const { cardTitle, cardSubtitle, cardStack, link } = props
   return (
     <div className="col-lg-4">
