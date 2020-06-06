@@ -15,7 +15,7 @@ const FetchText = styled.span`
   color: #49AC00;
 `;
 
-export default function info() {
+const info = () => {
   return (
     <div className="container">
       <div className="my-5"></div>
@@ -49,3 +49,6 @@ export default function info() {
     </div>
   )
 }
+
+
+export default info;

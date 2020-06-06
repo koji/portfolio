@@ -1,7 +1,7 @@
 import React from "react"
 import Intent from "./link"
 
-export default function Appbar() {
+const Appbar = () => {
   return (
     <div className="container my-3">
       <ul className="nav justify-content-center">
@@ -23,3 +23,5 @@ export default function Appbar() {
     </div>
   )
 }
+
+export default Appbar;

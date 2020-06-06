@@ -1,7 +1,7 @@
 import React from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
-export default function Intent({ children, to }) {
+const Intent = ({ children, to }) => {
   return (
     <AniLink
       cover bg="#218dff"
@@ -18,3 +18,5 @@ export default function Intent({ children, to }) {
     </AniLink>
   )
 }
+
+export default Intent;

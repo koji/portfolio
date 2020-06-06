@@ -1,6 +1,7 @@
 import React from "react"
+import { Card } from '../types/types';
 
-function card(props) {
+const card = (props: Card) => {
   const { cardTitle, cardSubtitle, cardStack, link } = props
   return (
     <div className="col-lg-4">

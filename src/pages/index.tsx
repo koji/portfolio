@@ -4,7 +4,7 @@ import Appbar from "../components/appbar"
 import Info from "../components/info"
 import { Helmet } from "react-helmet"
 
-function index() {
+const index = () => {
   return (
     <div>
       <Appbar />
