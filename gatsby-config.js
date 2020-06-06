@@ -10,6 +10,12 @@ module.exports = {
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-typescript`,
     {
+      resolve: 'gatsby-plugin-graphql-codegen',
+      options: {
+        fileName: `types/graphql-types.d.ts`
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
