@@ -1,13 +1,7 @@
 import React from "react"
+import { Card } from '../types/types';
 
-type Props = {
-  cardTitle: string;
-  cardSubtitle: string;
-  cardStack: string;
-  link: string;
-}
-
-const card = (props: Props) => {
+const card = (props: Card) => {
   const { cardTitle, cardSubtitle, cardStack, link } = props
   return (
     <div className="col-lg-4">
