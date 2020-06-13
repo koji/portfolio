@@ -59,3 +59,7 @@ body {
 .card:hover {
   transform: scale(1.09);
 }
+
+::-webkit-scrollbar {
+  width: 0;
+}
