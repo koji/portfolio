@@ -393,8 +393,8 @@ export type File = Node & {
   parent?: Maybe<Node>;
   children: Array<Node>;
   internal: Internal;
-  childrenOssYaml?: Maybe<Array<Maybe<OssYaml>>>;
   childrenProjectsYaml?: Maybe<Array<Maybe<ProjectsYaml>>>;
+  childrenOssYaml?: Maybe<Array<Maybe<OssYaml>>>;
 };
 
 
@@ -692,6 +692,48 @@ export type FileFieldsEnum =
   | 'internal___mediaType'
   | 'internal___owner'
   | 'internal___type'
+  | 'childrenProjectsYaml'
+  | 'childrenProjectsYaml___id'
+  | 'childrenProjectsYaml___parent___id'
+  | 'childrenProjectsYaml___parent___parent___id'
+  | 'childrenProjectsYaml___parent___parent___children'
+  | 'childrenProjectsYaml___parent___children'
+  | 'childrenProjectsYaml___parent___children___id'
+  | 'childrenProjectsYaml___parent___children___children'
+  | 'childrenProjectsYaml___parent___internal___content'
+  | 'childrenProjectsYaml___parent___internal___contentDigest'
+  | 'childrenProjectsYaml___parent___internal___description'
+  | 'childrenProjectsYaml___parent___internal___fieldOwners'
+  | 'childrenProjectsYaml___parent___internal___ignoreType'
+  | 'childrenProjectsYaml___parent___internal___mediaType'
+  | 'childrenProjectsYaml___parent___internal___owner'
+  | 'childrenProjectsYaml___parent___internal___type'
+  | 'childrenProjectsYaml___children'
+  | 'childrenProjectsYaml___children___id'
+  | 'childrenProjectsYaml___children___parent___id'
+  | 'childrenProjectsYaml___children___parent___children'
+  | 'childrenProjectsYaml___children___children'
+  | 'childrenProjectsYaml___children___children___id'
+  | 'childrenProjectsYaml___children___children___children'
+  | 'childrenProjectsYaml___children___internal___content'
+  | 'childrenProjectsYaml___children___internal___contentDigest'
+  | 'childrenProjectsYaml___children___internal___description'
+  | 'childrenProjectsYaml___children___internal___fieldOwners'
+  | 'childrenProjectsYaml___children___internal___ignoreType'
+  | 'childrenProjectsYaml___children___internal___mediaType'
+  | 'childrenProjectsYaml___children___internal___owner'
+  | 'childrenProjectsYaml___children___internal___type'
+  | 'childrenProjectsYaml___internal___content'
+  | 'childrenProjectsYaml___internal___contentDigest'
+  | 'childrenProjectsYaml___internal___description'
+  | 'childrenProjectsYaml___internal___fieldOwners'
+  | 'childrenProjectsYaml___internal___ignoreType'
+  | 'childrenProjectsYaml___internal___mediaType'
+  | 'childrenProjectsYaml___internal___owner'
+  | 'childrenProjectsYaml___internal___type'
+  | 'childrenProjectsYaml___title'
+  | 'childrenProjectsYaml___subtitle'
+  | 'childrenProjectsYaml___link'
   | 'childrenOssYaml'
   | 'childrenOssYaml___id'
   | 'childrenOssYaml___parent___id'
@@ -734,49 +776,7 @@ export type FileFieldsEnum =
   | 'childrenOssYaml___title'
   | 'childrenOssYaml___description'
   | 'childrenOssYaml___stack'
-  | 'childrenOssYaml___link'
-  | 'childrenProjectsYaml'
-  | 'childrenProjectsYaml___id'
-  | 'childrenProjectsYaml___parent___id'
-  | 'childrenProjectsYaml___parent___parent___id'
-  | 'childrenProjectsYaml___parent___parent___children'
-  | 'childrenProjectsYaml___parent___children'
-  | 'childrenProjectsYaml___parent___children___id'
-  | 'childrenProjectsYaml___parent___children___children'
-  | 'childrenProjectsYaml___parent___internal___content'
-  | 'childrenProjectsYaml___parent___internal___contentDigest'
-  | 'childrenProjectsYaml___parent___internal___description'
-  | 'childrenProjectsYaml___parent___internal___fieldOwners'
-  | 'childrenProjectsYaml___parent___internal___ignoreType'
-  | 'childrenProjectsYaml___parent___internal___mediaType'
-  | 'childrenProjectsYaml___parent___internal___owner'
-  | 'childrenProjectsYaml___parent___internal___type'
-  | 'childrenProjectsYaml___children'
-  | 'childrenProjectsYaml___children___id'
-  | 'childrenProjectsYaml___children___parent___id'
-  | 'childrenProjectsYaml___children___parent___children'
-  | 'childrenProjectsYaml___children___children'
-  | 'childrenProjectsYaml___children___children___id'
-  | 'childrenProjectsYaml___children___children___children'
-  | 'childrenProjectsYaml___children___internal___content'
-  | 'childrenProjectsYaml___children___internal___contentDigest'
-  | 'childrenProjectsYaml___children___internal___description'
-  | 'childrenProjectsYaml___children___internal___fieldOwners'
-  | 'childrenProjectsYaml___children___internal___ignoreType'
-  | 'childrenProjectsYaml___children___internal___mediaType'
-  | 'childrenProjectsYaml___children___internal___owner'
-  | 'childrenProjectsYaml___children___internal___type'
-  | 'childrenProjectsYaml___internal___content'
-  | 'childrenProjectsYaml___internal___contentDigest'
-  | 'childrenProjectsYaml___internal___description'
-  | 'childrenProjectsYaml___internal___fieldOwners'
-  | 'childrenProjectsYaml___internal___ignoreType'
-  | 'childrenProjectsYaml___internal___mediaType'
-  | 'childrenProjectsYaml___internal___owner'
-  | 'childrenProjectsYaml___internal___type'
-  | 'childrenProjectsYaml___title'
-  | 'childrenProjectsYaml___subtitle'
-  | 'childrenProjectsYaml___link';
+  | 'childrenOssYaml___link';
 
 export type FileFilterInput = {
   sourceInstanceName?: Maybe<StringQueryOperatorInput>;
@@ -818,8 +818,8 @@ export type FileFilterInput = {
   parent?: Maybe<NodeFilterInput>;
   children?: Maybe<NodeFilterListInput>;
   internal?: Maybe<InternalFilterInput>;
-  childrenOssYaml?: Maybe<OssYamlFilterListInput>;
   childrenProjectsYaml?: Maybe<ProjectsYamlFilterListInput>;
+  childrenOssYaml?: Maybe<OssYamlFilterListInput>;
 };
 
 export type FileGroupConnection = {
@@ -1752,10 +1752,10 @@ export type Query = {
   allSite: SiteConnection;
   imageSharp?: Maybe<ImageSharp>;
   allImageSharp: ImageSharpConnection;
-  projectsYaml?: Maybe<ProjectsYaml>;
-  allProjectsYaml: ProjectsYamlConnection;
   ossYaml?: Maybe<OssYaml>;
   allOssYaml: OssYamlConnection;
+  projectsYaml?: Maybe<ProjectsYaml>;
+  allProjectsYaml: ProjectsYamlConnection;
   siteBuildMetadata?: Maybe<SiteBuildMetadata>;
   allSiteBuildMetadata: SiteBuildMetadataConnection;
   sitePlugin?: Maybe<SitePlugin>;
@@ -1803,8 +1803,8 @@ export type QueryFileArgs = {
   parent?: Maybe<NodeFilterInput>;
   children?: Maybe<NodeFilterListInput>;
   internal?: Maybe<InternalFilterInput>;
-  childrenOssYaml?: Maybe<OssYamlFilterListInput>;
   childrenProjectsYaml?: Maybe<ProjectsYamlFilterListInput>;
+  childrenOssYaml?: Maybe<OssYamlFilterListInput>;
 };
 
 
@@ -1934,25 +1934,6 @@ export type QueryAllImageSharpArgs = {
 };
 
 
-export type QueryProjectsYamlArgs = {
-  id?: Maybe<StringQueryOperatorInput>;
-  parent?: Maybe<NodeFilterInput>;
-  children?: Maybe<NodeFilterListInput>;
-  internal?: Maybe<InternalFilterInput>;
-  title?: Maybe<StringQueryOperatorInput>;
-  subtitle?: Maybe<StringQueryOperatorInput>;
-  link?: Maybe<StringQueryOperatorInput>;
-};
-
-
-export type QueryAllProjectsYamlArgs = {
-  filter?: Maybe<ProjectsYamlFilterInput>;
-  sort?: Maybe<ProjectsYamlSortInput>;
-  skip?: Maybe<Scalars['Int']>;
-  limit?: Maybe<Scalars['Int']>;
-};
-
-
 export type QueryOssYamlArgs = {
   id?: Maybe<StringQueryOperatorInput>;
   parent?: Maybe<NodeFilterInput>;
@@ -1968,6 +1949,25 @@ export type QueryOssYamlArgs = {
 export type QueryAllOssYamlArgs = {
   filter?: Maybe<OssYamlFilterInput>;
   sort?: Maybe<OssYamlSortInput>;
+  skip?: Maybe<Scalars['Int']>;
+  limit?: Maybe<Scalars['Int']>;
+};
+
+
+export type QueryProjectsYamlArgs = {
+  id?: Maybe<StringQueryOperatorInput>;
+  parent?: Maybe<NodeFilterInput>;
+  children?: Maybe<NodeFilterListInput>;
+  internal?: Maybe<InternalFilterInput>;
+  title?: Maybe<StringQueryOperatorInput>;
+  subtitle?: Maybe<StringQueryOperatorInput>;
+  link?: Maybe<StringQueryOperatorInput>;
+};
+
+
+export type QueryAllProjectsYamlArgs = {
+  filter?: Maybe<ProjectsYamlFilterInput>;
+  sort?: Maybe<ProjectsYamlSortInput>;
   skip?: Maybe<Scalars['Int']>;
   limit?: Maybe<Scalars['Int']>;
 };

@@ -1,22 +1,21 @@
-import React from "react"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+import React from 'react';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
-const Intent = ({ children, to }) => {
-  return (
-    <AniLink
-      cover bg="#218dff"
-      className="nav-link"
-      to={to}
-      activeStyle={{
-        color: "white",
-      }}
-      style={{
-        color: "grey",
-      }}
-    >
-      {children}
-    </AniLink>
-  )
-}
+const Intent = ({ children, to }) => (
+  <AniLink
+    cover
+    bg='#218dff'
+    className='nav-link'
+    to={to}
+    activeStyle={{
+      color: `white`,
+    }}
+    style={{
+      color: `grey`,
+    }}
+  >
+    {children}
+  </AniLink>
+);
 
 export default Intent;
