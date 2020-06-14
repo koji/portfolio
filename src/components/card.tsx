@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card } from 'src/types/types';
+import { Card } from '../types/types';
 
 const card: React.FC<Card> = (props: Card) => {
   const { cardTitle, cardSubtitle, cardStack, link } = props;
