@@ -4,12 +4,14 @@ import Appbar from '../components/appbar';
 import { graphql } from 'gatsby';
 import Card from '../components/card';
 import { Helmet } from 'react-helmet';
+import ScrollBar from '../components/scrollbar';
 
-function Projects({ data }) {
+const Projects: React.FC = ({ data }) => {
   const projectList = data.allProjectsYaml.edges;
 
   return (
     <div className='container-fluid'>
+      <ScrollBar />
       <Appbar />
       <Helmet>
         <meta charSet='utf-8' />
@@ -22,7 +24,7 @@ function Projects({ data }) {
       </div>
     </div>
   );
-}
+};
 
 export default Projects;
 

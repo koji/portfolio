@@ -4,12 +4,14 @@ import Appbar from '../components/appbar';
 import { graphql } from 'gatsby';
 import Card from '../components/card';
 import { Helmet } from 'react-helmet';
+import ScrollBar from '../components/scrollbar';
 
-const OSS = ({ data }) => {
+const OSS: React.FC = ({ data }) => {
   const ossList = data.allOssYaml.edges;
   console.log(ossList);
   return (
     <div className='container-fluid'>
+      <ScrollBar />
       <Appbar />
       <Helmet>
         <meta charSet='utf-8' />
