@@ -1,10 +1,10 @@
 import React from 'react';
 import '../style.css';
-import Appbar from '../components/appbar';
+import Appbar from '@components/appbar';
 import { graphql } from 'gatsby';
-import Card from '../components/card';
+import Card from '@components/card';
 import { Helmet } from 'react-helmet';
-import ScrollBar from '../components/scrollbar';
+import ScrollBar from '@components/scrollbar';
 
 const OSS: React.FC = ({ data }) => {
   const ossList = data.allOssYaml.edges;

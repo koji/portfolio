@@ -1,3 +1,5 @@
+const path = require(`path`);
+
 module.exports = {
   siteMetadata: {
     title: `koji portfolio `,
@@ -15,6 +17,15 @@ module.exports = {
     //     fileName: `types/graphql-types.d.ts`,
     //   },
     // },
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          '@components': path.resolve(__dirname, `src/components`),
+        },
+        extensions: [`js`, `ts`, `tsx`],
+      },
+    },
     {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
