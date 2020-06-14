@@ -5,7 +5,7 @@ import Info from '../components/info';
 import { Helmet } from 'react-helmet';
 import ScrollBar from '../components/scrollbar';
 
-const index = () => (
+const index: React.FC = () => (
   <div>
     <ScrollBar />
     <Appbar />

@@ -6,7 +6,7 @@ import Card from '../components/card';
 import { Helmet } from 'react-helmet';
 import ScrollBar from '../components/scrollbar';
 
-function OSS({ data }) {
+const OSS: React.FC = ({ data }) => {
   const ossList = data.allOssYaml.edges;
 
   return (
@@ -30,7 +30,7 @@ function OSS({ data }) {
       </div>
     </div>
   );
-}
+};
 
 export default OSS;
 

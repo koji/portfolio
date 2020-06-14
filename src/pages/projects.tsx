@@ -6,7 +6,7 @@ import Card from '../components/card';
 import { Helmet } from 'react-helmet';
 import ScrollBar from '../components/scrollbar';
 
-function Projects({ data }) {
+const Projects: React.FC = ({ data }) => {
   const projectList = data.allProjectsYaml.edges;
 
   return (
@@ -24,7 +24,7 @@ function Projects({ data }) {
       </div>
     </div>
   );
-}
+};
 
 export default Projects;
 
