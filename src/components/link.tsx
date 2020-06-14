@@ -1,7 +1,7 @@
 import React from 'react';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
-const Intent = ({ children, to }) => (
+const Intent: React.FC<any> = ({ children, to }) => (
   <AniLink
     cover
     bg='#218dff'

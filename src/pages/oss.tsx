@@ -8,7 +8,7 @@ import ScrollBar from '../components/scrollbar';
 
 const OSS: React.FC = ({ data }) => {
   const ossList = data.allOssYaml.edges;
-
+  console.log(ossList);
   return (
     <div className='container-fluid'>
       <ScrollBar />
