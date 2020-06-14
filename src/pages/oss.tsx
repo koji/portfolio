@@ -5,9 +5,9 @@ import { graphql } from 'gatsby';
 import Card from '../components/card';
 import { Helmet } from 'react-helmet';
 
-function OSS({ data }) {
+const OSS = ({ data }) => {
   const ossList = data.allOssYaml.edges;
-
+  console.log(ossList);
   return (
     <div className='container-fluid'>
       <Appbar />
@@ -28,7 +28,7 @@ function OSS({ data }) {
       </div>
     </div>
   );
-}
+};
 
 export default OSS;
 

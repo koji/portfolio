@@ -10,7 +10,7 @@ const FetchText = styled.span`
   color: #49ac00;
 `;
 
-const info = () => (
+const info: React.FC = () => (
   <div className='container'>
     <div className='my-5'></div>
     <div className='display-3' style={{ color: `#218dff` }}>
