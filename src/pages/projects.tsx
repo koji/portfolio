@@ -14,7 +14,7 @@ const Projects: React.FC = ({ data }) => {
       <ScrollBar />
       <Appbar />
       <Helmet>
-        <meta charSet='utf-8' />
+        <meta charSet='utf-8' name="project page" />
         <title>Projects</title>
       </Helmet>
       <div className='row'>
