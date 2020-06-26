@@ -13,6 +13,7 @@ const index: React.FC = () => (
     <Helmet>
       <meta charSet='utf-8' />
       <title>Home</title>
+       <html lang="en" />
     </Helmet>
   </div>
 );
