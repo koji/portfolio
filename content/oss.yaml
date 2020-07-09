@@ -39,3 +39,9 @@
   stack: reactjs | typescript | storybook | bit.dev
   link: https://github.com/koji/react-nes-components
   image:
+
+- title: mtrand
+  description: mtrand is Deno third party module and it's mt19937 for Deno.
+  stack: deno | typescript | github action
+  link: https://deno.land/x/mtrand
+  image:
