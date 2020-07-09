@@ -11,7 +11,7 @@ const card: React.FC<Card> = (props: Card) => {
           <p className='card-text'>{cardSubtitle}</p>
           <p className='card-text'>{cardStack}</p>
           <a href={link} target='_blank' className='card-link'>
-            Link
+            Link to the details
           </a>
         </div>
       </div>

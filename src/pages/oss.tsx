@@ -14,7 +14,7 @@ const OSS: React.FC = ({ data }) => {
       <ScrollBar />
       <Appbar />
       <Helmet>
-        <meta charSet='utf-8' name="oss page" />
+        <meta charSet='utf-8' name='oss page' />
         <title>OSS</title>
       </Helmet>
       <div className='row'>

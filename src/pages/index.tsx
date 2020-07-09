@@ -11,7 +11,7 @@ const index: React.FC = () => (
     <Appbar />
     <Info />
     <Helmet>
-      <meta charSet='utf-8' name="index page" />
+      <meta charSet='utf-8' name='index page' />
       <title>Home</title>
     </Helmet>
   </div>
