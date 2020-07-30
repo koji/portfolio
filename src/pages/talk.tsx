@@ -13,7 +13,7 @@ const Talk: React.FC = ({ data }) => {
       <ScrollBar />
       <Appbar />
       <Helmet>
-        <meta charSet='utf-8' name='oss page' />
+        <meta charSet='utf-8' name='description' content='talk page' />
         <title>OSS</title>
       </Helmet>
       <div className='row'>
