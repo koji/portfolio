@@ -45,3 +45,9 @@
   stack: deno | typescript | github action
   link: https://deno.land/x/mtrand
   image:
+
+- title: gatsbyjs doc
+  description: Have contributed to translate the documents from English into Japanese.
+  stack: translate | modify documents
+  link:
+  image:
