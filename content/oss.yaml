@@ -51,3 +51,9 @@
   stack: translate | modify documents
   link:
   image:
+
+- title: beautiful-react-hooks doc
+  description: Have contributed to translate the documents from English into Japanese.
+  stack: translate | modify documents
+  link: https://github.com/beautifulinteractions/beautiful-react-hooks/blob/master/docs/README.jp-JP.md
+  image:
