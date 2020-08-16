@@ -14,8 +14,9 @@ const OSS: React.FC = ({ data }) => {
       <Appbar />
       <Helmet>
         <meta charSet='utf-8' name='description' content='OSS projects that I contributed' />
-        <meta charSet='utf-8' name='keywords' content='open source, oss, github'/>
+        <meta charSet='utf-8' name='keywords' content='open source, oss, github' />
         <title>OSS</title>
+        <html lang='en' />
       </Helmet>
       <div className='row'>
         {ossList.map(({ node }) => (

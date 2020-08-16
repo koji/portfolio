@@ -16,6 +16,7 @@ const Talk: React.FC = ({ data }) => {
         <meta charSet='utf-8' name='description' content='talk page' />
         <meta charSet='utf-8' name='keywords' content='talk, koji, talk, creative tech, creative coding' />
         <title>OSS</title>
+        <html lang='en' />
       </Helmet>
       <div className='row'>
         {talkList.map(({ node }) => (
