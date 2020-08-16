@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/quotes */
 import React from 'react';
 import '../style.css';
 import Appbar from '../components/Appbar';
