@@ -40,17 +40,17 @@ const info: React.FC = () => (
     </div>
     <div className='h1 code mt-2 mb-3'>{`}`}</div>
     <div className='h1 mt-5'>
-      <a className='mr-5 icon' aria-label='Twitter' href='https://twitter.com/koji_kanao'>
-        <Twitter />
-      </a>
-      <a className='mr-5 icon' aria-label='Instagram' href='https://www.instagram.com/koji_kanao/'>
-        <Insta />
+      <a className='mr-5 icon' aria-label='Devto' href='https://dev.to/kojikanao/'>
+        <Dev />
       </a>
       <a className='mr-5 icon' aria-label='GitHub' href='https://github.com/koji/'>
         <Github />
       </a>
-      <a className='mr-5 icon' aria-label='Devto' href='https://dev.to/kojikanao/'>
-        <Dev />
+      <a className='mr-5 icon' aria-label='Instagram' href='https://www.instagram.com/koji_kanao/'>
+        <Insta />
+      </a>
+      <a className='mr-5 icon' aria-label='Twitter' href='https://twitter.com/koji_kanao'>
+        <Twitter />
       </a>
       <a className='mr-5 icon' aria-label='Gmail' href='mailto://koji.kanao@nyu.edu'>
         <Mail />

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/quotes */
 import React from 'react';
 import '../style.css';
 import Appbar from '@components/appbar';
@@ -10,7 +11,7 @@ const index: React.FC = () => (
     <ScrollBar />
     <Appbar />
     <Info />
-    <Helmet htmlAttributes={{ lang: `en` }} defer={false}>
+    <Helmet htmlAttributes={{ lang: 'en', amp: undefined }} defer={false}>
       <meta charSet='utf-8' name='description' content='This is a portfolio site of Koji Kanao.' />
       <meta
         charSet='utf-8'

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/quotes */
 import React from 'react';
 import '../style.css';
 import Appbar from '@components/appbar';
@@ -12,7 +13,7 @@ const OSS: React.FC = ({ data }) => {
     <div className='container-fluid'>
       <ScrollBar />
       <Appbar />
-      <Helmet htmlAttributes={{ lang: `en` }} defer={false}>
+      <Helmet htmlAttributes={{ lang: 'en', amp: undefined }} defer={false}>
         <meta charSet='utf-8' name='description' content='OSS projects that I contributed' />
         <meta charSet='utf-8' name='keywords' content='open source, oss, github' />
         <title>OSS</title>

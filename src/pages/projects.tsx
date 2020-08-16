@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/quotes */
 import React from 'react';
 import '../style.css';
 import Appbar from '@components/appbar';
@@ -13,7 +14,7 @@ const Projects: React.FC = ({ data }) => {
     <div className='container-fluid'>
       <ScrollBar />
       <Appbar />
-      <Helmet htmlAttributes={{ lang: `en` }} defer={false}>
+      <Helmet htmlAttributes={{ lang: 'en', amp: undefined }} defer={false}>
         <meta charSet='utf-8' name='description' content='This is a project page' />
         <meta charSet='utf-8' name='keywords' content='project, koji project, itp project, art project' />
         <title>Projects</title>
