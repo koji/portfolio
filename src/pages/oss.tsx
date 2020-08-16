@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/quotes */
 import React from 'react';
 import '../style.css';
-import Appbar from '../components/Appbar';
+import Appbar from '../components/appbar';
 import { graphql } from 'gatsby';
-import RCard from '../components/RCard';
+import Card from '../components/card';
 import SEO from '../components/SEO';
-import ScrollBar from '../components/Scrollbar';
+import ScrollBar from '../components/scrollbar';
 
 
 
@@ -23,7 +23,7 @@ const OSS: React.FC = ({ data }: any) => {
       />
       <div className='row'>
         {ossList.map(({ node }) => (
-          <RCard
+          <Card
             cardTitle={node.title}
             cardSubtitle={node.description}
             cardStack={node.stack}

@@ -1,10 +1,10 @@
 import React from 'react';
 import '../style.css';
-import Appbar from '../components/Appbar';
+import Appbar from '../components/appbar';
 import { graphql } from 'gatsby';
-import RCard from '../components/RCard';
+import Card from '../components/card';
 import SEO from '../components/SEO';
-import ScrollBar from '../components/Scrollbar';
+import ScrollBar from '../components/scrollbar';
 
 type TalkNode = {
   title: string;
@@ -23,7 +23,7 @@ const Talk: React.FC = ({ data }: any) => {
       <SEO title={`Talk`} description={`talk page`} keywords={`talk, koji, talk, creative tech, creative coding`} />
       <div className='row'>
         {talkList.map((node: TalkNode) => (
-          <RCard
+          <Card
             cardTitle={node.title}
             cardSubtitle={node.description}
             cardStack={node.event}

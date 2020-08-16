@@ -1,6 +1,6 @@
 import React from 'react';
-import ScrollBar from '../components/Scrollbar';
-import Appbar from '../components/Appbar';
+import ScrollBar from '../components/scrollbar';
+import Appbar from '../components/appbar';
 import SEO from '../components/SEO';
 
 const ErrorPage: React.FC = () => {

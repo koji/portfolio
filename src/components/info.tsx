@@ -65,4 +65,4 @@ const Info: React.FC = () => (
   </div>
 );
 
-export default Info;
+export default info;
