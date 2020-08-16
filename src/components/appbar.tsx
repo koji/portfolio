@@ -29,7 +29,7 @@ const Appbar = () => (
           className='nav-link'
           href='https://drive.google.com/file/d/1dAHY3C69_FFo0AJ7_jiBBYuTWUZGQ4BA/view?usp=sharing'
         >
-          CV
+          <b>CV</b>
         </a>
       </li>
     </ul>
