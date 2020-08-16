@@ -13,8 +13,7 @@ const Projects: React.FC = ({ data }) => {
     <div className='container-fluid'>
       <ScrollBar />
       <Appbar />
-      <Helmet>
-        <html lang='en' />
+      <Helmet htmlAttributes={{ lang: `en` }}>
         <meta charSet='utf-8' name='description' content='This is a project page' />
         <meta charSet='utf-8' name='keywords' content='project, koji project, itp project, art project' />
         <title>Projects</title>
