@@ -19,6 +19,7 @@ const index: React.FC = () => (
       />
       <meta charSet='utf-8' name='robots' content='index, follow' />
       <title>Home</title>
+      <html lang='en' />
     </Helmet>
   </div>
 );
