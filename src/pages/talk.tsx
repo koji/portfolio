@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/quotes */
 import React from 'react';
 import '../style.css';
-import Appbar from '@components/Appbar';
+import Appbar from '../components/Appbar';
 import { graphql } from 'gatsby';
-import RCard from '@components/RCard';
-import { Helmet } from 'react-helmet';
-import ScrollBar from '@components/Scrollbar';
+import RCard from '../components/RCard';
+import SEO from '../components/SEO';
+import ScrollBar from '../components/Scrollbar';
 
 const Talk: React.FC = ({ data }) => {
   const talkList = data.allTalkYaml.edges;
@@ -13,12 +13,7 @@ const Talk: React.FC = ({ data }) => {
     <div className='container-fluid'>
       <ScrollBar />
       <Appbar />
-      <Helmet>
-        <html lang='en' />
-        <meta charSet='utf-8' name='description' content='talk page' />
-        <meta charSet='utf-8' name='keywords' content='talk, koji, talk, creative tech, creative coding' />
-        <title>OSS</title>
-      </Helmet>
+      <SEO title={'Talk'} description={'talk page'} keywords={'talk, koji, talk, creative tech, creative coding'} />
       <div className='row'>
         {talkList.map(({ node }) => (
           <RCard

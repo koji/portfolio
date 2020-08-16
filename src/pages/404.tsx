@@ -1,7 +1,7 @@
 import React from 'react';
 import ScrollBar from '../components/Scrollbar';
-import { Helmet } from 'react-helmet';
 import Appbar from '../components/Appbar';
+import SEO from '../components/SEO';
 
 const ErrorPage: React.FC = () => {
   return (
@@ -9,19 +9,13 @@ const ErrorPage: React.FC = () => {
       <ScrollBar />
       <Appbar />
       <h1>404 Page Not Found</h1>
-      <Helmet>
-        <html lang='en' />
-        <meta charSet='utf-8' name='description' content='This is a portfolio site of Koji Kanao.' />
-        <meta
-          charSet='utf-8'
-          name='keywords'
-          content='koji, kanao, koji kanao, kanao koji, software engineer, creative technologist, nyu-itp, itp'
-        />
-        <meta charSet='utf-8' name='robots' content='index, follow' />
-        <title>Home</title>
-      </Helmet>
+      <SEO
+        title={'404'}
+        description={'This is a portfolio site of Koji Kanao.'}
+        keywords={'koji, kanao, koji kanao, kanao koji, software engineer, creative technologist, nyu-itp, itp'}
+      />
     </div>
-  )
+  );
 }
 
 export default ErrorPage;

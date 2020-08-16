@@ -5,6 +5,7 @@ module.exports = {
     title: `koji portfolio `,
     description: `koji kanao portfolio skills and projects`,
     author: `koji kanao`,
+    keywords: `koji, kanao, koji kanao, kanao koji, software engineer, creative technologist`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -17,12 +18,12 @@ module.exports = {
     //     fileName: `types/graphql-types.d.ts`,
     //   },
     // },
-    {
-      resolve: 'gatsby-plugin-html-attributes',
-      options: {
-        lang: 'en'
-      }
-    },
+    // {
+    //   resolve: 'gatsby-plugin-html-attributes',
+    //   options: {
+    //     lang: 'en'
+    //   }
+    // },
     {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
