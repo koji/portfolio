@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/quotes */
 import React from 'react';
 import '../style.css';
 import Appbar from '../components/Appbar';
@@ -21,7 +20,7 @@ const Talk: React.FC = ({ data }: any) => {
     <div className='container-fluid'>
       <ScrollBar />
       <Appbar />
-      <SEO title={'Talk'} description={'talk page'} keywords={'talk, koji, talk, creative tech, creative coding'} />
+      <SEO title={`Talk`} description={`talk page`} keywords={`talk, koji, talk, creative tech, creative coding`} />
       <div className='row'>
         {talkList.map((node: TalkNode) => (
           <RCard
