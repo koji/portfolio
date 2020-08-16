@@ -7,7 +7,9 @@ import RCard from '../components/RCard';
 import SEO from '../components/SEO';
 import ScrollBar from '../components/Scrollbar';
 
-const OSS: React.FC = ({ data }) => {
+
+
+const OSS: React.FC = ({ data }: any) => {
   const ossList = data.allOssYaml.edges;
   return (
     <div className='container-fluid'>

@@ -14,7 +14,7 @@ type ProjectNode = {
   id: string;
 }
 
-const Projects: React.FC = ({ data }) => {
+const Projects: React.FC = ({ data }: any) => {
   const projectList = data.allProjectsYaml.edges;
 
   return (
