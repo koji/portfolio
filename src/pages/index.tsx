@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/quotes */
 import React from 'react';
 import '../style.css';
-import Appbar from '@components/appbar';
-import Info from '@components/info';
+import Appbar from '@components/Appbar';
+import Info from '@components/Info';
 import { Helmet } from 'react-helmet';
-import ScrollBar from '@components/scrollbar';
+import ScrollBar from '@components/Scrollbar';
 
 const index: React.FC = () => (
   <div>

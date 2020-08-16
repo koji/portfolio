@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/quotes */
 import React from 'react';
 import '../style.css';
-import Appbar from '@components/appbar';
+import Appbar from '@components/Appbar';
 import { graphql } from 'gatsby';
-import Card from '@components/card';
+import RCard from '@components/RCard';
 import { Helmet } from 'react-helmet';
-import ScrollBar from '@components/scrollbar';
+import ScrollBar from '@components/Scrollbar';
 
 const Projects: React.FC = ({ data }) => {
   const projectList = data.allProjectsYaml.edges;
@@ -21,7 +21,7 @@ const Projects: React.FC = ({ data }) => {
       </Helmet>
       <div className='row'>
         {projectList.map(({ node }) => (
-          <Card cardTitle={node.title} cardSubtitle={node.subtitle} link={node.link} key={node.id} />
+          <RCard cardTitle={node.title} cardSubtitle={node.subtitle} link={node.link} key={node.id} />
         ))}
       </div>
     </div>

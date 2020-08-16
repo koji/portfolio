@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/quotes */
 import React from 'react';
 import '../style.css';
-import Appbar from '@components/appbar';
+import Appbar from '@components/Appbar';
 import { graphql } from 'gatsby';
-import Card from '@components/card';
+import RCard from '@components/RCard';
 import { Helmet } from 'react-helmet';
-import ScrollBar from '@components/scrollbar';
+import ScrollBar from '@components/Scrollbar';
 
 const Talk: React.FC = ({ data }) => {
   const talkList = data.allTalkYaml.edges;
@@ -20,7 +20,7 @@ const Talk: React.FC = ({ data }) => {
       </Helmet>
       <div className='row'>
         {talkList.map(({ node }) => (
-          <Card
+          <RCard
             cardTitle={node.title}
             cardSubtitle={node.description}
             cardStack={node.event}

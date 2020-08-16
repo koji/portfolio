@@ -1,5 +1,5 @@
 import React from 'react';
-import Intent from './link';
+import Intent from './Intent';
 
 const Appbar = () => (
   <div className='container my-3'>
