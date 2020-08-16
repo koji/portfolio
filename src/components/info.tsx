@@ -20,7 +20,7 @@ const info: React.FC = () => (
     <div className='h1 code mt-4 mb-3'>await fetch('koji', {`{`}</div>
     <div className='text-muted mx-5 my-4 h3 text-justify info'>
       <FetchItemText>title: </FetchItemText>
-      <FetchText>software engineer,</FetchText>
+      <FetchText>software engineer|creative technologist</FetchText>
       <br />
       <FetchItemText>tech stack: </FetchItemText>
       <FetchText>
