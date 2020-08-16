@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { FaTwitter as Twitter, FaGithub as Github, FaInstagram as Insta, FaEnvelope as Mail } from 'react-icons/fa';
+import { FaTwitter as Twitter, FaGithub as Github, FaInstagram as Insta, FaEnvelope as Mail, FaDev as Dev } from 'react-icons/fa';
 import styled from 'styled-components';
 
 const FetchItemText = styled.span`
@@ -40,16 +40,19 @@ const info: React.FC = () => (
     </div>
     <div className='h1 code mt-2 mb-3'>{`}`}</div>
     <div className='h1 mt-5'>
-      <a className='mr-5 icon' href='https://twitter.com/koji_kanao'>
+      <a className='mr-5 icon' aria-label='Twitter' target='_blank' href='https://twitter.com/koji_kanao'>
         <Twitter />
       </a>
-      <a className='mr-5 icon' href='https://www.instagram.com/koji_kanao/'>
+      <a className='mr-5 icon' aria-label='Instagram' target='_blank' href='https://www.instagram.com/koji_kanao/'>
         <Insta />
       </a>
-      <a className='mr-5 icon' href='https://github.com/koji'>
+      <a className='mr-5 icon' aria-label='GitHub' target='_blank' href='https://github.com/koji/'>
         <Github />
       </a>
-      <a className='mr-5 icon' href='mailto://koji.kanao@nyu.edu'>
+      <a className='mr-5 icon' aria-label='Devto' target='_blank' href='https://dev.to/kojikanao/'>
+        <Dev />
+      </a>
+      <a className='mr-5 icon' aria-label='Gmail' target='_blank' href='mailto://koji.kanao@nyu.edu'>
         <Mail />
       </a>
     </div>
