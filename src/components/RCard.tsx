@@ -1,7 +1,7 @@
 import React from 'react';
-import { Card } from '../types/types';
+import { Card } from '../types/Types';
 
-const card: React.FC<Card> = (props: Card) => {
+const RCard: React.FC<Card> = (props: Card) => {
   const { cardTitle, cardSubtitle, cardStack, link } = props;
   return (
     <div className='col-lg-4'>
@@ -19,4 +19,4 @@ const card: React.FC<Card> = (props: Card) => {
   );
 };
 
-export default card;
+export default RCard;
