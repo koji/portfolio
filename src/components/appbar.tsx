@@ -5,16 +5,24 @@ const Appbar = () => (
   <div className='container my-3'>
     <ul className='nav justify-content-center'>
       <li className='nav-item mx-3'>
-        <Intent to='/'>Home</Intent>
+        <Intent to='/'>
+          <b>Home</b>
+        </Intent>
       </li>
       <li className='nav-item mx-3'>
-        <Intent to='/projects'>Projects</Intent>
+        <Intent to='/projects'>
+          <b>Projects</b>
+        </Intent>
       </li>
       <li className='nav-item mx-3'>
-        <Intent to='/oss'>OSS</Intent>
+        <Intent to='/oss'>
+          <b>OSS</b>
+        </Intent>
       </li>
       <li className='nav-item mx-3'>
-        <Intent to='/talk'>Talk</Intent>
+        <Intent to='/talk'>
+          <b>Talk</b>
+        </Intent>
       </li>
       <li className='nav-item mx-3'>
         <a
