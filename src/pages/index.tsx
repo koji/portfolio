@@ -11,7 +11,8 @@ const index: React.FC = () => (
     <ScrollBar />
     <Appbar />
     <Info />
-    <Helmet htmlAttributes={{ lang: 'en', amp: undefined }} defer={false}>
+    <Helmet>
+      <html lang='en' />
       <html lang='en' />
       <meta charSet='utf-8' name='description' content='This is a portfolio site of Koji Kanao.' />
       <meta

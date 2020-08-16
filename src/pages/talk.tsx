@@ -13,7 +13,8 @@ const Talk: React.FC = ({ data }) => {
     <div className='container-fluid'>
       <ScrollBar />
       <Appbar />
-      <Helmet htmlAttributes={{ lang: 'en', amp: undefined }} defer={false}>
+      <Helmet>
+        <html lang='en' />
         <meta charSet='utf-8' name='description' content='talk page' />
         <meta charSet='utf-8' name='keywords' content='talk, koji, talk, creative tech, creative coding' />
         <title>OSS</title>

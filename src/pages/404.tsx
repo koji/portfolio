@@ -9,7 +9,7 @@ const ErrorPage: React.FC = () => {
       <ScrollBar />
       <Appbar />
       <h1>404 Page Not Found</h1>
-      <Helmet htmlAttributes={{ lang: 'en', amp: undefined }} defer={false}>
+      <Helmet>
         <html lang='en' />
         <meta charSet='utf-8' name='description' content='This is a portfolio site of Koji Kanao.' />
         <meta
