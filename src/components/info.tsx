@@ -40,19 +40,19 @@ const info: React.FC = () => (
     </div>
     <div className='h1 code mt-2 mb-3'>{`}`}</div>
     <div className='h1 mt-5'>
-      <a className='mr-5 icon' aria-label='Twitter' target='_blank' href='https://twitter.com/koji_kanao'>
+      <a className='mr-5 icon' aria-label='Twitter' href='https://twitter.com/koji_kanao'>
         <Twitter />
       </a>
-      <a className='mr-5 icon' aria-label='Instagram' target='_blank' href='https://www.instagram.com/koji_kanao/'>
+      <a className='mr-5 icon' aria-label='Instagram' href='https://www.instagram.com/koji_kanao/'>
         <Insta />
       </a>
-      <a className='mr-5 icon' aria-label='GitHub' target='_blank' href='https://github.com/koji/'>
+      <a className='mr-5 icon' aria-label='GitHub' href='https://github.com/koji/'>
         <Github />
       </a>
-      <a className='mr-5 icon' aria-label='Devto' target='_blank' href='https://dev.to/kojikanao/'>
+      <a className='mr-5 icon' aria-label='Devto' href='https://dev.to/kojikanao/'>
         <Dev />
       </a>
-      <a className='mr-5 icon' aria-label='Gmail' target='_blank' href='mailto://koji.kanao@nyu.edu'>
+      <a className='mr-5 icon' aria-label='Gmail' href='mailto://koji.kanao@nyu.edu'>
         <Mail />
       </a>
     </div>
