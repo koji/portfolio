@@ -12,6 +12,8 @@ const index: React.FC = () => (
     <Info />
     <Helmet>
       <meta charSet='utf-8' name='description' content='This is a portfolio site of Koji Kanao.' />
+      <meta charSet='utf-8' name='keywords' content='koji, kanao, koji kanao, kanao koji, software engineer, creative technologist, nyu-itp, itp' />
+      <meta charSet='utf-8' name='robots' content='index, follow' />
       <title>Home</title>
     </Helmet>
   </div>
