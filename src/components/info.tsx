@@ -36,7 +36,7 @@ const info: React.FC = () => (
       <FetchText>AR | ML</FetchText>
       <br />
       <FetchItemText>education: </FetchItemText>
-      <FetchText>Graduated from NYU-ITP</FetchText>
+      <FetchText>Graduated from New York University & Kobe University</FetchText>
     </div>
     <div className='h1 code mt-2 mb-3'>{`}`}</div>
     <div className='h1 mt-5'>
