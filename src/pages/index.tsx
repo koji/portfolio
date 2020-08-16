@@ -12,6 +12,7 @@ const index: React.FC = () => (
     <Appbar />
     <Info />
     <Helmet htmlAttributes={{ lang: 'en', amp: undefined }} defer={false}>
+      <html lang='en' />
       <meta charSet='utf-8' name='description' content='This is a portfolio site of Koji Kanao.' />
       <meta
         charSet='utf-8'
