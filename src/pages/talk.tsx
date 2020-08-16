@@ -7,7 +7,15 @@ import RCard from '../components/RCard';
 import SEO from '../components/SEO';
 import ScrollBar from '../components/Scrollbar';
 
-const Talk: React.FC = ({ data }) => {
+type TalkNode = {
+  title: string;
+  description: string;
+  event: string;
+  link: string;
+  id: string;
+};
+
+const Talk: React.FC = ({ data }: any) => {
   const talkList = data.allTalkYaml.edges;
   return (
     <div className='container-fluid'>
@@ -15,12 +23,12 @@ const Talk: React.FC = ({ data }) => {
       <Appbar />
       <SEO title={'Talk'} description={'talk page'} keywords={'talk, koji, talk, creative tech, creative coding'} />
       <div className='row'>
-        {talkList.map(({ node }) => (
+        {talkList.map((node: TalkNode) => (
           <RCard
             cardTitle={node.title}
             cardSubtitle={node.description}
             cardStack={node.event}
-            // link={node.link}
+            link={node.link}
             key={node.id}
           />
         ))}
@@ -39,7 +47,7 @@ export const query = graphql`
           title
           description
           event
-          # link
+          link
           id
         }
       }

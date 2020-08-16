@@ -14,7 +14,7 @@ const SEO = ({ title, description, keywords }: SEOData) => (
     render={({
       site: {
         siteMetadata: { defaultTitle, defaultDescription, defaultKeywords },
-      }
+      },
     }) => {
       const seo = {
         title: title ? title : defaultTitle,
