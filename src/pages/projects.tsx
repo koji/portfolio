@@ -14,10 +14,10 @@ const Projects: React.FC = ({ data }) => {
       <ScrollBar />
       <Appbar />
       <Helmet>
+        <html lang='en' />
         <meta charSet='utf-8' name='description' content='This is a project page' />
         <meta charSet='utf-8' name='keywords' content='project, koji project, itp project, art project' />
         <title>Projects</title>
-        <html lang='en' />
       </Helmet>
       <div className='row'>
         {projectList.map(({ node }) => (

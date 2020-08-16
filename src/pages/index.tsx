@@ -11,6 +11,7 @@ const index: React.FC = () => (
     <Appbar />
     <Info />
     <Helmet>
+      <html lang='en' />
       <meta charSet='utf-8' name='description' content='This is a portfolio site of Koji Kanao.' />
       <meta
         charSet='utf-8'
@@ -19,7 +20,6 @@ const index: React.FC = () => (
       />
       <meta charSet='utf-8' name='robots' content='index, follow' />
       <title>Home</title>
-      <html lang='en' />
     </Helmet>
   </div>
 );
