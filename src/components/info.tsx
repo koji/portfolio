@@ -1,6 +1,12 @@
 import React from 'react';
 
-import { FaTwitter as Twitter, FaGithub as Github, FaInstagram as Insta, FaEnvelope as Mail, FaDev as Dev } from 'react-icons/fa';
+import {
+  FaTwitter as Twitter,
+  FaGithub as Github,
+  FaInstagram as Insta,
+  FaEnvelope as Mail,
+  FaDev as Dev,
+} from 'react-icons/fa';
 import styled from 'styled-components';
 
 const FetchItemText = styled.span`
