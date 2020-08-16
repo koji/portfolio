@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/quotes */
 import React from 'react';
 import '../style.css';
-import Appbar from '@components/Appbar';
+import Appbar from '../components/Appbar';
 import { graphql } from 'gatsby';
-import RCard from '@components/RCard';
-import { Helmet } from 'react-helmet';
-import ScrollBar from '@components/Scrollbar';
+import RCard from '../components/RCard';
+import SEO from '../components/SEO';
+import ScrollBar from '../components/Scrollbar';
 
 const Projects: React.FC = ({ data }) => {
   const projectList = data.allProjectsYaml.edges;
@@ -14,12 +14,11 @@ const Projects: React.FC = ({ data }) => {
     <div className='container-fluid'>
       <ScrollBar />
       <Appbar />
-      <Helmet>
-        <html lang='en' />
-        <meta charSet='utf-8' name='description' content='This is a project page' />
-        <meta charSet='utf-8' name='keywords' content='project, koji project, itp project, art project' />
-        <title>Projects</title>
-      </Helmet>
+      <SEO
+        title={'Projects'}
+        description={'This is a project page'}
+        keywords={'project, koji project, itp project, art project'}
+      />
       <div className='row'>
         {projectList.map(({ node }) => (
           <RCard cardTitle={node.title} cardSubtitle={node.subtitle} link={node.link} key={node.id} />

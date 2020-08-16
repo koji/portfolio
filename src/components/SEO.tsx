@@ -6,7 +6,7 @@ type SEOData = {
   title: string;
   description: string;
   keywords: string;
-}
+};
 
 const SEO = ({ title, description, keywords }: SEOData) => (
   <StaticQuery
@@ -25,9 +25,9 @@ const SEO = ({ title, description, keywords }: SEOData) => (
         <Helmet>
           <html lang='en' />
           <title>{seo.title}</title>
-          <meta name='description' content={seo.description} />
-          <meta name='keywords' content={seo.keywords} />
-          <meta name='robots' content='index, follow' />
+          <meta charSet='utf-8' name='description' content={seo.description} />
+          <meta charSet='utf-8' name='keywords' content={seo.keywords} />
+          <meta charSet='utf-8' name='robots' content='index, follow' />
         </Helmet>
       );
     }}

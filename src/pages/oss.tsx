@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/quotes */
 import React from 'react';
 import '../style.css';
-import Appbar from '@components/Appbar';
+import Appbar from '../components/Appbar';
 import { graphql } from 'gatsby';
-import RCard from '@components/RCard';
-import { Helmet } from 'react-helmet';
-import ScrollBar from '@components/Scrollbar';
+import RCard from '../components/RCard';
+import SEO from '../components/SEO';
+import ScrollBar from '../components/Scrollbar';
 
 const OSS: React.FC = ({ data }) => {
   const ossList = data.allOssYaml.edges;
@@ -13,12 +13,12 @@ const OSS: React.FC = ({ data }) => {
     <div className='container-fluid'>
       <ScrollBar />
       <Appbar />
-      <Helmet>
-        <html lang='en' />
-        <meta charSet='utf-8' name='description' content='OSS projects that I contributed' />
-        <meta charSet='utf-8' name='keywords' content='open source, oss, github' />
-        <title>OSS</title>
-      </Helmet>
+
+      <SEO
+        title={'OSS'}
+        description={'OSS projects that I contributed'}
+        keywords={'koji, kanao, koji kanao, open source, oss, github'}
+      />
       <div className='row'>
         {ossList.map(({ node }) => (
           <RCard

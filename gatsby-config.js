@@ -5,6 +5,7 @@ module.exports = {
     title: `koji portfolio `,
     description: `koji kanao portfolio skills and projects`,
     author: `koji kanao`,
+    keywords: `koji, kanao, koji kanao, kanao koji, software engineer, creative technologist`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
