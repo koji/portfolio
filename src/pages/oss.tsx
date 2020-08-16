@@ -13,7 +13,8 @@ const OSS: React.FC = ({ data }) => {
       <ScrollBar />
       <Appbar />
       <Helmet>
-        <meta charSet='utf-8' name='description' content='Cards on this page are that I contributed' />
+        <meta charSet='utf-8' name='description' content='OSS projects that I contributed' />
+        <meta charSet='utf-8' name='keywords' content='open source, oss, github'/>
         <title>OSS</title>
       </Helmet>
       <div className='row'>

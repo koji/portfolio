@@ -14,6 +14,7 @@ const Talk: React.FC = ({ data }) => {
       <Appbar />
       <Helmet>
         <meta charSet='utf-8' name='description' content='talk page' />
+        <meta charSet='utf-8' name='keywords' content='talk, koji, talk, creative tech, creative coding'/>
         <title>OSS</title>
       </Helmet>
       <div className='row'>

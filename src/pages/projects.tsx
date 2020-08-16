@@ -15,6 +15,7 @@ const Projects: React.FC = ({ data }) => {
       <Appbar />
       <Helmet>
         <meta charSet='utf-8' name='description' content='This is a project page' />
+        <meta charSet='utf-8' name='keywords' content='project, koji project, itp project, art project'/>
         <title>Projects</title>
       </Helmet>
       <div className='row'>
