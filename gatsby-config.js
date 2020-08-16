@@ -18,12 +18,12 @@ module.exports = {
     //     fileName: `types/graphql-types.d.ts`,
     //   },
     // },
-    {
-      resolve: 'gatsby-plugin-html-attributes',
-      options: {
-        lang: 'en'
-      }
-    },
+    // {
+    //   resolve: 'gatsby-plugin-html-attributes',
+    //   options: {
+    //     lang: 'en'
+    //   }
+    // },
     {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
