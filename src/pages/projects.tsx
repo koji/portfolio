@@ -12,7 +12,7 @@ type ProjectNode = {
   subtitle: string;
   link: string;
   id: string;
-}
+};
 
 const Projects: React.FC = ({ data }: any) => {
   const projectList = data.allProjectsYaml.edges;
