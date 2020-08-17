@@ -7,8 +7,6 @@ import Card from '../components/card';
 import SEO from '../components/SEO';
 import ScrollBar from '../components/scrollbar';
 
-
-
 const OSS: React.FC = ({ data }: any) => {
   const ossList = data.allOssYaml.edges;
   return (
