@@ -22,7 +22,7 @@ const Talk: React.FC = ({ data }: any) => {
       <Appbar />
       <SEO title={`Talk`} description={`talk page`} keywords={`talk, koji, talk, creative tech, creative coding`} />
       <div className='row'>
-        {talkList.map((node: TalkNode) => (
+        {talkList.map(({ node }: any) => (
           <Card
             cardTitle={node.title}
             cardSubtitle={node.description}

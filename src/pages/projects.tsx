@@ -27,7 +27,7 @@ const Projects: React.FC = ({ data }: any) => {
         keywords={'project, koji project, itp project, art project'}
       />
       <div className='row'>
-        {projectList.map((node: ProjectNode) => (
+        {projectList.map(({ node }: any) => (
           <Card cardTitle={node.title} cardSubtitle={node.subtitle} link={node.link} key={node.id} />
         ))}
       </div>
