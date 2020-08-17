@@ -8,10 +8,12 @@ import SEO from '../components/SEO';
 import ScrollBar from '../components/scrollbar';
 
 type ProjectNode = {
-  title: string;
-  subtitle: string;
-  link: string;
-  id: string;
+  node: {
+    title: string;
+    subtitle: string;
+    link: string;
+    id: string;
+  };
 };
 
 const Projects: React.FC = ({ data }: any) => {
@@ -27,7 +29,7 @@ const Projects: React.FC = ({ data }: any) => {
         keywords={'project, koji project, itp project, art project'}
       />
       <div className='row'>
-        {projectList.map(({ node }: any) => (
+        {projectList.map(({ node }: ProjectNode) => (
           <Card cardTitle={node.title} cardSubtitle={node.subtitle} link={node.link} key={node.id} />
         ))}
       </div>
