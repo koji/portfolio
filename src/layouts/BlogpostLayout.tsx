@@ -1,12 +1,14 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import SEO from '../components/SEO';
+import Appbar from '../components/appbar';
 
 const BlogpostLayout = ({ data }: any) => {
   const post = data.markdownRemark;
   return (
     <div>
       <SEO title={post.title} description={post.description} keywords={post.keywords} />
+      <Appbar />
       <div className='container'>
         <div className='row justify-content-md-center'>
           <h1>{post.frontmatter.title}</h1>
