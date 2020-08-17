@@ -16,13 +16,14 @@ type TalkNode = {
 
 const Talk: React.FC = ({ data }: any) => {
   const talkList = data.allTalkYaml.edges;
+  const { node } = data;
   return (
     <div className='container-fluid'>
       <ScrollBar />
       <Appbar />
       <SEO title={`Talk`} description={`talk page`} keywords={`talk, koji, talk, creative tech, creative coding`} />
       <div className='row'>
-        {talkList.map(({ node }: any) => (
+        {talkList.map(( node: TalkNode) => (
           <Card
             cardTitle={node.title}
             cardSubtitle={node.description}
