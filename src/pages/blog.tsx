@@ -1,18 +1,20 @@
 import React from 'react';
 import Post from '../components/Post';
 import { graphql } from 'gatsby';
-import { Helmet } from 'react-helmet';
 import PrimaryLayout from '../layouts/PrimaryLayout';
+import SEO from '../components/SEO';
+import ScrollBar from '../components/scrollbar';
 
 const Blog = ({ data }: any) => {
   return (
     <PrimaryLayout column={`col-6`}>
-      <Helmet>
-        <title>Blog</title>
-        <meta name='description' content='This is a description of the website' />
-        <meta name='keywords' content='gatsby, gatsbyjs project, gatsby bootstrap' />
-        <meta name='robots' content='index, follow' />
-      </Helmet>
+      <ScrollBar />
+      <SEO
+        title={'Blog'}
+        description={'Tech blog from what I learned'}
+        keywords={'koji, kanao, koji kanao, blog, coding, tech'}
+      />
+
       {data.allMarkdownRemark.nodes.map((node: any) => (
         <Post
           image={node.frontmatter.image}
