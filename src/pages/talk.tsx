@@ -7,22 +7,25 @@ import SEO from '../components/SEO';
 import ScrollBar from '../components/scrollbar';
 
 type TalkNode = {
-  title: string;
-  description: string;
-  event: string;
-  link: string;
-  id: string;
+  node: {
+    title: string;
+    description: string;
+    event: string;
+    link: string;
+    id: string;
+  };
 };
 
 const Talk: React.FC = ({ data }: any) => {
   const talkList = data.allTalkYaml.edges;
+  const { node } = data;
   return (
     <div className='container-fluid'>
       <ScrollBar />
       <Appbar />
       <SEO title={`Talk`} description={`talk page`} keywords={`talk, koji, talk, creative tech, creative coding`} />
       <div className='row'>
-        {talkList.map((node: TalkNode) => (
+        {talkList.map(( { node }: TalkNode) => (
           <Card
             cardTitle={node.title}
             cardSubtitle={node.description}
