@@ -4,3 +4,10 @@ export type Card = {
   cardStack: string;
   link: string;
 };
+
+export type BlogPost = {
+  title: string;
+  date: string;
+  keywords: string;
+  summary: string;
+};

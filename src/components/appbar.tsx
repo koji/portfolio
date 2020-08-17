@@ -10,6 +10,11 @@ const Appbar = () => (
         </Intent>
       </li>
       <li className='nav-item mx-3'>
+        <Intent to='/blog'>
+          <b>Blog</b>
+        </Intent>
+      </li>
+      <li className='nav-item mx-3'>
         <Intent to='/projects'>
           <b>Projects</b>
         </Intent>
