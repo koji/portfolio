@@ -22,7 +22,7 @@ const OSS: React.FC = ({ data }: any) => {
         keywords={'koji, kanao, koji kanao, open source, oss, github'}
       />
       <div className='row'>
-        {ossList.map(({ node }) => (
+        {ossList.map(({ node }: any) => (
           <Card
             cardTitle={node.title}
             cardSubtitle={node.description}
