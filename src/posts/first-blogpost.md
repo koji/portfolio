@@ -2,7 +2,7 @@
 title: "My First Blog Post"
 date: "2019-05-27"
 keywords: "keyword1, keyword2"
-image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.truthdig.com%2Farticles%2Fwill-there-ever-be-a-great-gatsby%2F&psig=AOvVaw1FWXaDVzUkMXOsC1-C89_v&ust=1597620128931000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPiV4fesnusCFQAAAAAdAAAAABAD"
+image: "https://dreamix.eu/blog/wp-content/uploads/2017/05/20150224test644-1508x706_c.jpg"
 summary: "This is about the first post."
 ---
 
