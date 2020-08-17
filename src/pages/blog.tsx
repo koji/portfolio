@@ -6,7 +6,7 @@ import PrimaryLayout from '../layouts/PrimaryLayout';
 
 const Blog = ({ data }: any) => {
   return (
-    <PrimaryLayout column={`col-xs-6`}>
+    <PrimaryLayout column={`col-6`}>
       <Helmet>
         <title>Blog</title>
         <meta name='description' content='This is a description of the website' />
