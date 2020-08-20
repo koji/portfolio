@@ -9,10 +9,10 @@ import {
 import styled from 'styled-components';
 
 const FetchItemText = styled.span`
-  color: #e1f4f3;
+  color: #e1f4f3 !important;
 `;
 const FetchText = styled.span`
-  color: #070a0e;
+  color: #070a0e !important;
 `;
 
 const info: React.FC = () => (
