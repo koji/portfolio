@@ -30,6 +30,10 @@ body {
   color: white !important;
 }
 
+.nav-item {
+  color: #EF8354;
+}
+
 /* .icon {
   height: 30px;
   transition: 0.1s ease-in;
