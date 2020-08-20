@@ -12,7 +12,7 @@ const FetchItemText = styled.span`
   color: #e1f4f3;
 `;
 const FetchText = styled.span`
-  color: #000000;
+  color: #070a0e;
 `;
 
 const info: React.FC = () => (
