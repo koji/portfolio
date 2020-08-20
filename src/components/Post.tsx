@@ -8,21 +8,19 @@ type Props = {
   readMore: string;
 };
 
-const Post = (props: Props) => {
-  return (
-    <div className='p-3'>
-      <Card>
-        <Card.Img variant='top' src={props.image} />
-        <Card.Body>
-          <Card.Title>{props.title}</Card.Title>
-          <Card.Text>{props.summary}</Card.Text>
-          <Button variant='primary' href={props.readMore}>
-            Read more...
-          </Button>
-        </Card.Body>
-      </Card>
-    </div>
-  );
-};
+const Post = (props: Props) => (
+  <div className='p-3'>
+    <Card>
+      <Card.Img variant='top' src={props.image} alt='eye-catch image' />
+      <Card.Body>
+        <Card.Title>{props.title}</Card.Title>
+        <Card.Text>{props.summary}</Card.Text>
+        <Button variant='primary' href={props.readMore}>
+          Read more...
+        </Button>
+      </Card.Body>
+    </Card>
+  </div>
+);
 
 export default Post;
