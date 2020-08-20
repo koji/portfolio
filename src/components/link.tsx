@@ -4,7 +4,7 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink';
 const Intent: React.FC<any> = ({ children, to }) => (
   <AniLink
     cover
-    bg='#218dff'
+    bg='#afeeee'
     className='nav-link'
     to={to}
     activeStyle={{
