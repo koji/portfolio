@@ -9,7 +9,7 @@ jobs:
       - uses: nzws/blog-at-issue-action@master
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          filepath: 'src/posts/{title}.md'
-          label: 'blog' # Optional
+          filepath: 'src/posts/{title}.md' # format this-is-the-title
+          label: 'blog'
           use-prettier: 'format' # Optional
 #           use-textlint: 'format' # Optional
