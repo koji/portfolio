@@ -12,4 +12,4 @@ jobs:
           filepath: 'src/posts/{title}.md'
           label: 'blog' # Optional
           use-prettier: 'format' # Optional
-          use-textlint: 'format' # Optional
+#           use-textlint: 'format' # Optional
