@@ -1,0 +1,15 @@
+name: Create/Update blog post
+on:
+  - issues
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: nzws/blog-at-issue-action@master
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          filepath: 'src/posts/{title}.md'
+          label: 'blog' # Optional
+          use-prettier: 'format' # Optional
+          use-textlint: 'format' # Optional
