@@ -12,9 +12,9 @@ const index: React.FC = () => (
     <Appbar />
     <Info />
     <SEO
-      title={'Home'}
-      description={'This is a portfolio site of Koji Kanao.'}
-      keywords={'koji, kanao, koji kanao, kanao koji, software engineer, creative technologist, nyu-itp, itp'}
+      title={`Home`}
+      description={`This is a portfolio site of Koji Kanao.`}
+      keywords={`koji, kanao, koji kanao, kanao koji, software engineer, creative technologist, nyu-itp, itp`}
     />
   </div>
 );

@@ -1,7 +1,12 @@
 import React from 'react';
 import Appbar from '../components/appbar';
 
-const PrimaryLayout = (props: any) => (
+type Props = {
+  column: string;
+  children: any;
+};
+
+const PrimaryLayout: React.FC<Props> = (props: Props) => (
   <div>
     <Appbar />
     <div className='container'>

@@ -8,7 +8,7 @@ type Props = {
   readMore: string;
 };
 
-const Post = (props: Props) => (
+const Post: React.FC<Props> = (props: Props) => (
   <div className='p-3'>
     <Card>
       <Card.Img variant='top' src={props.image} alt='eye-catch image' />

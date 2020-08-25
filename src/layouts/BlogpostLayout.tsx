@@ -12,8 +12,7 @@ const Divider = styled.hr`
   width: 80%;
 `;
 
-
-const BlogpostLayout = ({ data }: any) => {
+const BlogpostLayout: React.FC<any> = ({ data }: any) => {
   const post = data.markdownRemark;
   return (
     <div>

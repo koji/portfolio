@@ -5,13 +5,13 @@ import PrimaryLayout from '../layouts/PrimaryLayout';
 import SEO from '../components/SEO';
 import ScrollBar from '../components/scrollbar';
 
-const Blog = ({ data }: any) => (
+const Blog: React.FC<any> = ({ data }: any) => (
   <PrimaryLayout column={`col-6`}>
     <ScrollBar />
     <SEO
-      title={'Blog'}
-      description={'Tech blog from what I learned'}
-      keywords={'koji, kanao, koji kanao, blog, coding, tech'}
+      title={`Blog`}
+      description={`Tech blog from what I learned`}
+      keywords={`koji, kanao, koji kanao, blog, coding, tech`}
     />
 
     {data.allMarkdownRemark.nodes.map((node: any) => (

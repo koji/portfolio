@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
-const Scrollbar = styled.div`
+const SBar = styled.div`
   position: fixed;
   top: 0;
   right: 0;
@@ -50,10 +50,10 @@ const ProgressBar = styled.div`
   }
 `;
 
-const ScrollBar = () => (
+const ScrollBar: React.FC = () => (
   <>
     <ProgressBar />
-    <Scrollbar />
+    <SBar />
   </>
 );
 
