@@ -5,6 +5,7 @@ import {
   FaInstagram as Insta,
   FaEnvelope as Mail,
   FaDev as Dev,
+  FaLinkedinIn as LinkedIn,
 } from 'react-icons/fa';
 import styled from 'styled-components';
 
@@ -51,8 +52,8 @@ const info: React.FC = () => (
       <a className='mr-5 icon' aria-label='GitHub' href='https://github.com/koji/'>
         <Github />
       </a>
-      <a className='mr-5 icon' aria-label='Instagram' href='https://www.instagram.com/koji_kanao/'>
-        <Insta />
+      <a className='mr-5 icon' aria-label='LinkedIn' href='https://www.linkedin.com/in/kojikanao'>
+        <LinkedIn />
       </a>
       <a className='mr-5 icon' aria-label='Twitter' href='https://twitter.com/koji_kanao'>
         <Twitter />
