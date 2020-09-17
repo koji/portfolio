@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/quotes */
 import React from 'react';
 import '../style.css';
-import Appbar from '../components/appbar';
+import { Appbar } from '../components/appbar';
 import { graphql } from 'gatsby';
-import Card from '../components/card';
-import SEO from '../components/SEO';
-import ScrollBar from '../components/scrollbar';
+import { RCard } from '../components/card';
+import { SEO } from '../components/SEO';
+import { ScrollBar } from '../components/scrollbar';
 
 type ProjectNode = {
   node: {
@@ -16,7 +16,7 @@ type ProjectNode = {
   };
 };
 
-const Projects: React.FC = ({ data }: any) => {
+export const Projects: React.FC = ({ data }: any) => {
   const projectList = data.allProjectsYaml.edges;
 
   return (
@@ -30,14 +30,12 @@ const Projects: React.FC = ({ data }: any) => {
       />
       <div className='row'>
         {projectList.map(({ node }: ProjectNode) => (
-          <Card cardTitle={node.title} cardSubtitle={node.subtitle} link={node.link} key={node.id} />
+          <RCard cardTitle={node.title} cardSubtitle={node.subtitle} link={node.link} key={node.id} />
         ))}
       </div>
     </div>
   );
 };
-
-export default Projects;
 
 export const query = graphql`
   {

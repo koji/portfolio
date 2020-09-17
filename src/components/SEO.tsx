@@ -8,7 +8,7 @@ type SEOData = {
   keywords: string;
 };
 
-const SEO = ({ title, description, keywords }: SEOData) => (
+export const SEO = ({ title, description, keywords }: SEOData) => (
   <StaticQuery
     query={query}
     render={({
@@ -33,8 +33,6 @@ const SEO = ({ title, description, keywords }: SEOData) => (
     }}
   />
 );
-
-export default SEO;
 
 const query = graphql`
   {

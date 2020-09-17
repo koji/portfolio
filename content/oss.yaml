@@ -20,7 +20,7 @@
   description: wcartist is a CLI tool which allows users to create word art with one line command.
   stack: python
   link: https://github.com/koji/wcartist
-  image:
+  image: https://raw.githubusercontent.com/koji/wcartist/master/image/wcartist_sample01.png
 
 - title: Material UI Doc
   description: Have contributed to translate the documents from English into Japanese.

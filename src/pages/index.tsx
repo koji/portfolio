@@ -1,12 +1,12 @@
 import React from 'react';
 import '../style.css';
-import Appbar from '../components/appbar';
-import Info from '../components/info';
+import { Appbar } from '../components/appbar';
+import { Info } from '../components/info';
 // import { Helmet } from 'react-helmet';
-import ScrollBar from '../components/scrollbar';
-import SEO from '../components/SEO';
+import { ScrollBar } from '../components/scrollbar';
+import { SEO } from '../components/SEO';
 
-const index: React.FC = () => (
+export const index: React.FC = () => (
   <div>
     <ScrollBar />
     <Appbar />
@@ -18,5 +18,3 @@ const index: React.FC = () => (
     />
   </div>
 );
-
-export default index;

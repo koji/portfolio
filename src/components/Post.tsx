@@ -8,7 +8,7 @@ type Props = {
   readMore: string;
 };
 
-const Post: React.FC<Props> = (props: Props) => (
+export const Post: React.FC<Props> = (props: Props) => (
   <div className='p-3'>
     <Card>
       <Card.Img variant='top' src={props.image} alt='eye-catch image' />
@@ -22,5 +22,3 @@ const Post: React.FC<Props> = (props: Props) => (
     </Card>
   </div>
 );
-
-export default Post;

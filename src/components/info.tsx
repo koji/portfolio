@@ -16,7 +16,7 @@ const FetchText = styled.span`
   color: #070a0e !important;
 `;
 
-const info: React.FC = () => (
+export const Info: React.FC = () => (
   <div className='container'>
     <div className='my-5'></div>
     <div className='display-3' style={{ color: `#218dff` }}>
@@ -64,5 +64,3 @@ const info: React.FC = () => (
     </div>
   </div>
 );
-
-export default info;

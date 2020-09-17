@@ -1,12 +1,12 @@
 import React from 'react';
-import Appbar from '../components/appbar';
+import { Appbar } from '../components/appbar';
 
 type Props = {
   column: string;
   children: any;
 };
 
-const PrimaryLayout: React.FC<Props> = (props: Props) => (
+export const PrimaryLayout: React.FC<Props> = (props: Props) => (
   <div>
     <Appbar />
     <div className='container'>
@@ -16,5 +16,3 @@ const PrimaryLayout: React.FC<Props> = (props: Props) => (
     </div>
   </div>
 );
-
-export default PrimaryLayout;
