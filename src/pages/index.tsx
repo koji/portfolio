@@ -6,7 +6,7 @@ import { Info } from '../components/info';
 import { ScrollBar } from '../components/scrollbar';
 import { SEO } from '../components/SEO';
 
-export const index: React.FC = () => (
+const index: React.FC = () => (
   <div>
     <ScrollBar />
     <Appbar />
@@ -18,3 +18,5 @@ export const index: React.FC = () => (
     />
   </div>
 );
+
+export default index;
