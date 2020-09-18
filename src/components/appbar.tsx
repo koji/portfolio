@@ -1,7 +1,7 @@
 import React from 'react';
-import Intent from './link';
+import { Intent } from './link';
 
-const Appbar: React.FC = () => (
+export const Appbar: React.FC = () => (
   <div className='container my-3'>
     <ul className='nav justify-content-center'>
       <li className='nav-item mx-3'>
@@ -40,5 +40,3 @@ const Appbar: React.FC = () => (
     </ul>
   </div>
 );
-
-export default Appbar;

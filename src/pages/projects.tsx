@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/quotes */
 import React from 'react';
 import '../style.css';
-import Appbar from '../components/appbar';
+import { Appbar } from '../components/appbar';
 import { graphql } from 'gatsby';
-import Card from '../components/card';
-import SEO from '../components/SEO';
-import ScrollBar from '../components/scrollbar';
+import { RCard } from '../components/card';
+import { SEO } from '../components/SEO';
+import { ScrollBar } from '../components/scrollbar';
 
 type ProjectNode = {
   node: {
@@ -13,6 +13,8 @@ type ProjectNode = {
     subtitle: string;
     link: string;
     id: string;
+    stack: string;
+    image?: string;
   };
 };
 
@@ -30,7 +32,26 @@ const Projects: React.FC = ({ data }: any) => {
       />
       <div className='row'>
         {projectList.map(({ node }: ProjectNode) => (
-          <Card cardTitle={node.title} cardSubtitle={node.subtitle} link={node.link} key={node.id} />
+          <>
+            {node.image ? (
+              <RCard
+                cardTitle={node.title}
+                cardSubtitle={node.subtitle}
+                cardStack={node.stack}
+                link={node.link}
+                key={node.id}
+                imgSrc={node.image}
+              />
+            ) : (
+              <RCard
+                cardTitle={node.title}
+                cardSubtitle={node.subtitle}
+                cardStack={node.stack}
+                link={node.link}
+                key={node.id}
+              />
+            )}
+          </>
         ))}
       </div>
     </div>
@@ -46,8 +67,10 @@ export const query = graphql`
         node {
           title
           subtitle
+          stack
           link
           id
+          image
         }
       }
     }

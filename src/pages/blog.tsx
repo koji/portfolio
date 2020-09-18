@@ -1,9 +1,9 @@
 import React from 'react';
-import Post from '../components/Post';
+import { Post } from '../components/Post';
 import { graphql } from 'gatsby';
-import PrimaryLayout from '../layouts/PrimaryLayout';
-import SEO from '../components/SEO';
-import ScrollBar from '../components/scrollbar';
+import { PrimaryLayout } from '../layouts/PrimaryLayout';
+import { SEO } from '../components/SEO';
+import { ScrollBar } from '../components/scrollbar';
 
 const Blog: React.FC<any> = ({ data }: any) => (
   <PrimaryLayout column={`col-6`}>
