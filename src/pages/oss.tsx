@@ -8,7 +8,7 @@ import { SEO } from '../components/SEO';
 import { ScrollBar } from '../components/scrollbar';
 import { OSSCard } from '../types/Types';
 
-export const OSS: React.FC = ({ data }: any) => {
+const OSS: React.FC = ({ data }: any) => {
   const ossList = data.allOssYaml.edges;
   return (
     <div className='container-fluid'>
@@ -47,6 +47,8 @@ export const OSS: React.FC = ({ data }: any) => {
     </div>
   );
 };
+
+export default OSS;
 
 export const query = graphql`
   {

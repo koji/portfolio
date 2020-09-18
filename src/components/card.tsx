@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card as CardType } from '../types/Types';
+import Image from 'gatsby-image';
 
 export const RCard: React.FC<CardType> = (props: CardType) => {
   const { cardTitle, cardSubtitle, cardStack, link, imgSrc } = props;
@@ -9,6 +10,7 @@ export const RCard: React.FC<CardType> = (props: CardType) => {
         <div className='card-body'>
           <h2 className='card-title'>{cardTitle}</h2>
           <img className='card-img' src={imgSrc} />
+          {/* <Image fluid={imgSrc} className='card-img' /> */}
           <p className='card-text'>{cardSubtitle}</p>
           <p className='card-text'>{cardStack}</p>
           <a href={link} target='_blank' className='card-link'>

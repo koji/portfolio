@@ -2,25 +2,25 @@
   description: easyGAN is a CLI tool which can train images and generates images with DCGAN.
   stack: python | keras
   link: https://easygan.netlify.app/
-  image:
+  image: /static/0b6efc8106ecea5126c5ae3284d20478/45040/easygan.png
 
 - title: icTrainer
   description: ictrainer is a CLI tool which offers a couple of functions to train own image classifier. It offers image collecting, resize, and face detector
   stack: python | keras | tensorflow
   link: https://github.com/koji/icTrainer
-  image:
+  image: /static/6abf6fed71ca07a595be559c2f4b2dfd/40ffe/ictrainer.png
 
 - title: gengitignore
   description: gengitignore is a CLI tool to generate .gitignore file. This package help developers to manage codes on Git/Github.
   stack: nodejs
   link: https://github.com/koji/genigore
-  image:
+  image: /static/47c05afe9c4f6d9538de05082bb26620/b48f8/gengitignore.png
 
 - title: wcartist
   description: wcartist is a CLI tool which allows users to create word art with one line command.
   stack: python
   link: https://github.com/koji/wcartist
-  image: https://raw.githubusercontent.com/koji/wcartist/master/image/wcartist_sample01.png
+  image: /static/d3499e10d647ad950c3503e476b78f0f/cc568/wcartist.png
 
 - title: Material UI Doc
   description: Have contributed to translate the documents from English into Japanese.
@@ -38,13 +38,13 @@
   description: nes-components is a react-component with nes.css. This is published as a npm package.
   stack: reactjs | typescript | storybook | bit.dev
   link: https://github.com/koji/react-nes-components
-  image:
+  image: /static/cc238dd79936bcc4f69df20d00a0b89e/72a03/nes-components.png
 
 - title: mtrand
   description: mtrand is Deno third party module and it's mt19937 for Deno.
   stack: deno | typescript | github action
   link: https://deno.land/x/mtrand
-  image:
+  image: /static/2b1d83398b0bfbfb77a1f91303a48a99/a33c4/mtrand.png
 
 - title: gatsbyjs doc
   description: Have contributed to translate the documents from English into Japanese.
@@ -56,4 +56,10 @@
   description: Have contributed to translate the documents from English into Japanese.
   stack: translate | modify documents
   link: https://github.com/beautifulinteractions/beautiful-react-hooks/blob/master/docs/README.jp-JP.md
+  image:
+
+- title: typescript-web
+  description: Fixed deprecated code on the website
+  stack: modify code | translate
+  link: https://github.com/microsoft/TypeScript-Website/pull/1083#event-3763003490
   image:
