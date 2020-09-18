@@ -16,7 +16,7 @@ type TalkNode = {
   };
 };
 
-export const Talk: React.FC = ({ data }: any) => {
+const Talk: React.FC = ({ data }: any) => {
   const talkList = data.allTalkYaml.edges;
   const { node } = data;
   return (
@@ -38,6 +38,8 @@ export const Talk: React.FC = ({ data }: any) => {
     </div>
   );
 };
+
+export default Talk;
 
 export const query = graphql`
   {

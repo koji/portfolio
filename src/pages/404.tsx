@@ -3,7 +3,7 @@ import { ScrollBar } from '../components/scrollbar';
 import { Appbar } from '../components/appbar';
 import { SEO } from '../components/SEO';
 
-export const ErrorPage: React.FC = () => (
+const ErrorPage: React.FC = () => (
   <div>
     <ScrollBar />
     <Appbar />
@@ -15,3 +15,5 @@ export const ErrorPage: React.FC = () => (
     />
   </div>
 );
+
+export default ErrorPage;

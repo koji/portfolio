@@ -5,7 +5,7 @@ import { PrimaryLayout } from '../layouts/PrimaryLayout';
 import { SEO } from '../components/SEO';
 import { ScrollBar } from '../components/scrollbar';
 
-export const Blog: React.FC<any> = ({ data }: any) => (
+const Blog: React.FC<any> = ({ data }: any) => (
   <PrimaryLayout column={`col-6`}>
     <ScrollBar />
     <SEO
@@ -24,6 +24,8 @@ export const Blog: React.FC<any> = ({ data }: any) => (
     ))}
   </PrimaryLayout>
 );
+
+export default Blog;
 
 export const query = graphql`
   {

@@ -16,7 +16,7 @@ type ProjectNode = {
   };
 };
 
-export const Projects: React.FC = ({ data }: any) => {
+const Projects: React.FC = ({ data }: any) => {
   const projectList = data.allProjectsYaml.edges;
 
   return (
@@ -36,6 +36,8 @@ export const Projects: React.FC = ({ data }: any) => {
     </div>
   );
 };
+
+export default Projects;
 
 export const query = graphql`
   {
