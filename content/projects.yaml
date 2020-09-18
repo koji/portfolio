@@ -1,36 +1,43 @@
 - title: mtindo
   subtitle: mtindo is a style transfer application. It offers a unique opportunity that generates a new image/video from an image/video.
   link: https://itp.nyu.edu/thesis2018/#/student/koji
-  image:
+  stack: python nodejs electron
+  image: mtindo.png
 
 - title: Data from Mukuru
   subtitle: Data Visualization project with Pawa Initiative which is a NPO in Nairobi, Kenya.
   link: http://datavi.herokuapp.com/mukuru/
-  image:
+  stack: D3.js
+  image: data_from.png
 
 - title: nikobot
   subtitle: nikobot is an interactive expressive robot pet for your desk, a minimal interactive robot.
   link: https://www.nitishitp.com/nikobot
-  image:
+  stack: Arduino html css javascript
+  image: nikobot.jpg
 
 - title: Rose light
   subtitle: Rose light is a physical computing project that is made of 3d printing parts and Arduino.
-  link: https://github.com/Mr404Found/Qr-Code-Application
+  link:
+  stack: Arduino Bluetooth
   image:
 
 - title: Gif Camera
   subtitle: Gif Camera is a physical computing prototype. This device offers a function that can create a gif easily to users. This offers 5 types of filters with combinations of three buttons.
   link: https://github.com/koji/gifCamera
-  image:
+  stack: RaspberryPi python
+  image: 
 
 - title: RealSense Scan App
   subtitle: This is an experimental project to use RealSense and openFrameworks.
   link: https://github.com/koji/RealSense
-  image:
+  stack: openFrameworks
+  image: realsense.png
 
 - title: Ichi-go ichi-e
   subtitle: chi-go ichi-e is a Japanese four-character idiom.
             The term means "for this time only" or "once in a lifetime."
             Ichi-go ichi-e is an openFrameworks application that generates a new shader code.
   link: https://vimeo.com/363803650
+  stack: openFrameworks
   image:

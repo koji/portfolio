@@ -13,6 +13,8 @@ type ProjectNode = {
     subtitle: string;
     link: string;
     id: string;
+    stack: string;
+    image?: string;
   };
 };
 
@@ -30,7 +32,26 @@ const Projects: React.FC = ({ data }: any) => {
       />
       <div className='row'>
         {projectList.map(({ node }: ProjectNode) => (
-          <RCard cardTitle={node.title} cardSubtitle={node.subtitle} link={node.link} key={node.id} />
+          <>
+            {node.image ? (
+              <RCard
+                cardTitle={node.title}
+                cardSubtitle={node.subtitle}
+                cardStack={node.stack}
+                link={node.link}
+                key={node.id}
+                imgSrc={node.image}
+              />
+            ) : (
+              <RCard
+                cardTitle={node.title}
+                cardSubtitle={node.subtitle}
+                cardStack={node.stack}
+                link={node.link}
+                key={node.id}
+              />
+            )}
+          </>
         ))}
       </div>
     </div>
@@ -46,8 +67,10 @@ export const query = graphql`
         node {
           title
           subtitle
+          stack
           link
           id
+          image
         }
       }
     }
