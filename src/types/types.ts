@@ -12,14 +12,3 @@ export type BlogPost = {
   keywords: string;
   summary: string;
 };
-
-export type OSSCard = {
-  node: {
-    title: string;
-    description: string;
-    stack: string;
-    link: string;
-    id: string;
-    image?: string;
-  };
-};

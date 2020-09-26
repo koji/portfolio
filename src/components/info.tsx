@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import {
   FaTwitter as Twitter,
   FaGithub as Github,
@@ -16,7 +16,7 @@ const FetchText = styled.span`
   color: #070a0e !important;
 `;
 
-export const Info: React.FC = () => (
+const info: React.FC = () => (
   <div className='container'>
     <div className='my-5'></div>
     <div className='display-3' style={{ color: `#218dff` }}>
@@ -64,3 +64,5 @@ export const Info: React.FC = () => (
     </div>
   </div>
 );
+
+export default info;

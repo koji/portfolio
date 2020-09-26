@@ -1,10 +1,10 @@
-import * as React from 'react';
+import React from 'react';
 import '../style.css';
-import { Appbar } from '../components/appbar';
+import Appbar from '../components/appbar';
 import { graphql } from 'gatsby';
 import { RCard } from '../components/card';
 import SEO from '../components/SEO';
-import { ScrollBar } from '../components/scrollbar';
+import ScrollBar from '../components/scrollbar';
 
 type TalkNode = {
   node: {
@@ -21,7 +21,7 @@ const Talk: React.FC = ({ data }: any) => {
   const { node } = data;
   return (
     <div className='container-fluid'>
-      <Scross />
+      <ScrollBar />
       <Appbar />
       <SEO title={`Talk`} description={`talk page`} keywords={`talk, koji, talk, creative tech, creative coding`} />
       <div className='row'>

@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/quotes */
-import * as React from 'react';
+import React from 'react';
 import '../style.css';
-import { Appbar } from '../components/appbar';
+import Appbar from '../components/appbar';
 import { graphql } from 'gatsby';
 import { RCard } from '../components/card';
 import SEO from '../components/SEO';
-import { ScrollBar } from '../components/scrollbar';
+import ScrollBar from '../components/scrollbar';
 
 const OSS: React.FC = ({ data }: any) => {
   const ossList = data.allOssYaml.edges;

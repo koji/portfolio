@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
@@ -8,7 +8,7 @@ type SEOData = {
   keywords: string;
 };
 
-export const SEO = ({ title, description, keywords }: SEOData) => (
+const SEO = ({ title, description, keywords }: SEOData) => (
   <StaticQuery
     query={query}
     render={({
@@ -33,6 +33,8 @@ export const SEO = ({ title, description, keywords }: SEOData) => (
     }}
   />
 );
+
+export default SEO;
 
 const query = graphql`
   {

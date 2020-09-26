@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/quotes */
-import * as React from 'react';
+import React from 'react';
 import '../style.css';
-import { Appbar } from '../components/appbar';
+import Appbar from '../components/appbar';
 import { graphql } from 'gatsby';
 import { RCard } from '../components/card';
 import SEO from '../components/SEO';
-import { ScrollBar } from '../components/scrollbar';
+import ScrollBar from '../components/scrollbar';
 
 type ProjectNode = {
   node: {
@@ -13,8 +13,6 @@ type ProjectNode = {
     subtitle: string;
     link: string;
     id: string;
-    stack: string;
-    image?: string;
   };
 };
 

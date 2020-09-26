@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 
 type Props = {
@@ -8,7 +8,7 @@ type Props = {
   readMore: string;
 };
 
-export const Post: React.FC<Props> = (props: Props) => (
+const Post: React.FC<Props> = (props: Props) => (
   <div className='p-3'>
     <Card>
       <Card.Img variant='top' src={props.image} alt='eye-catch image' />
@@ -22,3 +22,5 @@ export const Post: React.FC<Props> = (props: Props) => (
     </Card>
   </div>
 );
+
+export default Post;

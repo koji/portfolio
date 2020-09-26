@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
 const SBar = styled.div`
@@ -50,9 +50,11 @@ const ProgressBar = styled.div`
   }
 `;
 
-export const ScrollBar: React.FC = () => (
+const ScrollBar: React.FC = () => (
   <>
     <ProgressBar />
     <SBar />
   </>
 );
+
+export default ScrollBar;

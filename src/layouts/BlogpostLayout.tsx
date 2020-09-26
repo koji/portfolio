@@ -1,7 +1,7 @@
-import * as React from 'react';
+import React from 'react';
 import { graphql } from 'gatsby';
-import { SEO } from '../components/SEO';
-import { Appbar } from '../components/appbar';
+import SEO from '../components/SEO';
+import Appbar from '../components/appbar';
 import styled from 'styled-components';
 
 const Divider = styled.hr`
@@ -12,7 +12,7 @@ const Divider = styled.hr`
   width: 80%;
 `;
 
-export const BlogpostLayout: React.FC<any> = ({ data }: any) => {
+const BlogpostLayout: React.FC<any> = ({ data }: any) => {
   const post = data.markdownRemark;
   return (
     <div>
@@ -28,6 +28,8 @@ export const BlogpostLayout: React.FC<any> = ({ data }: any) => {
     </div>
   );
 };
+
+export default BlogpostLayout;
 
 export const query = graphql`
   query($slug: String!) {
