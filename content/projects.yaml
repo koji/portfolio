@@ -26,7 +26,7 @@
   subtitle: Gif Camera is a physical computing prototype. This device offers a function that can create a gif easily to users. This offers 5 types of filters with combinations of three buttons.
   link: https://github.com/koji/gifCamera
   stack: RaspberryPi python
-  image: 
+  image: gifcamera.png
 
 - title: RealSense Scan App
   subtitle: This is an experimental project to use RealSense and openFrameworks.
@@ -40,4 +40,4 @@
             Ichi-go ichi-e is an openFrameworks application that generates a new shader code.
   link: https://vimeo.com/363803650
   stack: openFrameworks
-  image:
+  image: Ichi-go_ichi-e.png

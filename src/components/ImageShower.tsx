@@ -7,7 +7,7 @@ type Props = {
   alt: string;
 };
 
-export const Image = (props: Props) => (
+export const ImageShower = (props: Props) => (
   <StaticQuery
     query={graphql`
       query {
