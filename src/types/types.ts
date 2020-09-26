@@ -3,6 +3,7 @@ export type Card = {
   cardSubtitle: string;
   cardStack: string;
   link: string;
+  imgSrc?: string;
 };
 
 export type BlogPost = {

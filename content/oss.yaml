@@ -2,58 +2,46 @@
   description: easyGAN is a CLI tool which can train images and generates images with DCGAN.
   stack: python | keras
   link: https://easygan.netlify.app/
-  image:
+  image: easygan.png
 
 - title: icTrainer
   description: ictrainer is a CLI tool which offers a couple of functions to train own image classifier. It offers image collecting, resize, and face detector
   stack: python | keras | tensorflow
   link: https://github.com/koji/icTrainer
-  image:
+  image: ictrainer.png
 
 - title: gengitignore
   description: gengitignore is a CLI tool to generate .gitignore file. This package help developers to manage codes on Git/Github.
   stack: nodejs
   link: https://github.com/koji/genigore
-  image:
+  image: gengitignore.png
 
 - title: wcartist
   description: wcartist is a CLI tool which allows users to create word art with one line command.
   stack: python
   link: https://github.com/koji/wcartist
-  image:
+  image: wcartist.png
 
-- title: Material UI Doc
-  description: Have contributed to translate the documents from English into Japanese.
-  stack: translate
-  link:
-  image:
+# - title: Material UI Doc
+#   description: Have contributed to translate the documents from English into Japanese.
+#   stack: translate
+#   link:
+#   image:
 
-- title: Realsense Doc for Pi
-  description: Created a setup guide for Raspberry Pi.
-  stack: Raspberry Pi | Realsense
-  link: https://github.com/IntelRealSense/librealsense/blob/master/doc/installation_raspbian.md
-  image:
+# - title: Realsense Doc for Pi
+#   description: Created a setup guide for Raspberry Pi.
+#   stack: Raspberry Pi | Realsense
+#   link: https://github.com/IntelRealSense/librealsense/blob/master/doc/installation_raspbian.md
+#   image:
 
 - title: react-nes-components
   description: nes-components is a react-component with nes.css. This is published as a npm package.
   stack: reactjs | typescript | storybook | bit.dev
   link: https://github.com/koji/react-nes-components
-  image:
+  image: nes-components.png
 
 - title: mtrand
   description: mtrand is Deno third party module and it's mt19937 for Deno.
   stack: deno | typescript | github action
   link: https://deno.land/x/mtrand
-  image:
-
-- title: gatsbyjs doc
-  description: Have contributed to translate the documents from English into Japanese.
-  stack: translate | modify documents
-  link:
-  image:
-
-- title: beautiful-react-hooks doc
-  description: Have contributed to translate the documents from English into Japanese.
-  stack: translate | modify documents
-  link: https://github.com/beautifulinteractions/beautiful-react-hooks/blob/master/docs/README.jp-JP.md
-  image:
+  image: mtrand.png

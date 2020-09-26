@@ -3,7 +3,7 @@ import React from 'react';
 import '../style.css';
 import Appbar from '../components/appbar';
 import { graphql } from 'gatsby';
-import Card from '../components/card';
+import { RCard } from '../components/card';
 import SEO from '../components/SEO';
 import ScrollBar from '../components/scrollbar';
 
@@ -21,13 +21,27 @@ const OSS: React.FC = ({ data }: any) => {
       />
       <div className='row'>
         {ossList.map(({ node }: any) => (
-          <Card
-            cardTitle={node.title}
-            cardSubtitle={node.description}
-            cardStack={node.stack}
-            link={node.link}
-            key={node.id}
-          />
+          <>
+            {node.image ? (
+              <RCard
+                cardTitle={node.title}
+                cardSubtitle={node.description}
+                cardStack={node.stack}
+                imgSrc={node.image}
+                link={node.link}
+                key={node.id}
+              ></RCard>
+            ) : (
+              <RCard
+                cardTitle={node.title}
+                cardSubtitle={node.description}
+                cardStack={node.stack}
+                link={node.link}
+                key={node.id}
+                imgSrc={''}
+              />
+            )}
+          </>
         ))}
       </div>
     </div>
@@ -46,6 +60,7 @@ export const query = graphql`
           stack
           link
           id
+          image
         }
       }
     }
