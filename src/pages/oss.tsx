@@ -4,9 +4,8 @@ import '../style.css';
 import { Appbar } from '../components/appbar';
 import { graphql } from 'gatsby';
 import { RCard } from '../components/card';
-import { SEO } from '../components/SEO';
-import { ScrollBar } from '../components/scrollbar';
-import { OSSCard } from '../types/Types';
+import SEO from '../components/SEO';
+import ScrollBar from '../components/scrollbar';
 
 const OSS: React.FC = ({ data }: any) => {
   const ossList = data.allOssYaml.edges;
@@ -21,7 +20,7 @@ const OSS: React.FC = ({ data }: any) => {
         keywords={'koji, kanao, koji kanao, open source, oss, github'}
       />
       <div className='row'>
-        {ossList.map(({ node }: OSSCard) => (
+        {ossList.map(({ node }: any) => (
           <>
             {node.image ? (
               <RCard
@@ -39,6 +38,7 @@ const OSS: React.FC = ({ data }: any) => {
                 cardStack={node.stack}
                 link={node.link}
                 key={node.id}
+                imgSrc={''}
               />
             )}
           </>

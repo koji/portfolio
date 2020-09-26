@@ -4,8 +4,8 @@ import '../style.css';
 import { Appbar } from '../components/appbar';
 import { graphql } from 'gatsby';
 import { RCard } from '../components/card';
-import { SEO } from '../components/SEO';
-import { ScrollBar } from '../components/scrollbar';
+import SEO from '../components/SEO';
+import ScrollBar from '../components/scrollbar';
 
 type ProjectNode = {
   node: {
@@ -18,7 +18,7 @@ type ProjectNode = {
   };
 };
 
-const Projects: React.FC = ({ data }: any) => {
+const Project: React.FC = ({ data }: any) => {
   const projectList = data.allProjectsYaml.edges;
 
   return (
@@ -26,12 +26,12 @@ const Projects: React.FC = ({ data }: any) => {
       <ScrollBar />
       <Appbar />
       <SEO
-        title={'Projects'}
+        title={'Project'}
         description={'This is a project page'}
         keywords={'project, koji project, itp project, art project'}
       />
       <div className='row'>
-        {projectList.map(({ node }: ProjectNode) => (
+        {projectList.map(({ node }: any) => (
           <>
             {node.image ? (
               <RCard
@@ -58,7 +58,7 @@ const Projects: React.FC = ({ data }: any) => {
   );
 };
 
-export default Projects;
+export default Project;
 
 export const query = graphql`
   {

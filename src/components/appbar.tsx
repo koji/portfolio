@@ -15,8 +15,8 @@ export const Appbar: React.FC = () => (
         </Intent>
       </li>
       <li className='nav-item mx-3'>
-        <Intent to='/projects'>
-          <b>Projects</b>
+        <Intent to='/project'>
+          <b>Project</b>
         </Intent>
       </li>
       <li className='nav-item mx-3'>

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Card as CardType } from '../types/Types';
+import { Card as CardType } from '../types/types';
 import { ImageShower } from './ImageShower';
 
 export const RCard: React.FC<CardType> = (props: CardType) => {

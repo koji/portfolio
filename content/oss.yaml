@@ -45,21 +45,3 @@
   stack: deno | typescript | github action
   link: https://deno.land/x/mtrand
   image: mtrand.png
-
-# - title: gatsbyjs doc
-#   description: Have contributed to translate the documents from English into Japanese.
-#   stack: translate | modify documents
-#   link:
-#   image:
-
-# - title: beautiful-react-hooks doc
-#   description: Have contributed to translate the documents from English into Japanese.
-#   stack: translate | modify documents
-#   link: https://github.com/beautifulinteractions/beautiful-react-hooks/blob/master/docs/README.jp-JP.md
-#   image:
-
-# - title: typescript-web
-#   description: Fixed deprecated code on the website
-#   stack: modify code | translate
-#   link: https://github.com/microsoft/TypeScript-Website/pull/1083#event-3763003490
-#   image:
