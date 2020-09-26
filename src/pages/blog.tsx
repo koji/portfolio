@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { Post } from '../components/Post';
 import { graphql } from 'gatsby';
 import { PrimaryLayout } from '../layouts/PrimaryLayout';

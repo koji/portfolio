@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 export const Intent: React.FC<any> = ({ children, to }) => (

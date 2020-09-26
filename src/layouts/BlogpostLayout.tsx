@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { graphql } from 'gatsby';
 import { SEO } from '../components/SEO';
 import { Appbar } from '../components/appbar';
