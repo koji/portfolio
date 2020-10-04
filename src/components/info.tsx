@@ -2,10 +2,11 @@ import React from 'react';
 import {
   FaTwitter as Twitter,
   FaGithub as Github,
-  FaInstagram as Insta,
+  //FaInstagram as Insta,
   FaEnvelope as Mail,
   FaDev as Dev,
   FaLinkedinIn as LinkedIn,
+  FaMedium as Medium,
 } from 'react-icons/fa';
 import styled from 'styled-components';
 
@@ -57,6 +58,9 @@ const info: React.FC = () => (
       </a>
       <a className='mr-5 icon' aria-label='Twitter' href='https://twitter.com/koji_kanao'>
         <Twitter />
+      </a>
+      <a className='mr-5 icon' aria-label='Medium' href='https://medium.com/@koji_kanao'>
+        <Medium />
       </a>
       <a className='mr-5 icon' aria-label='Gmail' href='mailto://koji.kanao@nyu.edu'>
         <Mail />
