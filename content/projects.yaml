@@ -6,7 +6,7 @@
 
 - title: Data from Mukuru
   subtitle: Data Visualization project with Pawa Initiative which is a NPO in Nairobi, Kenya.
-  link: http://datavi.herokuapp.com/mukuru/
+  link: https://datavi.herokuapp.com/mukuru/
   stack: D3.js
   image: data_from.png
 
