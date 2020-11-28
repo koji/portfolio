@@ -6,7 +6,7 @@
 
 - title: Data from Mukuru
   subtitle: Data Visualization project with Pawa Initiative which is a NPO in Nairobi, Kenya.
-  link: https://datavi.herokuapp.com/mukuru/
+  link: http://datavi.herokuapp.com/mukuru/
   stack: D3.js
   image: data_from.png
 
@@ -20,7 +20,7 @@
   subtitle: Rose light is a physical computing project that is made of 3d printing parts and Arduino.
   link:
   stack: Arduino Bluetooth
-  image:
+  image: roselight.jpg
 
 - title: Gif Camera
   subtitle: Gif Camera is a physical computing prototype. This device offers a function that can create a gif easily to users. This offers 5 types of filters with combinations of three buttons.
@@ -41,3 +41,10 @@
   link: https://vimeo.com/363803650
   stack: openFrameworks
   image: Ichi-go_ichi-e.png
+
+- title: Jobs on GitHub
+  subtitle: Use GitHub API for Job boards with Reactjs and Typescript.
+            The main purpose is to use react hooks.
+  link: https://engineer-job-board.netlify.app/
+  stack: reactjs TypeScript GitHub API
+  image: jobs_on_github.png
