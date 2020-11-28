@@ -59,7 +59,7 @@ const info: React.FC = () => (
       <a className='mr-5 icon' aria-label='Twitter' href='https://twitter.com/koji_kanao'>
         <Twitter />
       </a>
-      <a className='mr-5 icon' aria-label='Medium' href='https://medium.com/@koji_kanao'>
+      <a className='mr-5 icon' aria-label='Medium' href='https://koji-kanao.medium.com/'>
         <Medium />
       </a>
       <a className='mr-5 icon' aria-label='Gmail' href='mailto://koji.kanao@nyu.edu'>
