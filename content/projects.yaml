@@ -53,5 +53,5 @@
   subtitle: Use OMDB API with Reactjs and Typescript.
             Currently the website has a search function.
   link: https://react-movie-list-app.netlify.app/
-  stack: reactjs TypeScript omdbAPI
+  stack: reactjs TypeScript OMDBAPI
   image: movieapp.png
