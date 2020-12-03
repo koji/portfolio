@@ -48,3 +48,10 @@
   link: https://engineer-job-board.netlify.app/
   stack: reactjs TypeScript GitHub API
   image: jobs_on_github.png
+
+- title: Movie Search App
+  subtitle: Use OMDB API with Reactjs and Typescript.
+            Currently the website has a search function.
+  link: https://react-movie-list-app.netlify.app/
+  stack: reactjs TypeScript omdbAPI
+  image: movieapp.png
