@@ -45,3 +45,9 @@
   stack: deno | typescript | github action
   link: https://deno.land/x/mtrand
   image: mtrand.png
+
+- title: p5js-web-editor Japanese UI
+  description: I led to add Japanese translation to p5js web editor.
+  stack: javascript | react | i18n
+  link: https://github.com/processing/p5.js-web-editor/releases/tag/v1.2.0
+  image: p5js_web_editor.png
