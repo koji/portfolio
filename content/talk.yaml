@@ -3,7 +3,6 @@
   event: nydv private event
   link: http://kojikanao.netlify.app/talk
   image:
-
 - title: mtindo StyleTransfer Desktop app
   description: I talked about my thesis project, mtindo. mtindo is a desktop app that allows users to try StyleTransfer without any difficult setups.
   event: Creative Coding NYC

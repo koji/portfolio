@@ -12,18 +12,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-typescript`,
-    // {
-    //   resolve: "gatsby-plugin-graphql-codegen",
-    //   options: {
-    //     fileName: `types/graphql-types.d.ts`,
-    //   },
-    // },
-    // {
-    //   resolve: 'gatsby-plugin-html-attributes',
-    //   options: {
-    //     lang: 'en'
-    //   }
-    // },
     {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
@@ -33,15 +21,6 @@ module.exports = {
         extensions: [`js`, `ts`, `tsx`],
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-alias-imports`,
-    //   options: {
-    //     alias: {
-    //       src: `${__dirname}/src`,
-    //       components: `${__dirname}/src/components`,
-    //     },
-    //   },
-    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

@@ -3,37 +3,31 @@
   link: https://itp.nyu.edu/thesis2018/#/student/koji
   stack: python nodejs electron
   image: mtindo.png
-
 - title: Data from Mukuru
   subtitle: Data Visualization project with Pawa Initiative which is a NPO in Nairobi, Kenya.
   link: http://datavi.herokuapp.com/mukuru/
   stack: D3.js
   image: data_from.png
-
 - title: nikobot
   subtitle: nikobot is an interactive expressive robot pet for your desk, a minimal interactive robot.
   link: https://www.nitishitp.com/nikobot
   stack: Arduino html css javascript
   image: nikobot.jpg
-
 - title: Rose light
   subtitle: Rose light is a physical computing project that is made of 3d printing parts and Arduino.
   link:
   stack: Arduino Bluetooth
   image: roselight.jpg
-
 - title: Gif Camera
   subtitle: Gif Camera is a physical computing prototype. This device offers a function that can create a gif easily to users. This offers 5 types of filters with combinations of three buttons.
   link: https://github.com/koji/gifCamera
   stack: RaspberryPi python
   image: gifcamera.png
-
 - title: RealSense Scan App
   subtitle: This is an experimental project to use RealSense and openFrameworks.
   link: https://github.com/koji/RealSense
   stack: openFrameworks
   image: realsense.png
-
 - title: Ichi-go ichi-e
   subtitle: chi-go ichi-e is a Japanese four-character idiom.
             The term means "for this time only" or "once in a lifetime."
@@ -41,14 +35,12 @@
   link: https://vimeo.com/363803650
   stack: openFrameworks
   image: Ichi-go_ichi-e.png
-
 - title: Jobs on GitHub
   subtitle: Use GitHub API for Job boards with Reactjs and Typescript.
             The main purpose is to use react hooks.
   link: https://engineer-job-board.netlify.app/
   stack: reactjs TypeScript GitHub API
   image: jobs_on_github.png
-
 - title: Movie Search App
   subtitle: Use OMDB API with Reactjs and Typescript.
             Currently the website has a search function.
