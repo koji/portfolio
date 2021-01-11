@@ -47,3 +47,8 @@
   link: https://react-movie-list-app.netlify.app/
   stack: reactjs TypeScript OMDB API
   image: movieapp.png
+- title: Instagram Effects
+  subtitle: I have released two Instagram effects so far.
+  link: https://www.facebook.com/sparkarhub/portfolios/1305061616534560
+  stack: javascript fragment-shader
+  image: instagram.png
