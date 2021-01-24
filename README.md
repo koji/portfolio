@@ -4,4 +4,6 @@ portfolio
 kojikanao.netlify.app/
 
 ### ToDo
-- [ ] Get custom domain for this
+- [x] Get custom domain for this
+- [ ] Add a timeline to home page
+- [ ] Renew the design
