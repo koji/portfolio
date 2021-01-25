@@ -32,7 +32,7 @@ const Appbar: React.FC = () => (
       <li className='nav-item mx-3'>
         <a
           className='nav-link'
-          href='https://drive.google.com/file/d/1dAHY3C69_FFo0AJ7_jiBBYuTWUZGQ4BA/view?usp=sharing'
+          href='https://drive.google.com/file/d/1VKzYV14WiEp8tU2n0kpQ4HH3FyNMDx9X/view?usp=sharing'
         >
           <b>CV</b>
         </a>
