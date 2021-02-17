@@ -52,3 +52,8 @@
   link: https://www.facebook.com/sparkarhub/portfolios/1305061616534560
   stack: javascript fragment-shader
   image: instagram.png
+- title: NewsAPI News
+  subtitle: nextjs demo app with News API (SSG)
+  link: https://nextjs-with-newsapi.vercel.app/
+  stack: nextjs typescript
+  image: nextjs_with_newsapi.png
