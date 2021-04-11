@@ -47,19 +47,31 @@ const info: React.FC = () => (
     </div>
     <div className='h1 code mt-2 mb-3'>{`}`}</div>
     <div className='h1 mt-5'>
-      <a className='mr-5 icon' aria-label='Devto' href='https://dev.to/kojikanao/'>
+      <a className='mr-5 icon' aria-label='Devto' href='https://dev.to/kojikanao/' target='_blank' rel='noopener'>
         <Dev />
       </a>
-      <a className='mr-5 icon' aria-label='GitHub' href='https://github.com/koji/'>
+      <a className='mr-5 icon' aria-label='GitHub' href='https://github.com/koji/' target='_blank' rel='noopener'>
         <Github />
       </a>
-      <a className='mr-5 icon' aria-label='LinkedIn' href='https://www.linkedin.com/in/kojikanao'>
+      <a
+        className='mr-5 icon'
+        aria-label='LinkedIn'
+        href='https://www.linkedin.com/in/kojikanao/'
+        target='_blank'
+        rel='noopener'
+      >
         <LinkedIn />
       </a>
-      <a className='mr-5 icon' aria-label='Twitter' href='https://twitter.com/koji_kanao'>
+      <a
+        className='mr-5 icon'
+        aria-label='Twitter'
+        href='https://twitter.com/koji_kanao/'
+        target='_blank'
+        rel='noopener'
+      >
         <Twitter />
       </a>
-      <a className='mr-5 icon' aria-label='Medium' href='https://koji-kanao.medium.com/'>
+      <a className='mr-5 icon' aria-label='Medium' href='https://koji-kanao.medium.com/' target='_blank' rel='noopener'>
         <Medium />
       </a>
       <a className='mr-5 icon' aria-label='Gmail' href='mailto://koji.kanao@nyu.edu'>
