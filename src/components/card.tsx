@@ -13,7 +13,7 @@ export const RCard: React.FC<CardType> = (props: CardType) => {
           {imgSrc && imgAlt ? <ImageShower filename={imgSrc} alt={imgAlt} /> : <span></span>}
           <p className='card-text'>{cardSubtitle}</p>
           <p className='card-text'>{cardStack}</p>
-          <a href={link} target='_blank' className='card-link'>
+          <a href={link} target='_blank' className='card-link' rel='noopener'>
             Link
           </a>
         </div>
