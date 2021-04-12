@@ -50,11 +50,9 @@ const ProgressBar = styled.div`
   }
 `;
 
-const ScrollBar: React.FC = () => (
+export const ScrollBar: React.FC = () => (
   <>
     <ProgressBar />
     <SBar />
   </>
 );
-
-export default ScrollBar;

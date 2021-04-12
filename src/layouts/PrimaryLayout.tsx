@@ -1,5 +1,5 @@
 import React from 'react';
-import Appbar from '../components/appbar';
+import { Appbar } from '../components/appbar';
 
 type Props = {
   column: string;

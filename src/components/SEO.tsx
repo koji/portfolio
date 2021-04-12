@@ -8,7 +8,7 @@ type SEOData = {
   keywords: string;
 };
 
-const SEO = ({ title, description, keywords }: SEOData) => (
+export const SEO = ({ title, description, keywords }: SEOData) => (
   <StaticQuery
     query={query}
     render={({
@@ -28,14 +28,12 @@ const SEO = ({ title, description, keywords }: SEOData) => (
           <meta charSet='utf-8' name='description' content={seo.description} />
           <meta charSet='utf-8' name='keywords' content={seo.keywords} />
           <meta charSet='utf-8' name='robots' content='index, follow' />
-          <meta name="google-site-verification" content="4K8gxthi6jPHyKAJ_992XK2cBJC0YPkWGUqESK4bwfY" />
+          <meta name='google-site-verification' content='4K8gxthi6jPHyKAJ_992XK2cBJC0YPkWGUqESK4bwfY' />
         </Helmet>
       );
     }}
   />
 );
-
-export default SEO;
 
 const query = graphql`
   {
