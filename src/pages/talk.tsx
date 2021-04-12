@@ -1,10 +1,10 @@
 import React from 'react';
 import '../style.css';
-import Appbar from '../components/appbar';
+import { Appbar } from '../components/appbar';
 import { graphql } from 'gatsby';
 import { RCard } from '../components/card';
-import SEO from '../components/SEO';
-import ScrollBar from '../components/scrollbar';
+import { SEO } from '../components/SEO';
+import { ScrollBar } from '../components/scrollbar';
 
 type TalkNode = {
   node: {

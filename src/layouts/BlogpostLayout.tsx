@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import SEO from '../components/SEO';
-import Appbar from '../components/appbar';
+import { SEO } from '../components/SEO';
+import { Appbar } from '../components/appbar';
 import styled from 'styled-components';
 
 const Divider = styled.hr`
