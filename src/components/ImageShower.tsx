@@ -37,9 +37,16 @@ export const ImageShower = (props: Props) => (
         return null;
       }
       //const imageSizes = image.node.childImageSharp.sizes; ←for fixing size
+      // const path = image.node.childImageSharp.fluid.src;
+      // console.log(path);
+      // const webp = path.replace(/.+\.jpeg|jpg|png/, `webp`);
+      // console.log(webp);
       return (
         /*<Img alt={props.alt} sizes={imageSizes} /> ←for fixing size */
-        <Img fluid={image.node.childImageSharp.fluid} alt={props.alt} />
+        <picture>
+          {/* <source srcSet={webp} type='image/webp' /> */}
+          <Img fluid={image.node.childImageSharp.fluid} alt={props.alt} />
+        </picture>
       );
     }}
   />

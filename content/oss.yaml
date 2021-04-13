@@ -2,22 +2,22 @@
   description: easyGAN is a CLI tool which can train images and generates images with DCGAN.
   stack: python | keras
   link: https://easygan.netlify.app/
-  image: easygan.png
+  image: easygan.webp
 - title: icTrainer
   description: ictrainer is a CLI tool which offers a couple of functions to train own image classifier. It offers image collecting, resize, and face detector
   stack: python | keras | tensorflow
   link: https://github.com/koji/icTrainer
-  image: ictrainer.png
+  image: ictrainer.webp
 - title: gengitignore
   description: gengitignore is a CLI tool to generate .gitignore file. This package help developers to manage codes on Git/Github.
   stack: nodejs
   link: https://github.com/koji/genigore
-  image: gengitignore.png
+  image: gengitignore.webp
 - title: wcartist
   description: wcartist is a CLI tool which allows users to create word art with one line command.
   stack: python
   link: https://github.com/koji/wcartist
-  image: wcartist.png
+  image: wcartist.webp
 # - title: Material UI Doc
 #   description: Have contributed to translate the documents from English into Japanese.
 #   stack: translate
@@ -33,14 +33,14 @@
   description: nes-components is a react-component with nes.css. This is published as a npm package.
   stack: reactjs | typescript | storybook | bit.dev
   link: https://github.com/koji/react-nes-components
-  image: nes-components.png
+  image: nes-components.webp
 - title: mtrand
   description: mtrand is Deno third party module and it's mt19937 for Deno.
   stack: deno | typescript | github action
   link: https://deno.land/x/mtrand
-  image: mtrand.png
+  image: mtrand.webp
 - title: p5js-web-editor Japanese UI
   description: I led to add Japanese translation to p5js web editor.
   stack: javascript | react | i18n
   link: https://github.com/processing/p5.js-web-editor/releases/tag/v1.2.0
-  image: p5js_web_editor.png
+  image: p5js-web-editor.webp
