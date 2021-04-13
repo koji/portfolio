@@ -5,7 +5,7 @@ import { ImageShower } from './ImageShower';
 export const RCard: React.FC<CardType> = (props: CardType) => {
   const { cardTitle, cardSubtitle, cardStack, link, imgSrc } = props;
   const imgAlt = imgSrc?.split(`.`)[0] ? imgSrc.split(`.`)[0] : `no-image`;
-  const webp = imgSrc?.replace(/.+\.jpeg|jpg|png/, `webp`);
+  // const webp = imgSrc?.replace(/.+\.jpeg|jpg|png/, `webp`);
   return (
     <div className='col-lg-4'>
       <div className='card mx-3 my-5'>
