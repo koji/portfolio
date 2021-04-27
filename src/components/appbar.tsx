@@ -30,12 +30,7 @@ export const Appbar: React.FC = () => (
         </Intent>
       </li>
       <li className='nav-item mx-3'>
-        <a
-          className='nav-link'
-          href='https://drive.google.com/file/d/1VKzYV14WiEp8tU2n0kpQ4HH3FyNMDx9X/view?usp=sharing/'
-          target='_blank'
-          rel='noopener'
-        >
+        <a className='nav-link' href='' target='_blank' rel='noopener'>
           <b>CV</b>
         </a>
       </li>
