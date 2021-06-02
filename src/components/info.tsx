@@ -65,7 +65,7 @@ export const Info: React.FC = () => (
       <a
         className='mr-5 icon'
         aria-label='Twitter'
-        href='https://twitter.com/koji_kanao/'
+        href='https://twitter.com/kojikanao_nyc'
         target='_blank'
         rel='noopener'
       >

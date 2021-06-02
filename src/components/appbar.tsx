@@ -1,5 +1,5 @@
-import React from 'react';
-import Intent from './link';
+import * as React from 'react';
+import { Intent } from './link';
 
 export const Appbar: React.FC = () => (
   <div className='container my-3'>
