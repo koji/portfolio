@@ -6,7 +6,7 @@
   "author": "koji kanao",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.7",
-    "bootstrap": "^4.5.2",
+    "bootstrap": "^4.6.0",
     "gatsby": "^3.0.0",
     "gatsby-image": "^3.3.0",
     "gatsby-plugin-alias-imports": "^1.0.5",
